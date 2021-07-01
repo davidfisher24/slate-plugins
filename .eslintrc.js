@@ -283,7 +283,7 @@ module.exports = {
     },
     // local
     {
-      files: 'packages/**/*',
+      files: 'packages/(**,!playground)/*',
       excludedFiles: '**/*.spec.*',
       rules: {
         'no-restricted-imports': [
