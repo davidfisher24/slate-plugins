@@ -32,6 +32,10 @@ import { Looks5 } from '@styled-icons/material/Looks5';
 import { Looks6 } from '@styled-icons/material/Looks6';
 import { LooksOne } from '@styled-icons/material/LooksOne';
 import { LooksTwo } from '@styled-icons/material/LooksTwo';
+import { PageAdd } from '@styled-icons/foundation/PageAdd';
+import { PageCopy } from '@styled-icons/foundation/PageCopy';
+import { PageMultiple } from '@styled-icons/foundation/PageMultiple'; 
+import { PageRemove } from '@styled-icons/foundation/PageRemove';
 import { Search } from '@styled-icons/material/Search';
 import {
   addColumn,
@@ -327,6 +331,7 @@ const ReactLiveScope = {
   ELEMENT_ALIGN_JUSTIFY,
   ELEMENT_ALIGN_RIGHT,
   insertTable,
+  insertTabs,
   ToolbarAlign,
   ToolbarElement,
   ToolbarList,
@@ -362,6 +367,10 @@ const ReactLiveScope = {
   Looks6,
   LooksOne,
   LooksTwo,
+  PageAdd,
+  PageCopy,
+  PageMultiple,
+  PageRemove,
   initialValuePlayground,
   optionsMentionPlugin,
   useSlatePluginsActions,
