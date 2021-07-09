@@ -10,8 +10,5 @@ export const isType = (
   pluginKey?: string | string[]
 ) => {
   const keys = castArray(pluginKey);
-  keys.forEach((key) => {
-    if (node?.type === getSlatePluginType(editor, key)) return true;
-  });
-  return false;
+  return keys.some((key) => node?.type === getSlatePluginType(editor, key));
 };

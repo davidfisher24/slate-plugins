@@ -70,6 +70,13 @@ import {
   ELEMENT_TH,
   ELEMENT_TR,
 } from '@udecode/slate-plugins-table';
+import {
+  ELEMENT_TABS,
+  ELEMENT_TAB,
+  ELEMENT_TABS_LIST,
+  ELEMENT_TABS_CONTENT,
+  ELEMENT_TAB_CONTENT
+} from '@udecode/slate-plugins-tabs';
 
 export type DefaultSlatePluginKey =
   | typeof ELEMENT_ALIGN_CENTER
@@ -97,6 +104,11 @@ export type DefaultSlatePluginKey =
   | typeof ELEMENT_TH
   | typeof ELEMENT_TODO_LI
   | typeof ELEMENT_TR
+  | typeof ELEMENT_TABS
+  | typeof ELEMENT_TAB
+  | typeof ELEMENT_TABS_LIST
+  | typeof ELEMENT_TABS_CONTENT
+  | typeof ELEMENT_TAB_CONTENT
   | typeof ELEMENT_UL
   | typeof MARK_BOLD
   | typeof MARK_CODE
@@ -142,6 +154,11 @@ export const createSlatePluginsOptions = <T extends string = string>(
     [ELEMENT_TABLE]: {},
     [ELEMENT_TD]: DEFAULTS_TD,
     [ELEMENT_TH]: DEFAULTS_TH,
+    [ELEMENT_TABS]: {},
+    [ELEMENT_TAB]: {},
+    [ELEMENT_TABS_LIST]: {},
+    [ELEMENT_TABS_CONTENT]: {},
+    [ELEMENT_TAB_CONTENT]: {},
     [ELEMENT_TODO_LI]: DEFAULTS_TODO_LIST,
     [ELEMENT_TR]: {},
     [ELEMENT_UL]: {},

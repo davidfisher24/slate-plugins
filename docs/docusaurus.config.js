@@ -288,6 +288,14 @@ module.exports = {
             __dirname,
             '../packages/elements/table-ui/src'
           ),
+          '@udecode/slate-plugins-tabs': path.resolve(
+            __dirname,
+            '../packages/elements/tabs/src'
+          ),
+          '@udecode/slate-plugins-tabs-ui': path.resolve(
+            __dirname,
+            '../packages/elements/tabs-ui/src'
+          ),
           '@udecode/slate-plugins-basic-marks': path.resolve(
             __dirname,
             '../packages/marks/basic-marks/src'

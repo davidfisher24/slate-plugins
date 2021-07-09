@@ -58,7 +58,21 @@ import {
   ELEMENT_TH,
   ELEMENT_TR,
 } from '@udecode/slate-plugins-table';
+import {
+  ELEMENT_TABS,
+  ELEMENT_TABS_LIST,
+  ELEMENT_TAB,
+  ELEMENT_TABS_CONTENT,
+  ELEMENT_TAB_CONTENT,
+} from '@udecode/slate-plugins-tabs';
 import { TableElement } from '@udecode/slate-plugins-table-ui';
+import { 
+  TabsElement,
+  //TabsListElement,
+  TabElement,
+  //TabsContentElement,
+  TabContentElement
+} from '@udecode/slate-plugins-tabs-ui';
 import { StyledElement, StyledLeaf } from '@udecode/slate-plugins-ui-fluent';
 import { DefaultSlatePluginKey } from './createSlatePluginsOptions';
 
@@ -233,8 +247,34 @@ export const createSlatePluginsComponents = <T extends string = string>(
         },
       },
     }),
-    [ELEMENT_TODO_LI]: TodoListElement,
     [ELEMENT_TR]: withProps(StyledElement, { as: 'tr' }),
+    [ELEMENT_TABS]: TabsElement,
+    //[ELEMENT_TABS_CONTENT]: TabsContentElement,
+    [ELEMENT_TABS_CONTENT]: withProps(StyledLeaf, { 
+      as: 'div',
+      styles: {
+        root: {
+          display: 'flex'
+        }
+      }
+    }),
+    [ELEMENT_TAB_CONTENT]: TabContentElement,
+    [ELEMENT_TAB]: TabElement,
+    //[ELEMENT_TABS_LIST]: TabsListElement,
+    [ELEMENT_TABS_LIST]: withProps(StyledLeaf, { 
+      as: 'div',
+      styles: {
+        root: {
+          display: 'flex',
+          overflow: 'hidden',
+          border: '1px solid #ccc',
+          listStyle: 'none',
+          backgroundColor: '#f1f1f1',
+          marginBottom: '0'
+        },
+      },
+    }),
+    [ELEMENT_TODO_LI]: TodoListElement,
     [MARK_BOLD]: withProps(StyledLeaf, { as: 'strong' }),
     [MARK_CODE]: withProps(StyledLeaf, {
       as: 'code',

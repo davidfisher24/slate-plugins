@@ -20,6 +20,11 @@ import {
   ELEMENT_TH,
   ELEMENT_TODO_LI,
   ELEMENT_TR,
+  ELEMENT_TAB,
+  ELEMENT_TABS,
+  ELEMENT_TABS_CONTENT,
+  ELEMENT_TABS_LIST,
+  ELEMENT_TAB_CONTENT,
   ELEMENT_UL,
   MARK_BOLD,
   MARK_CODE,
@@ -749,6 +754,8 @@ const createTable = () => ({
   ],
 });
 
+
+
 const createSpanningTable = () => ({
   type: ELEMENT_TABLE,
   children: [
@@ -818,6 +825,76 @@ export const initialValueTables: any = [
   },
 ];
 
+const createTabs = () => ({
+  type: ELEMENT_TABS,
+  children: [
+    {
+      type: ELEMENT_TABS_LIST,
+      children: [
+        {
+          type: ELEMENT_TAB,
+          active: true,
+          children: [createElement('Tab 1', { mark: MARK_BOLD })],
+        },
+        {
+          type: ELEMENT_TAB,
+          children: [createElement('Tab 2', { mark: MARK_BOLD })],
+        },
+        {
+          type: ELEMENT_TAB,
+          children: [createElement('Tab 3', { mark: MARK_BOLD })],
+        },
+      ],
+    },
+    {
+      type: ELEMENT_TABS_CONTENT,
+      children: [
+        {
+          type: ELEMENT_TAB_CONTENT,
+          active: true,
+          children: [createElement('Tab 1', { mark: MARK_BOLD })],
+        },
+        {
+          type: ELEMENT_TAB_CONTENT,
+          children: [createElement('Tab 2', { mark: MARK_BOLD })],
+        },
+        {
+          type: ELEMENT_TAB_CONTENT,
+          children: [createElement('Tab 3', { mark: MARK_BOLD })],
+        },
+      ],
+    },
+  ],
+})
+
+export const initialValueTabs: any = [
+  {
+    type: ELEMENT_H2,
+    children: [
+      {
+        text: '🏓 Tabs',
+      },
+    ],
+  },
+  {
+    type: ELEMENT_PARAGRAPH,
+    children: [
+      {
+        text: 'A number of tabs is added and content can be added to each one.',
+      },
+    ],
+  },
+  createTabs(),
+  {
+    type: ELEMENT_PARAGRAPH,
+    children: [
+      {
+        text: 'Content can be added inside each tab',
+      },
+    ],
+  },
+]
+
 export const initialValueSoftBreak: any = [
   {
     type: ELEMENT_H1,
@@ -886,6 +963,7 @@ export const initialValuePlayground: any = getNodesWithRandomId([
   ...initialValueBasicElements,
   ...initialValueList,
   ...initialValueTables,
+  ...initialValueTabs,
   ...initialValueLinks,
   ...initialValueMentions,
   ...initialValueImages,
