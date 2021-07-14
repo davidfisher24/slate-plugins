@@ -64,7 +64,7 @@ it('serialize blockquote to html', () => {
         plugins: [createBlockquotePlugin()],
         nodes: [
           {
-            type: 'blockquote',
+            type: 'block-quote',
             children: [{ text: 'Blockquoted text here...' }],
           },
         ],
