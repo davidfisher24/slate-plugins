@@ -139,17 +139,17 @@ it('serialize table to html', () => {
           type: 'table',
           children: [
             {
-              type: 'tr',
+              type: 'table_row',
               children: [
-                { type: 'td', children: [{ text: 'Foo' }] },
-                { type: 'td', children: [{ text: 'Bar' }] },
+                { type: 'table_cell', children: [{ text: 'Foo' }] },
+                { type: 'table_cell', children: [{ text: 'Bar' }] },
               ],
             },
             {
-              type: 'tr',
+              type: 'table_row',
               children: [
                 {
-                  type: 'td',
+                  type: 'table_cell',
                   attributes: { colspan: '2' },
                   children: [{ text: 'Span' }],
                 },
@@ -163,7 +163,7 @@ it('serialize table to html', () => {
   expect(render.children[0].children[0].children[0].textContent).toEqual('Foo');
   expect(render.children[0].children[0].children[1].textContent).toEqual('Bar');
   expect(render.children[0]?.children[1].children[0].outerHTML).toEqual(
-    '<td class="slate-td" colspan="2">Span</td>'
+    '<td class="slate-table_cell" colspan="2">Span</td>'
   );
 });
 
