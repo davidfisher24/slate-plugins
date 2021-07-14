@@ -23,7 +23,7 @@ const output = (
   <editor>
     <hp>
       link:{' '}
-      <element type="a" url="http://google.com">
+      <element type="link" url="http://google.com">
         http://google.com
       </element>{' '}
     </hp>

@@ -27,8 +27,8 @@ it('serialize link to html with attributes', () => {
         nodes: [
           { text: 'Some paragraph of text with ' },
           {
-            type: 'a',
-            url: 'https://theuselessweb.com/',
+            type: 'link',
+            href: 'https://theuselessweb.com/',
             attributes: { target: '_blank', rel: 'noopener nofollow' },
             children: [{ text: 'link' }],
           },
@@ -37,7 +37,7 @@ it('serialize link to html with attributes', () => {
       }
     )
   ).toBe(
-    'Some paragraph of text with <a href="https://theuselessweb.com/" class="slate-a" target="_blank" rel="noopener nofollow">link</a> part.'
+    'Some paragraph of text with <a href="https://theuselessweb.com/" class="slate-link" target="_blank" rel="noopener nofollow">link</a> part.'
   );
 });
 

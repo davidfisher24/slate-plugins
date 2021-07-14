@@ -32,21 +32,21 @@ it('serialize link to html with attributes', () => {
       nodes: [
         { text: 'An external ' },
         {
-          type: 'a',
-          url: 'https://theuselessweb.com/',
+          type: 'link',
+          href: 'https://theuselessweb.com/',
           children: [{ text: 'link' }],
         },
         { text: ' and an internal ' },
         {
-          type: 'a',
-          url: 'https://slatejs.org/',
+          type: 'link',
+          href: 'https://slatejs.org/',
           children: [{ text: 'link' }],
         },
         { text: '.' },
       ],
     })
   ).toBe(
-    'An external <a href="https://theuselessweb.com/" class="slate-a" target="_blank">link</a> and an internal <a href="https://slatejs.org/" class="slate-a">link</a>.'
+    'An external <a href="https://theuselessweb.com/" class="slate-link" target="_blank">link</a> and an internal <a href="https://slatejs.org/" class="slate-link">link</a>.'
   );
 });
 

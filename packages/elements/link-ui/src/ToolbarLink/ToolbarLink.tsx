@@ -40,7 +40,6 @@ export const ToolbarLink = ({ getLinkUrl, ...props }: ToolbarLinkProps) => {
 
         event.preventDefault();
         let prevUrl = '';
-
         const linkNode = getAbove(editor, {
           match: { type },
         });
@@ -49,10 +48,12 @@ export const ToolbarLink = ({ getLinkUrl, ...props }: ToolbarLinkProps) => {
         }
 
         let url;
+        let text;
         if (getLinkUrl) {
           url = await getLinkUrl(prevUrl);
         } else {
           url = window.prompt(`Enter the URL of the link:`, prevUrl);
+          text = window.prompt(`Enter the text of the link`)
         }
 
         if (!url) {
@@ -69,7 +70,7 @@ export const ToolbarLink = ({ getLinkUrl, ...props }: ToolbarLinkProps) => {
         // If our cursor is in middle of a link, then we don't want to inser it inline
         const shouldWrap: boolean =
           linkNode !== undefined && isCollapsed(editor.selection);
-        upsertLinkAtSelection(editor, { url, wrap: shouldWrap });
+        upsertLinkAtSelection(editor, { url, text, wrap: shouldWrap });
       }}
       {...props}
     />

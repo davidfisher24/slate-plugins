@@ -13,9 +13,9 @@ export const getLinkDeserialize = (): Deserialize => (editor) => {
       type: options.type,
       getNode: (el) => ({
         type: options.type,
-        url: el.getAttribute('href'),
+        href: el.getAttribute('href'),
       }),
-      rules: [{ nodeNames: 'A' }],
+      rules: [{ nodeNames: 'LINK' }],
       ...options.deserialize,
     }),
   };

@@ -44,4 +44,6 @@ export * from './isWordAfterTrigger';
 export * from './match';
 export * from './queryEditor';
 export * from './queryNode';
+export * from './getPreviousSiblingNode';
+export * from './getPreviousSiblingNodes';
 export * from './someNode';

@@ -45,15 +45,15 @@ it('serialize link to html', () => {
       nodes: [
         { text: 'Some paragraph of text with ' },
         {
-          type: 'a',
-          url: 'https://theuselessweb.com/',
+          type: 'link',
+          href: 'https://theuselessweb.com/',
           children: [{ text: 'link' }],
         },
         { text: ' part.' },
       ],
     })
   ).toBe(
-    'Some paragraph of text with <a href="https://theuselessweb.com/" class="slate-a">link</a> part.'
+    'Some paragraph of text with <a href="https://theuselessweb.com/" class="slate-link">link</a> part.'
   );
 });
 

@@ -21,9 +21,11 @@ export const upsertLinkAtSelection = (
   editor: SPEditor,
   {
     url,
+    text,
     wrap,
   }: {
     url: string;
+    text?: string | null;
     /**
      * If true, wrap the link at the location (default: selection) even if the selection is collapsed.
      */
@@ -38,7 +40,7 @@ export const upsertLinkAtSelection = (
     return insertNodes<TElement>(editor, {
       type,
       url,
-      children: [{ text: url }],
+      children: [{ text: text || url }],
     });
   }
 

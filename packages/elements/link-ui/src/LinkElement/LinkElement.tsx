@@ -31,7 +31,7 @@ export const LinkElementBase = ({
   return (
     <a
       {...attributes}
-      href={element.url}
+      href={element.href}
       className={classNames.root}
       {...nodeProps}
     >

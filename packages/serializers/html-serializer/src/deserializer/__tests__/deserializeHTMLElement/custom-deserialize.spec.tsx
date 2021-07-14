@@ -36,8 +36,8 @@ const editor = createEditorPlugins({
     a: {
       deserialize: {
         getNode: (el) => ({
-          type: 'a',
-          url: el.getAttribute('href'),
+          type: 'link',
+          href: el.getAttribute('href'),
           opener: el.getAttribute('target') === '_blank',
         }),
       },

@@ -1,7 +1,7 @@
 import { RangeBeforeOptions } from '@udecode/slate-plugins-common';
 
 export interface LinkNodeData {
-  url: string;
+  href: string;
 }
 
 export interface WithLinkOptions {
