@@ -33,7 +33,7 @@ it('should be', () => {
     rules: [
       {
         path: [0, 0],
-        strictType: options.h1.type,
+        strictType: options['heading-one'].type,
       },
       { path: [0, 1], type: ELEMENT_PARAGRAPH },
     ],

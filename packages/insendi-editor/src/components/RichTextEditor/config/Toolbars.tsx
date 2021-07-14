@@ -1,10 +1,6 @@
 import React from 'react';
 import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
 import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
-import { PageAdd } from '@styled-icons/foundation/PageAdd';
-import { PageCopy } from '@styled-icons/foundation/PageCopy'; // remove tabs
-import { PageMultiple } from '@styled-icons/foundation/PageMultiple'; // insertTabs
-import { PageRemove } from '@styled-icons/foundation/PageRemove';
 import { Subscript } from '@styled-icons/foundation/Subscript';
 import { Superscript } from '@styled-icons/foundation/Superscript';
 import { BorderAll } from '@styled-icons/material/BorderAll';
@@ -28,12 +24,7 @@ import { Highlight } from '@styled-icons/material/Highlight';
 import { Image } from '@styled-icons/material/Image';
 import { Keyboard } from '@styled-icons/material/Keyboard';
 import { Link } from '@styled-icons/material/Link';
-import { Looks3 } from '@styled-icons/material/Looks3';
-import { Looks4 } from '@styled-icons/material/Looks4';
-import { Looks5 } from '@styled-icons/material/Looks5';
-import { Looks6 } from '@styled-icons/material/Looks6';
-import { LooksOne } from '@styled-icons/material/LooksOne';
-import { LooksTwo } from '@styled-icons/material/LooksTwo';
+import { Title } from '@styled-icons/material/Title';
 import { TippyProps } from '@tippyjs/react';
 import {
   addColumn,
@@ -47,12 +38,7 @@ import {
   ELEMENT_ALIGN_RIGHT,
   ELEMENT_BLOCKQUOTE,
   ELEMENT_CODE_BLOCK,
-  ELEMENT_H1,
   ELEMENT_H2,
-  ELEMENT_H3,
-  ELEMENT_H4,
-  ELEMENT_H5,
-  ELEMENT_H6,
   ELEMENT_OL,
   ELEMENT_UL,
   getSlatePluginType,
@@ -84,28 +70,8 @@ export const ToolbarButtonsBasicElements = () => {
   return (
     <>
       <ToolbarElement
-        type={getSlatePluginType(editor, ELEMENT_H1)}
-        icon={<LooksOne />}
-      />
-      <ToolbarElement
         type={getSlatePluginType(editor, ELEMENT_H2)}
-        icon={<LooksTwo />}
-      />
-      <ToolbarElement
-        type={getSlatePluginType(editor, ELEMENT_H3)}
-        icon={<Looks3 />}
-      />
-      <ToolbarElement
-        type={getSlatePluginType(editor, ELEMENT_H4)}
-        icon={<Looks4 />}
-      />
-      <ToolbarElement
-        type={getSlatePluginType(editor, ELEMENT_H5)}
-        icon={<Looks5 />}
-      />
-      <ToolbarElement
-        type={getSlatePluginType(editor, ELEMENT_H6)}
-        icon={<Looks6 />}
+        icon={<Title />}
       />
       <ToolbarElement
         type={getSlatePluginType(editor, ELEMENT_BLOCKQUOTE)}

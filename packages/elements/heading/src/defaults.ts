@@ -1,9 +1,9 @@
-export const ELEMENT_H1 = 'h1';
-export const ELEMENT_H2 = 'h2';
-export const ELEMENT_H3 = 'h3';
-export const ELEMENT_H4 = 'h4';
-export const ELEMENT_H5 = 'h5';
-export const ELEMENT_H6 = 'h6';
+export const ELEMENT_H1 = 'heading-one';
+export const ELEMENT_H2 = 'heading-two';
+export const ELEMENT_H3 = 'heading-three';
+export const ELEMENT_H4 = 'heading-four';
+export const ELEMENT_H5 = 'heading-five';
+export const ELEMENT_H6 = 'heading-six';
 
 export const KEYS_HEADING = [
   ELEMENT_H1,
