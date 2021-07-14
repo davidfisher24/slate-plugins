@@ -239,6 +239,8 @@ import { useTagOnChange } from './examples/tag/hooks/useTagOnChange';
 import { useTagOnSelectItem } from './examples/tag/hooks/useTagOnSelectItem';
 import { HighlightHTML } from './utils/HighlightHTML';
 
+import { RichTextEditor } from '@udecode/insendi-editor'
+
 const editableProps = {
   placeholder: 'Type…',
   style: {
@@ -518,6 +520,7 @@ const ReactLiveScope = {
   withStyledPlaceHolders,
   getHugeDocument,
   withReact,
+  RichTextEditor
 };
 
 export default ReactLiveScope;

@@ -81,6 +81,11 @@ module.exports = {
           position: 'right',
         },
         {
+          href: '/docs/insendi',
+          label: 'Insendi',
+          position: 'right',
+        },
+        {
           href: domainAPI,
           label: 'API',
           position: 'right',

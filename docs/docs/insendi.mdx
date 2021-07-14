@@ -1,0 +1,29 @@
+---
+slug: /insendi
+title: Insendi Example
+---
+
+Insendi .
+
+```ts live
+
+() => {
+  const Editor = () => {
+    const value = [{
+      "type": "paragraph",
+      "children": [
+        {
+          "text": "Write something",
+        }
+      ],
+    }]
+    return (
+      <RichTextEditor 
+        value={value}
+      />
+    );
+  }
+
+  return <Editor />;
+}
+```

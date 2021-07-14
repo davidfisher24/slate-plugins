@@ -30,6 +30,7 @@ module.exports = {
       collapsed: false,
     },
     'playground',
+    'insendi',
     {
       type: 'category',
       label: 'Plugins',
