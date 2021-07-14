@@ -4,17 +4,17 @@ export const content = Object.freeze([
     type: 'table',
     children: [
       {
-        type: 'tr',
+        type: 'table_row',
         children: [
-          { type: 'td', children: [{ text: 'A1' }] },
-          { type: 'td', children: [{ text: 'B1' }] },
+          { type: 'table_cell', children: [{ text: 'A1' }] },
+          { type: 'table_cell', children: [{ text: 'B1' }] },
         ],
       },
       {
-        type: 'tr',
+        type: 'table_row',
         children: [
-          { type: 'td', children: [{ text: 'A2' }] },
-          { type: 'td', children: [{ text: 'B2' }] },
+          { type: 'table_cell', children: [{ text: 'A2' }] },
+          { type: 'table_cell', children: [{ text: 'B2' }] },
         ],
       },
     ],
@@ -28,17 +28,17 @@ export const out = Object.freeze([
     type: 'table',
     children: [
       {
-        type: 'tr',
+        type: 'table_row',
         children: [
-          { type: 'td', children: [{ text: '' }] },
-          { type: 'td', children: [{ text: '' }] },
+          { type: 'table_cell', children: [{ text: '' }] },
+          { type: 'table_cell', children: [{ text: '' }] },
         ],
       },
       {
-        type: 'tr',
+        type: 'table_row',
         children: [
-          { type: 'td', children: [{ text: 'A2' }] },
-          { type: 'td', children: [{ text: 'B2' }] },
+          { type: 'table_cell', children: [{ text: 'A2' }] },
+          { type: 'table_cell', children: [{ text: 'B2' }] },
         ],
       },
     ],
@@ -52,17 +52,17 @@ export const output2 = Object.freeze([
     type: 'table',
     children: [
       {
-        type: 'tr',
+        type: 'table_row',
         children: [
-          { type: 'td', children: [{ text: '1' }] },
-          { type: 'td', children: [{ text: 'B1' }] },
+          { type: 'table_cell', children: [{ text: '1' }] },
+          { type: 'table_cell', children: [{ text: 'B1' }] },
         ],
       },
       {
-        type: 'tr',
+        type: 'table_row',
         children: [
-          { type: 'td', children: [{ text: 'A2' }] },
-          { type: 'td', children: [{ text: 'B2' }] },
+          { type: 'table_cell', children: [{ text: 'A2' }] },
+          { type: 'table_cell', children: [{ text: 'B2' }] },
         ],
       },
     ],

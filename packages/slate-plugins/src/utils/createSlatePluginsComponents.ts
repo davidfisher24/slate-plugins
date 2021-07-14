@@ -204,8 +204,6 @@ export const createSlatePluginsComponents = <T extends string = string>(
       as: 'td',
       styles: {
         root: {
-          backgroundColor: 'rgb(255, 255, 255)',
-          border: '1px solid rgb(193, 199, 208)',
           padding: '8px',
           minWidth: '48px',
           selectors: {
@@ -220,7 +218,7 @@ export const createSlatePluginsComponents = <T extends string = string>(
       as: 'th',
       styles: {
         root: {
-          backgroundColor: 'rgb(244, 245, 247)',
+          backgroundColor: 'rgb(255, 255, 255)',
           border: '1px solid rgb(193, 199, 208)',
           padding: '8px',
           minWidth: '48px',
