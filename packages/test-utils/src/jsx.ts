@@ -11,22 +11,22 @@ const ELEMENT_H4 = 'h4';
 const ELEMENT_H5 = 'h5';
 const ELEMENT_H6 = 'h6';
 const ELEMENT_IMAGE = 'img';
-const ELEMENT_LI = 'li';
+const ELEMENT_LI = 'list-item';
 const ELEMENT_LINK = 'a';
 const ELEMENT_MEDIA_EMBED = 'media_embed';
 const ELEMENT_MENTION = 'mention';
-const ELEMENT_OL = 'ol';
+const ELEMENT_OL = 'numbered-list';
 const ELEMENT_PARAGRAPH = 'p';
 const ELEMENT_TABLE = 'table';
 const ELEMENT_TD = 'td';
 const ELEMENT_TH = 'th';
 const ELEMENT_TODO_LI = 'action_item';
 const ELEMENT_TR = 'tr';
-const ELEMENT_UL = 'ul';
+const ELEMENT_UL = 'unorderd-list';
 const ELEMENT_BLOCKQUOTE = 'blockquote';
 const ELEMENT_CODE_BLOCK = 'code_block';
 const ELEMENT_CODE_LINE = 'code_line';
-const ELEMENT_LIC = 'lic';
+const ELEMENT_LIC = 'list-item-content';
 const ELEMENT_EXCALIDRAW = 'excalidraw';
 
 declare global {
