@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
 import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
 import { PageAdd } from '@styled-icons/foundation/PageAdd';
@@ -24,6 +25,7 @@ import { FormatListNumbered } from '@styled-icons/material/FormatListNumbered';
 import { FormatQuote } from '@styled-icons/material/FormatQuote';
 import { FormatStrikethrough } from '@styled-icons/material/FormatStrikethrough';
 import { FormatUnderlined } from '@styled-icons/material/FormatUnderlined';
+import { FormatPaint } from '@styled-icons/material/FormatPaint';
 import { Highlight } from '@styled-icons/material/Highlight';
 import { Image } from '@styled-icons/material/Image';
 import { Keyboard } from '@styled-icons/material/Keyboard';
@@ -72,6 +74,7 @@ import {
   ToolbarImage,
   ToolbarLink,
   ToolbarList,
+  ToolbarMultiHighlight,
   ToolbarMark,
   ToolbarTable,
   useEventEditorId,
@@ -193,11 +196,6 @@ export const ToolbarButtonsBasicMarks = () => {
         clear={getSlatePluginType(editor, MARK_SUPERSCRIPT)}
         icon={<Subscript />}
       />
-      <ToolbarMark
-        type={getSlatePluginType(editor, MARK_HIGHLIGHT)}
-        clear={getSlatePluginType(editor, MARK_HIGHLIGHT)}
-        icon={<Highlight />}
-      />
     </>
   );
 };
@@ -220,6 +218,33 @@ export const ToolbarHighlight = () => {
     <ToolbarMark
       type={getSlatePluginType(editor, MARK_HIGHLIGHT)}
       icon={<Highlight />}
+    />
+  );
+};
+
+
+export const ToolbarButtonsMultiHighlight = () => {
+  const editor = useStoreEditorRef(useEventEditorId('focus'));
+  const colors = [
+    '#F1D2D3',
+    '#C6D3E8',
+    '#F8EBCA',
+    '#B9D2AC',
+    '#EAB28B',
+    '#CDB4D5',
+    '#A5C9C9',
+    '#D2D8DB',
+  ];
+  
+  return (
+    <ToolbarMultiHighlight
+      config={colors.map((color,i) => {
+        const Icon = styled(FormatPaint)`
+          color: ${color};
+        `
+        return { icon: <Icon />, color }
+      })}
+      removeIcon={<FormatPaint />}
     />
   );
 };
@@ -282,6 +307,7 @@ export const ToolbarButtons = () => (
     <ToolbarButtonsBasicElements />
     <ToolbarButtonsList />
     <ToolbarButtonsBasicMarks />
+    <ToolbarButtonsMultiHighlight />
     <ToolbarButtonsAlign />
     <ToolbarLink icon={<Link />} />
     <ToolbarImage icon={<Image />} />

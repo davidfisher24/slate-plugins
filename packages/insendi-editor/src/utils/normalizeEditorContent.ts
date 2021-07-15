@@ -15,7 +15,11 @@ const convertFormatToJSON = (object: any) => {
         if (key === 'marks') {
             // replace all marks with a simple true/false operator
             object['marks'].forEach((mark: any) => {
-                newObject[mark.type] = true;
+                if (mark.type === 'highlight') {
+                    newObject['multi-highlight'] = mark.data.color
+                } else {
+                    newObject[mark.type] = true;
+                }
             })
         } else if (key === 'data') {
             // bring all data properties up onto main node
