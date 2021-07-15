@@ -54,7 +54,12 @@ module.exports = {
         {
           type: 'category',
           label: 'Marks',
-          items: ['plugins/basic-marks', 'plugins/highlight', 'plugins/kbd'],
+          items: [
+            'plugins/basic-marks', 
+            'plugins/highlight', 
+            'plugins/multi-highlight', 
+            'plugins/kbd'
+          ],
           collapsed: false,
         },
         {

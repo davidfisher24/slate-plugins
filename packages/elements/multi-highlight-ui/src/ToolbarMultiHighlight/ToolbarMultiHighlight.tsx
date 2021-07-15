@@ -10,7 +10,10 @@ import {
   ELEMENT_MULTI_HIGHLIGHT
 } from '@udecode/slate-plugins-multi-highlight';
 import { ToolbarButton } from '@udecode/slate-plugins-toolbar';
-import { ToolbarMultiHighlightProps } from './ToolbarMultiHighlight.types'
+import { 
+  ToolbarMultiHighlightProps,
+  ToolbarMultiHighlightConfigProps
+ } from './ToolbarMultiHighlight.types'
 
 export const ToolbarMultiHighlight = (
   { clear, config, removeIcon }: ToolbarMultiHighlightProps
@@ -31,8 +34,8 @@ export const ToolbarMultiHighlight = (
         }
         icon={removeIcon}
       />
-      {config.map((button: any) => {
-        const { color, icon } = button
+      {config.map((buttonConfig: ToolbarMultiHighlightConfigProps) => {
+        const { color, icon } = buttonConfig;
         return (
           <ToolbarButton
             active={

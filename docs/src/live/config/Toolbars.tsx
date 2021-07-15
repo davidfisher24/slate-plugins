@@ -1,6 +1,7 @@
 import 'tippy.js/animations/scale.css';
 import 'tippy.js/dist/tippy.css';
 import React from 'react';
+import styled from 'styled-components';
 import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
 import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
 import { Highlight } from '@styled-icons/boxicons-regular/Highlight';
@@ -23,6 +24,7 @@ import { FormatListNumbered } from '@styled-icons/material/FormatListNumbered';
 import { FormatQuote } from '@styled-icons/material/FormatQuote';
 import { FormatStrikethrough } from '@styled-icons/material/FormatStrikethrough';
 import { FormatUnderlined } from '@styled-icons/material/FormatUnderlined';
+import { FormatPaint } from '@styled-icons/material/FormatPaint';
 import { Keyboard } from '@styled-icons/material/Keyboard';
 import { Looks3 } from '@styled-icons/material/Looks3';
 import { Looks4 } from '@styled-icons/material/Looks4';
@@ -64,6 +66,7 @@ import {
   ToolbarElement,
   ToolbarList,
   ToolbarMark,
+  ToolbarMultiHighlight,
   ToolbarTable,
   useStoreEditorRef,
 } from '@udecode/slate-plugins';
@@ -209,6 +212,32 @@ export const ToolbarHighlight = () => {
     <ToolbarMark
       type={getSlatePluginType(editor, MARK_HIGHLIGHT)}
       icon={<Highlight />}
+    />
+  );
+};
+
+export const ToolbarButtonsMultiHighlight = () => {
+  const editor = useStoreEditorRef(useEventEditorId('focus'));
+  const colors = [
+    '#F1D2D3',
+    '#C6D3E8',
+    '#F8EBCA',
+    '#B9D2AC',
+    '#EAB28B',
+    '#CDB4D5',
+    '#A5C9C9',
+    '#D2D8DB',
+  ];
+  
+  return (
+    <ToolbarMultiHighlight
+      config={colors.map((color,i) => {
+        const Icon = styled(FormatPaint)`
+          color: ${color};
+        `
+        return { icon: <Icon />, color }
+      })}
+      removeIcon={<FormatPaint />}
     />
   );
 };

@@ -13,6 +13,7 @@ import {
   ELEMENT_LI,
   ELEMENT_LIC,
   ELEMENT_LINK,
+  ELEMENT_MULTI_HIGHLIGHT,
   ELEMENT_OL,
   ELEMENT_PARAGRAPH,
   ELEMENT_TABLE,
@@ -485,6 +486,66 @@ export const initialValueHighlight: any = [
   },
 ];
 
+export const initialValueMultiHighlight: any = [
+  {
+    type: ELEMENT_H2,
+    children: [
+      {
+        text: '🌈 Multi Highlight',
+      },
+    ],
+  },
+  {
+    type: ELEMENT_PARAGRAPH,
+    children: [
+      {
+        text: 'The Highlight plugin enables support for ',
+      },
+      {
+        text: 'highlights',
+        [ELEMENT_MULTI_HIGHLIGHT]: '#C6D3E8',
+      },
+      {
+        text: ' of ',
+      },
+      {
+        text: 'multiple colours',
+        [ELEMENT_MULTI_HIGHLIGHT]: '#EAB28B',
+      },
+      {
+        text:
+          ', useful when reviewing content or highlighting it for future reference.',
+      },
+    ],
+  },
+  {
+    type: ELEMENT_PARAGRAPH,
+    children: [
+      {
+        text: 'The toolbar can be congfigured to handle a variety of colours.',
+      },
+      {
+        text: 'The mark value is configured as a ',
+      },
+      {
+        text: 'hex string',
+        [ELEMENT_MULTI_HIGHLIGHT]: '#F8EBCA',
+      },
+      {
+        text: ', not as a  ',
+      },
+      {
+        text: 'boolean',
+        [ELEMENT_MULTI_HIGHLIGHT]: '#D2D8DB',
+      },
+      {
+        text:
+          '.',
+      },
+    ],
+  },
+];
+
 export const initialValueBasicElements: any = [
   createElement('🧱 Elements', { type: ELEMENT_H1 }),
   createElement('🔥 Basic Elements', { type: ELEMENT_H2 }),
@@ -883,6 +944,7 @@ export const initialValuePlayground: any = getNodesWithRandomId([
   ...initialValueForcedLayout,
   ...initialValueBasicMarks,
   ...initialValueHighlight,
+  ...initialValueMultiHighlight,
   ...initialValueBasicElements,
   ...initialValueList,
   ...initialValueTables,

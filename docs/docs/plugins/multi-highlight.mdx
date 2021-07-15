@@ -1,0 +1,32 @@
+---
+slug: /plugins/multi-highlight
+title: Multi Highlight
+---
+
+### `createMultiHighlightPlugin`
+
+```ts live
+() => {
+
+  const plugins = [
+    ...pluginsBasic,
+    createMultiHighlightPlugin(),
+  ];
+
+  return (
+    <>
+      <HeadingToolbar>
+        <ToolbarButtonsMultiHighlight />
+      </HeadingToolbar>
+      <SlatePlugins
+        id="multi-highlight"
+        plugins={plugins}
+        components={components}
+        options={options}
+        editableProps={editableProps}
+        initialValue={initialValueMultiHighlight}
+      />
+    </>
+  );
+}
+```

@@ -23,6 +23,7 @@ import { FormatListNumbered } from '@styled-icons/material/FormatListNumbered';
 import { FormatQuote } from '@styled-icons/material/FormatQuote';
 import { FormatStrikethrough } from '@styled-icons/material/FormatStrikethrough';
 import { FormatUnderlined } from '@styled-icons/material/FormatUnderlined';
+import { FormatPaint } from '@styled-icons/material/FormatPaint';
 import { Image } from '@styled-icons/material/Image';
 import { Keyboard } from '@styled-icons/material/Keyboard';
 import { Link } from '@styled-icons/material/Link';
@@ -47,6 +48,7 @@ import {
   createLinkPlugin,
   createListPlugin,
   createMediaEmbedPlugin,
+  createMultiHighlightPlugin,
   createNodeIdPlugin,
   createNormalizeTypesPlugin,
   createReactPlugin,
@@ -121,6 +123,7 @@ import {
   ELEMENT_H5,
   ELEMENT_H6,
 } from '@udecode/slate-plugins-heading';
+import { ELEMENT_MULTI_HIGHLIGHT } from '@udecode/slate-plugins-multi-highlight';
 import { MARK_HIGHLIGHT } from '@udecode/slate-plugins-highlight';
 import { createImagePlugin, ELEMENT_IMAGE } from '@udecode/slate-plugins-image';
 import { MARK_KBD } from '@udecode/slate-plugins-kbd';
@@ -155,6 +158,7 @@ import { createHeadingPlugin } from '../../../packages/elements/heading/src/crea
 import { KEYS_HEADING } from '../../../packages/elements/heading/src/defaults';
 import { ToolbarImage } from '../../../packages/elements/image-ui/src/ToolbarImage/ToolbarImage';
 import { ToolbarLink } from '../../../packages/elements/link-ui/src/ToolbarLink/ToolbarLink';
+import { ToolbarMultiHighlight } from '../../../packages/elements/multi-highlight-ui/src/ToolbarMultiHighlight/ToolbarMultiHighlight';
 import { ELEMENT_LIC } from '../../../packages/elements/list/src/defaults';
 import { unwrapList } from '../../../packages/elements/list/src/transforms/unwrapList';
 import { MentionSelect } from '../../../packages/elements/mention-ui/src/MentionSelect/MentionSelect';
@@ -195,6 +199,7 @@ import {
   initialValuePlaceholder,
   initialValuePlainText,
   initialValuePlayground,
+  initialValueMultiHighlight,
   initialValuePreview,
   initialValueSearchHighlighting,
   initialValueSoftBreak,
@@ -217,6 +222,7 @@ import {
   ToolbarButtonsList,
   ToolbarButtonsTable,
   ToolbarHighlight,
+  ToolbarButtonsMultiHighlight,
   ToolbarKbd,
 } from './config/Toolbars';
 import { withStyledDraggables } from './config/withStyledDraggables';
@@ -338,6 +344,7 @@ const ReactLiveScope = {
   FormatQuote,
   FormatStrikethrough,
   FormatUnderlined,
+  FormatPaint,
   Keyboard,
   Looks3,
   Looks4,
@@ -346,6 +353,7 @@ const ReactLiveScope = {
   LooksOne,
   LooksTwo,
   initialValuePlayground,
+  initialValueMultiHighlight,
   optionsMentionPlugin,
   useSlatePluginsActions,
   useStoreEditorEnabled,
@@ -406,6 +414,7 @@ const ReactLiveScope = {
   createLinkPlugin,
   createListPlugin,
   createMediaEmbedPlugin,
+  createMultiHighlightPlugin,
   createNodeIdPlugin,
   createNormalizeTypesPlugin,
   createParagraphPlugin,
@@ -442,6 +451,7 @@ const ReactLiveScope = {
   ELEMENT_OL,
   ELEMENT_MEDIA_EMBED,
   ELEMENT_MENTION,
+  ELEMENT_MULTI_HIGHLIGHT,
   ELEMENT_PARAGRAPH,
   ELEMENT_TABLE,
   ELEMENT_TD,
@@ -509,8 +519,10 @@ const ReactLiveScope = {
   ToolbarButtonsList,
   ToolbarButtonsTable,
   ToolbarImage,
+  ToolbarMultiHighlight,
   ToolbarHighlight,
   ToolbarLink,
+  ToolbarButtonsMultiHighlight,
   ToolbarKbd,
   ToolbarSearchHighlight,
   useFindReplacePlugin,

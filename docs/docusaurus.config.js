@@ -301,6 +301,10 @@ module.exports = {
             __dirname,
             '../packages/marks/highlight/src'
           ),
+          '@udecode/slate-plugins-multi-highlight': path.resolve(
+            __dirname,
+            '../packages/elements/multi-highlight/src'
+          ),
           '@udecode/slate-plugins-kbd': path.resolve(
             __dirname,
             '../packages/marks/kbd/src'
