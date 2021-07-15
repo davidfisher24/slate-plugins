@@ -15,6 +15,7 @@ const ELEMENT_LI = 'li';
 const ELEMENT_LINK = 'a';
 const ELEMENT_MEDIA_EMBED = 'media_embed';
 const ELEMENT_MENTION = 'mention';
+const ELEMENT_MULTI_HIGHLIGHT = 'multi-highlight';
 const ELEMENT_OL = 'ol';
 const ELEMENT_PARAGRAPH = 'p';
 const ELEMENT_TABLE = 'table';

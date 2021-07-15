@@ -9,75 +9,48 @@ import {
   isMultiHighlightActive,
   ELEMENT_MULTI_HIGHLIGHT
 } from '@udecode/slate-plugins-multi-highlight';
-import {
-  ToolbarButton,
-  ToolbarButtonProps,
-} from '@udecode/slate-plugins-toolbar';
-
-
-export interface ToolbarMultiHighlightProps extends ToolbarButtonProps {
-  clear: 'string | string[] | undefined'
-}
-
-
+import { ToolbarButton } from '@udecode/slate-plugins-toolbar';
+import { ToolbarMultiHighlightProps } from './ToolbarMultiHighlight.types'
 
 export const ToolbarMultiHighlight = (
-  { clear, ...props }: ToolbarMultiHighlightProps
+  { clear, config, removeIcon }: ToolbarMultiHighlightProps
 ) => {
   const editor = useStoreEditorState(useEventEditorId('focus'));
 
+  if (!config) return (<></>)
   return (
     <>
       <ToolbarButton
         onMouseDown={
           editor
             ? getPreventDefaultHandler(
-              removeMark, editor, { 
+              removeMark, editor, {
                 key: ELEMENT_MULTI_HIGHLIGHT 
               })
             : undefined
         }
-        {...props}
+        icon={removeIcon}
       />
-      <ToolbarButton
-        active={
-          !!editor?.selection && 
-          isMultiHighlightActive(editor, 'red')
-        }
-        onMouseDown={
-          editor
-            ? getPreventDefaultHandler(
-              toggleMultiHighlight, editor, clear, 'red')
-            : undefined
-        }
-        {...props}
-      />
-      <ToolbarButton
-        active={
-          !!editor?.selection && 
-          isMultiHighlightActive(editor, 'green')
-        }
-        onMouseDown={
-          editor
-            ? getPreventDefaultHandler(
-              toggleMultiHighlight, editor, clear, 'green')
-            : undefined
-        }
-        {...props}
-      />
-      <ToolbarButton
-        active={
-          !!editor?.selection && 
-          isMultiHighlightActive(editor, 'blue')
-        }
-        onMouseDown={
-          editor
-            ? getPreventDefaultHandler(
-              toggleMultiHighlight, editor, clear, 'blue')
-            : undefined
-        }
-        {...props}
-      />
+      {config.map((button: any) => {
+        const { color, icon } = button
+        return (
+          <ToolbarButton
+            active={
+              !!editor?.selection && 
+              isMultiHighlightActive(editor, color)
+            }
+            onMouseDown={
+              editor
+                ? getPreventDefaultHandler(
+                  toggleMultiHighlight, editor, clear, color)
+                : undefined
+            }
+            key={color}
+            icon={icon}
+          />
+        )
+      })}
     </>
   );
 };
+
