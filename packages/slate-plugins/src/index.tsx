@@ -32,6 +32,8 @@ export * from '@udecode/slate-plugins-media-embed';
 export * from '@udecode/slate-plugins-media-embed-ui';
 export * from '@udecode/slate-plugins-mention';
 export * from '@udecode/slate-plugins-mention-ui';
+export * from '@udecode/slate-plugins-multi-highlight';
+export * from '@udecode/slate-plugins-multi-highlight-ui';
 export * from '@udecode/slate-plugins-node-id';
 export * from '@udecode/slate-plugins-normalizers';
 export * from '@udecode/slate-plugins-paragraph';

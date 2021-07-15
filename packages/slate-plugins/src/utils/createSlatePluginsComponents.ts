@@ -51,6 +51,8 @@ import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
 import { MediaEmbedElement } from '@udecode/slate-plugins-media-embed-ui';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import { MentionElement } from '@udecode/slate-plugins-mention-ui';
+import { ELEMENT_MULTI_HIGHLIGHT } from '@udecode/slate-plugins-multi-highlight';
+import { MultiHighlightElement } from '@udecode/slate-plugins-multi-highlight-ui';
 import { ELEMENT_PARAGRAPH } from '@udecode/slate-plugins-paragraph';
 import {
   ELEMENT_TABLE,
@@ -172,6 +174,7 @@ export const createSlatePluginsComponents = <T extends string = string>(
     [ELEMENT_LINK]: LinkElement,
     [ELEMENT_MEDIA_EMBED]: MediaEmbedElement,
     [ELEMENT_MENTION]: MentionElement,
+    [ELEMENT_MULTI_HIGHLIGHT]: MultiHighlightElement,
     [ELEMENT_UL]: withProps(StyledElement, {
       as: 'ul',
       styles: {

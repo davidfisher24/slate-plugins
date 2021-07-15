@@ -59,6 +59,9 @@ import {
 import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import {
+  ELEMENT_MULTI_HIGHLIGHT,
+} from '@udecode/slate-plugins-multi-highlight';
+import {
   DEFAULTS_PARAGRAPH,
   ELEMENT_PARAGRAPH,
 } from '@udecode/slate-plugins-paragraph';
@@ -90,6 +93,7 @@ export type DefaultSlatePluginKey =
   | typeof ELEMENT_LINK
   | typeof ELEMENT_MEDIA_EMBED
   | typeof ELEMENT_MENTION
+  | typeof ELEMENT_MULTI_HIGHLIGHT
   | typeof ELEMENT_OL
   | typeof ELEMENT_PARAGRAPH
   | typeof ELEMENT_TABLE
@@ -136,6 +140,7 @@ export const createSlatePluginsOptions = <T extends string = string>(
     [ELEMENT_LI]: {},
     [ELEMENT_LINK]: {},
     [ELEMENT_MEDIA_EMBED]: {},
+    [ELEMENT_MULTI_HIGHLIGHT]: {},
     [ELEMENT_MENTION]: {},
     [ELEMENT_OL]: {},
     [ELEMENT_PARAGRAPH]: DEFAULTS_PARAGRAPH,

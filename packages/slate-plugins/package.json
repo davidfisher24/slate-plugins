@@ -64,6 +64,8 @@
     "@udecode/slate-plugins-media-embed-ui": "1.0.0-next.40",
     "@udecode/slate-plugins-mention": "1.0.0-next.40",
     "@udecode/slate-plugins-mention-ui": "1.0.0-next.40",
+    "@udecode/slate-plugins-multi-highlight": "^1.0.0-next.40",
+    "@udecode/slate-plugins-multi-highlight-ui": "^1.0.0-next.40",
     "@udecode/slate-plugins-node-id": "1.0.0-next.40",
     "@udecode/slate-plugins-normalizers": "1.0.0-next.40",
     "@udecode/slate-plugins-paragraph": "1.0.0-next.40",
