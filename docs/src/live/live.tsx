@@ -32,6 +32,7 @@ import { Looks5 } from '@styled-icons/material/Looks5';
 import { Looks6 } from '@styled-icons/material/Looks6';
 import { LooksOne } from '@styled-icons/material/LooksOne';
 import { LooksTwo } from '@styled-icons/material/LooksTwo';
+import { OndemandVideo } from '@styled-icons/material/OndemandVideo';
 import { Search } from '@styled-icons/material/Search';
 import {
   addColumn,
@@ -47,6 +48,7 @@ import {
   createLinkPlugin,
   createListPlugin,
   createMediaEmbedPlugin,
+  createVideoPlugin,
   createNodeIdPlugin,
   createNormalizeTypesPlugin,
   createReactPlugin,
@@ -71,6 +73,7 @@ import {
   ToolbarElement,
   ToolbarList,
   ToolbarTable,
+  ToolbarVideo,
   useFindReplacePlugin,
   useMentionPlugin,
   useSlatePlugins,
@@ -133,6 +136,7 @@ import {
   toggleList,
 } from '@udecode/slate-plugins-list';
 import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
+import { ELEMENT_VIDEO } from '@udecode/slate-plugins-video';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import { MentionElement } from '@udecode/slate-plugins-mention-ui';
 import { ELEMENT_PARAGRAPH } from '@udecode/slate-plugins-paragraph';
@@ -199,6 +203,7 @@ import {
   initialValueSearchHighlighting,
   initialValueSoftBreak,
   initialValueTables,
+  initialValueVideo,
   initialValueVoids,
 } from './config/initialValues';
 import { MENTIONABLES } from './config/mentionables';
@@ -315,6 +320,7 @@ const ReactLiveScope = {
   ToolbarElement,
   ToolbarList,
   ToolbarTable,
+  ToolbarVideo,
   ToolbarCodeBlock,
   CodeAlt,
   CodeBlock,
@@ -345,6 +351,7 @@ const ReactLiveScope = {
   Looks6,
   LooksOne,
   LooksTwo,
+  OndemandVideo,
   initialValuePlayground,
   optionsMentionPlugin,
   useSlatePluginsActions,
@@ -406,6 +413,7 @@ const ReactLiveScope = {
   createLinkPlugin,
   createListPlugin,
   createMediaEmbedPlugin,
+  createVideoPlugin,
   createNodeIdPlugin,
   createNormalizeTypesPlugin,
   createParagraphPlugin,
@@ -449,6 +457,7 @@ const ReactLiveScope = {
   ELEMENT_TODO_LI,
   ELEMENT_TR,
   ELEMENT_UL,
+  ELEMENT_VIDEO,
   HeadingToolbar,
   HTML5Backend,
   Image,
@@ -475,6 +484,7 @@ const ReactLiveScope = {
   initialValueSearchHighlighting,
   initialValueSoftBreak,
   initialValueTables,
+  initialValueVideo,
   initialValueVoids,
   useEventEditorId,
   Link,

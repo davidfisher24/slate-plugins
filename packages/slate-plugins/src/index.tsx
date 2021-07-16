@@ -43,4 +43,6 @@ export * from '@udecode/slate-plugins-toolbar';
 export * from '@udecode/slate-plugins-trailing-block';
 export * from '@udecode/slate-plugins-ui-fluent';
 export * from '@udecode/slate-plugins-placeholder';
+export * from '@udecode/slate-plugins-video';
+export * from '@udecode/slate-plugins-video-ui';
 export * from './utils/index';

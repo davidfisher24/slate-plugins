@@ -23,6 +23,7 @@ const ELEMENT_TH = 'th';
 const ELEMENT_TODO_LI = 'action_item';
 const ELEMENT_TR = 'tr';
 const ELEMENT_UL = 'ul';
+const ELEMENT_VIDEO = 'video';
 const ELEMENT_BLOCKQUOTE = 'blockquote';
 const ELEMENT_CODE_BLOCK = 'code_block';
 const ELEMENT_CODE_LINE = 'code_line';
@@ -72,6 +73,7 @@ export const jsx = createHyperscript({
     htodoli: { type: ELEMENT_TODO_LI },
     htr: { type: ELEMENT_TR },
     hul: { type: ELEMENT_UL },
+    hvideo: { type: ELEMENT_VIDEO, children: voidChildren },
     hdefault: { type: ELEMENT_PARAGRAPH },
     hlic: { type: ELEMENT_LIC },
   },

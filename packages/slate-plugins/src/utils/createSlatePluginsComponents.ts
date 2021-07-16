@@ -49,6 +49,8 @@ import {
 import { TodoListElement } from '@udecode/slate-plugins-list-ui';
 import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
 import { MediaEmbedElement } from '@udecode/slate-plugins-media-embed-ui';
+import { ELEMENT_VIDEO } from '@udecode/slate-plugins-video';
+import { VideoElement } from '@udecode/slate-plugins-video-ui';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import { MentionElement } from '@udecode/slate-plugins-mention-ui';
 import { ELEMENT_PARAGRAPH } from '@udecode/slate-plugins-paragraph';
@@ -235,6 +237,7 @@ export const createSlatePluginsComponents = <T extends string = string>(
     }),
     [ELEMENT_TODO_LI]: TodoListElement,
     [ELEMENT_TR]: withProps(StyledElement, { as: 'tr' }),
+    [ELEMENT_VIDEO]: VideoElement,
     [MARK_BOLD]: withProps(StyledLeaf, { as: 'strong' }),
     [MARK_CODE]: withProps(StyledLeaf, {
       as: 'code',

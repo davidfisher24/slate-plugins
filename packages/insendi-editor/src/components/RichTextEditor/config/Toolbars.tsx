@@ -34,6 +34,7 @@ import { Looks5 } from '@styled-icons/material/Looks5';
 import { Looks6 } from '@styled-icons/material/Looks6';
 import { LooksOne } from '@styled-icons/material/LooksOne';
 import { LooksTwo } from '@styled-icons/material/LooksTwo';
+import { OndemandVideo } from '@styled-icons/material/OndemandVideo';
 import { TippyProps } from '@tippyjs/react';
 import {
   addColumn,
@@ -74,6 +75,7 @@ import {
   ToolbarList,
   ToolbarMark,
   ToolbarTable,
+  ToolbarVideo,
   useEventEditorId,
   useStoreEditorRef,
 } from '@udecode/slate-plugins';
@@ -285,6 +287,7 @@ export const ToolbarButtons = () => (
     <ToolbarButtonsAlign />
     <ToolbarLink icon={<Link />} />
     <ToolbarImage icon={<Image />} />
+    <ToolbarVideo icon={<OndemandVideo />} />
     <ToolbarButtonsTable />
   </>
 );

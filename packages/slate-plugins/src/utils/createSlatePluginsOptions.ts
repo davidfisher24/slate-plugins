@@ -57,6 +57,7 @@ import {
   ELEMENT_UL,
 } from '@udecode/slate-plugins-list';
 import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
+import { ELEMENT_VIDEO } from '@udecode/slate-plugins-video';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import {
   DEFAULTS_PARAGRAPH,
@@ -98,6 +99,7 @@ export type DefaultSlatePluginKey =
   | typeof ELEMENT_TODO_LI
   | typeof ELEMENT_TR
   | typeof ELEMENT_UL
+  | typeof ELEMENT_VIDEO
   | typeof MARK_BOLD
   | typeof MARK_CODE
   | typeof MARK_HIGHLIGHT
@@ -145,6 +147,7 @@ export const createSlatePluginsOptions = <T extends string = string>(
     [ELEMENT_TODO_LI]: DEFAULTS_TODO_LIST,
     [ELEMENT_TR]: {},
     [ELEMENT_UL]: {},
+    [ELEMENT_VIDEO]: {},
     [MARK_BOLD]: DEFAULTS_BOLD,
     [MARK_CODE]: DEFAULTS_CODE,
     [MARK_HIGHLIGHT]: DEFAULTS_HIGHLIGHT,

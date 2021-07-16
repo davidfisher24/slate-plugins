@@ -76,6 +76,22 @@ export const initialValueEmbeds: any = (
   </fragment>
 );
 
+export const initialValueVideo: any = (
+  <fragment>
+    <hh2>🎥 Video</hh2>
+    <hp>
+      This is an example of configurable video nodes.
+    </hp>
+    <hvideo src="https://www.youtube.com/watch?v=Rmexb_yyiw0">
+      <htext />
+    </hvideo>
+    <hp>
+      Try it out! This editor is built to handle youtube and vimeo embeds, but you could
+      handle any type.
+    </hp>
+  </fragment>
+);
+
 export const initialValueExcalidraw: any = (
   <fragment>
     <hh2>🎨 Excalidraw</hh2>

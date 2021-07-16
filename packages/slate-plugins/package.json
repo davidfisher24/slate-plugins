@@ -74,7 +74,9 @@
     "@udecode/slate-plugins-table-ui": "1.0.0-next.40",
     "@udecode/slate-plugins-toolbar": "1.0.0-next.40",
     "@udecode/slate-plugins-trailing-block": "1.0.0-next.40",
-    "@udecode/slate-plugins-ui-fluent": "1.0.0-next.40"
+    "@udecode/slate-plugins-ui-fluent": "1.0.0-next.40",
+    "@udecode/slate-plugins-video": "^1.0.0-next.40",
+    "@udecode/slate-plugins-video-ui": "^1.0.0-next.40"
   },
   "publishConfig": {
     "access": "public"

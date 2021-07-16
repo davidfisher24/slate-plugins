@@ -1,0 +1,32 @@
+---
+slug: /plugins/video
+title: Video
+---
+
+### `createVideoPlugin`
+
+```ts live
+() => {
+  const plugins = [
+    ...pluginsBasic,
+    createVideoPlugin(),
+    createSelectOnBackspacePlugin({ allow: [ELEMENT_VIDEO] }),
+  ];
+
+  return (
+    <>
+    <HeadingToolbar>
+      <ToolbarVideo icon={<OndemandVideo />} />
+    </HeadingToolbar>
+      <SlatePlugins
+        id="video"
+        plugins={plugins}
+        components={components}
+        options={options}
+        editableProps={editableProps}
+        initialValue={initialValueVideo}
+      />
+    </>
+  );
+}
+```
