@@ -237,6 +237,14 @@ module.exports = {
             __dirname,
             '../packages/elements/heading/src'
           ),
+          '@udecode/slate-plugins-iframe': path.resolve(
+            __dirname,
+            '../packages/elements/iframe/src'
+          ),
+          '@udecode/slate-plugins-iframe-ui': path.resolve(
+            __dirname,
+            '../packages/elements/iframe-ui/src'
+          ),
           '@udecode/slate-plugins-image': path.resolve(
             __dirname,
             '../packages/elements/image/src'

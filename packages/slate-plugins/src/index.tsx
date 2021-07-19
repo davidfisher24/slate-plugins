@@ -20,6 +20,8 @@ export * from '@udecode/slate-plugins-find-replace-ui';
 export * from '@udecode/slate-plugins-heading';
 export * from '@udecode/slate-plugins-highlight';
 export * from '@udecode/slate-plugins-html-serializer';
+export * from '@udecode/slate-plugins-iframe';
+export * from '@udecode/slate-plugins-iframe-ui';
 export * from '@udecode/slate-plugins-image';
 export * from '@udecode/slate-plugins-image-ui';
 export * from '@udecode/slate-plugins-kbd';

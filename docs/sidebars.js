@@ -42,6 +42,7 @@ module.exports = {
             'plugins/alignment',
             'plugins/basic-elements',
             'plugins/excalidraw',
+            'plugins/iframe',
             'plugins/image',
             'plugins/link',
             'plugins/list',

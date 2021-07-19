@@ -13,6 +13,7 @@ import { BorderClear } from '@styled-icons/material/BorderClear';
 import { BorderLeft } from '@styled-icons/material/BorderLeft';
 import { BorderRight } from '@styled-icons/material/BorderRight';
 import { BorderTop } from '@styled-icons/material/BorderTop';
+import { FilterFrames } from '@styled-icons/material/FilterFrames';
 import { FormatAlignCenter } from '@styled-icons/material/FormatAlignCenter';
 import { FormatAlignJustify } from '@styled-icons/material/FormatAlignJustify';
 import { FormatAlignLeft } from '@styled-icons/material/FormatAlignLeft';
@@ -69,6 +70,7 @@ import {
   ToolbarAlign,
   ToolbarCodeBlock,
   ToolbarElement,
+  ToolbarIframe,
   ToolbarImage,
   ToolbarLink,
   ToolbarList,
@@ -286,5 +288,6 @@ export const ToolbarButtons = () => (
     <ToolbarLink icon={<Link />} />
     <ToolbarImage icon={<Image />} />
     <ToolbarButtonsTable />
+    <ToolbarIframe icon={<FilterFrames />} />
   </>
 );

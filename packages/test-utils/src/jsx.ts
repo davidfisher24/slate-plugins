@@ -10,6 +10,7 @@ const ELEMENT_H3 = 'h3';
 const ELEMENT_H4 = 'h4';
 const ELEMENT_H5 = 'h5';
 const ELEMENT_H6 = 'h6';
+const ELEMENT_IFRAME = 'frame';
 const ELEMENT_IMAGE = 'img';
 const ELEMENT_LI = 'li';
 const ELEMENT_LINK = 'a';
@@ -58,6 +59,7 @@ export const jsx = createHyperscript({
     hh4: { type: ELEMENT_H4 },
     hh5: { type: ELEMENT_H5 },
     hh6: { type: ELEMENT_H6 },
+    hiframe: { type: ELEMENT_IFRAME },
     himg: { type: ELEMENT_IMAGE, children: voidChildren },
     hjustify: { type: ELEMENT_ALIGN_JUSTIFY },
     hli: { type: ELEMENT_LI },

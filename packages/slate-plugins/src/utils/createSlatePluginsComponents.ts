@@ -49,6 +49,8 @@ import {
 import { TodoListElement } from '@udecode/slate-plugins-list-ui';
 import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
 import { MediaEmbedElement } from '@udecode/slate-plugins-media-embed-ui';
+import { ELEMENT_IFRAME } from '@udecode/slate-plugins-iframe';
+import { IframeElement } from '@udecode/slate-plugins-iframe-ui';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import { MentionElement } from '@udecode/slate-plugins-mention-ui';
 import { ELEMENT_PARAGRAPH } from '@udecode/slate-plugins-paragraph';
@@ -167,6 +169,7 @@ export const createSlatePluginsComponents = <T extends string = string>(
         },
       },
     }),
+    [ELEMENT_IFRAME]: IframeElement,
     [ELEMENT_IMAGE]: ImageElement,
     [ELEMENT_LI]: withProps(StyledElement, { as: 'li' }),
     [ELEMENT_LINK]: LinkElement,

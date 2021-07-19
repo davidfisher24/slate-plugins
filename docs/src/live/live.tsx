@@ -12,6 +12,7 @@ import { BorderClear } from '@styled-icons/material/BorderClear';
 import { BorderLeft } from '@styled-icons/material/BorderLeft';
 import { BorderRight } from '@styled-icons/material/BorderRight';
 import { BorderTop } from '@styled-icons/material/BorderTop';
+import { FilterFrames } from '@styled-icons/material/FilterFrames';
 import { FormatAlignCenter } from '@styled-icons/material/FormatAlignCenter';
 import { FormatAlignJustify } from '@styled-icons/material/FormatAlignJustify';
 import { FormatAlignLeft } from '@styled-icons/material/FormatAlignLeft';
@@ -44,6 +45,7 @@ import {
   createHighlightPlugin,
   createHistoryPlugin,
   createKbdPlugin,
+  createIframePlugin,
   createLinkPlugin,
   createListPlugin,
   createMediaEmbedPlugin,
@@ -69,6 +71,7 @@ import {
   SlatePlugins,
   ToolbarAlign,
   ToolbarElement,
+  ToolbarIframe,
   ToolbarList,
   ToolbarTable,
   useFindReplacePlugin,
@@ -133,6 +136,7 @@ import {
   toggleList,
 } from '@udecode/slate-plugins-list';
 import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
+import { ELEMENT_IFRAME } from '@udecode/slate-plugins-iframe';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import { MentionElement } from '@udecode/slate-plugins-mention-ui';
 import { ELEMENT_PARAGRAPH } from '@udecode/slate-plugins-paragraph';
@@ -184,6 +188,7 @@ import {
   initialValueForcedLayout,
   initialValueHighlight,
   initialValueIframe,
+  initialValueFrame,
   initialValueImages,
   initialValueKbd,
   initialValueLinks,
@@ -327,6 +332,7 @@ const ReactLiveScope = {
   BorderLeft,
   BorderRight,
   BorderTop,
+  FilterFrames,
   FormatAlignCenter,
   FormatAlignJustify,
   FormatAlignLeft,
@@ -372,6 +378,7 @@ const ReactLiveScope = {
   EDITABLE_VOID,
   EditableVoidElement,
   initialValueIframe,
+  initialValueFrame,
   useSlatePlugins,
   useStoreEditorRef,
   HighlightHTML,
@@ -400,6 +407,7 @@ const ReactLiveScope = {
   createHeadingPlugin,
   createHighlightPlugin,
   createHistoryPlugin,
+  createIframePlugin,
   createImagePlugin,
   createItalicPlugin,
   createKbdPlugin,
@@ -435,6 +443,7 @@ const ReactLiveScope = {
   initialValueBalloonToolbar,
   ELEMENT_H5,
   ELEMENT_H6,
+  ELEMENT_IFRAME,
   ELEMENT_IMAGE,
   ELEMENT_LI,
   ELEMENT_LIC,
@@ -508,6 +517,7 @@ const ReactLiveScope = {
   ToolbarButtonsBasicMarks,
   ToolbarButtonsList,
   ToolbarButtonsTable,
+  ToolbarIframe,
   ToolbarImage,
   ToolbarHighlight,
   ToolbarLink,

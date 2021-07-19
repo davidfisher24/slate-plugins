@@ -57,6 +57,7 @@ import {
   ELEMENT_UL,
 } from '@udecode/slate-plugins-list';
 import { ELEMENT_MEDIA_EMBED } from '@udecode/slate-plugins-media-embed';
+import { ELEMENT_IFRAME } from '@udecode/slate-plugins-iframe';
 import { ELEMENT_MENTION } from '@udecode/slate-plugins-mention';
 import {
   DEFAULTS_PARAGRAPH,
@@ -85,6 +86,7 @@ export type DefaultSlatePluginKey =
   | typeof ELEMENT_H4
   | typeof ELEMENT_H5
   | typeof ELEMENT_H6
+  | typeof ELEMENT_IFRAME
   | typeof ELEMENT_IMAGE
   | typeof ELEMENT_LI
   | typeof ELEMENT_LINK
@@ -132,6 +134,7 @@ export const createSlatePluginsOptions = <T extends string = string>(
     [ELEMENT_H4]: {},
     [ELEMENT_H5]: {},
     [ELEMENT_H6]: {},
+    [ELEMENT_IFRAME]: {},
     [ELEMENT_IMAGE]: {},
     [ELEMENT_LI]: {},
     [ELEMENT_LINK]: {},

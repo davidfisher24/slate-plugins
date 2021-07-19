@@ -1,0 +1,32 @@
+---
+slug: /plugins/iframe
+title: Iframe
+---
+
+### `createIframePlugin`
+
+```ts live
+() => {
+  const plugins = [
+    ...pluginsBasic,
+    createIframePlugin(),
+    createSelectOnBackspacePlugin({ allow: [ELEMENT_IFRAME] }),
+  ];
+
+  return (
+    <>
+    <HeadingToolbar>
+      <ToolbarIframe icon={<FilterFrames />} />
+    </HeadingToolbar>
+      <SlatePlugins
+        id="iframe"
+        plugins={plugins}
+        components={components}
+        options={options}
+        editableProps={editableProps}
+        initialValue={initialValueFrame}
+      />
+    </>
+  );
+}
+```

@@ -76,6 +76,21 @@ export const initialValueEmbeds: any = (
   </fragment>
 );
 
+export const initialValueFrame: any = (
+  <fragment>
+    <hh2>🎥 Iframe</hh2>
+    <hp>
+      This is an example of configurable iframe nodes.
+    </hp>
+    <hiframe src="http://toastytech.com/evil/">
+      <htext />
+    </hiframe>
+    <hp>
+      Try it out! This editor is built to handle iframe embeds.
+    </hp>
+  </fragment>
+);
+
 export const initialValueExcalidraw: any = (
   <fragment>
     <hh2>🎨 Excalidraw</hh2>
