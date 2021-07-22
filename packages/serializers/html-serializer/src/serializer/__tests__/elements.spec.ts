@@ -79,15 +79,15 @@ it('serialize headings to html', () => {
       plugins: [createHeadingPlugin()],
       nodes: [
         {
-          type: 'h1',
+          type: 'heading-one',
           children: [{ text: 'Heading 1' }],
         },
         {
-          type: 'h2',
+          type: 'heading-two',
           children: [{ text: 'Heading 2' }],
         },
         {
-          type: 'h3',
+          type: 'heading-three',
           children: [{ text: 'Heading 3' }],
         },
       ],

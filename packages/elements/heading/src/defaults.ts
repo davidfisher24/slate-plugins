@@ -1,3 +1,5 @@
+import { SlatePluginOptions } from '@udecode/slate-plugins-core';
+
 export const ELEMENT_H1 = 'heading-one';
 export const ELEMENT_H2 = 'heading-two';
 export const ELEMENT_H3 = 'heading-three';
@@ -16,14 +18,14 @@ export const KEYS_HEADING = [
 
 export const DEFAULT_HEADING_LEVEL = 6;
 
-export const DEFAULTS_H1 = {
+export const DEFAULTS_H1: Partial<SlatePluginOptions> = {
   hotkey: ['mod+opt+1', 'mod+shift+1'],
 };
 
-export const DEFAULTS_H2 = {
+export const DEFAULTS_H2: Partial<SlatePluginOptions> = {
   hotkey: ['mod+opt+2', 'mod+shift+2'],
 };
 
-export const DEFAULTS_H3 = {
+export const DEFAULTS_H3: Partial<SlatePluginOptions>= {
   hotkey: ['mod+opt+3', 'mod+shift+3'],
 };
