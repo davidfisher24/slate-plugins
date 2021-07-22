@@ -25,7 +25,7 @@ const output = (
 
 it('should be', () => {
   const editor = withNormalizeTypes({
-    rules: [{ path: [0], strictType: options['heading-one'].type }],
+    rules: [{ path: [0], strictType: options.h1.type }],
   })(input as Editor);
 
   editor.normalizeNode([input, []]);

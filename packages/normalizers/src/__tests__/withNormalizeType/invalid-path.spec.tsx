@@ -16,7 +16,7 @@ it('should be', () => {
     rules: [
       {
         path: [0, 0],
-        strictType: options['heading-one'].type,
+        strictType: options.h1.type,
       },
       { path: [0, 1], type: options.p.type },
     ],
