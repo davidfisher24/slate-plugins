@@ -1,90 +1,102 @@
-// import 'prismjs/components/prism-antlr4';
-// import 'prismjs/components/prism-bash';
-// import 'prismjs/components/prism-c';
-// import 'prismjs/components/prism-cmake';
-// import 'prismjs/components/prism-coffeescript';
-// import 'prismjs/components/prism-cpp';
-// import 'prismjs/components/prism-csharp';
-// import 'prismjs/components/prism-css';
-// import 'prismjs/components/prism-django';
-// import 'prismjs/components/prism-docker';
-// import 'prismjs/components/prism-ejs';
-// import 'prismjs/components/prism-erlang';
-// import 'prismjs/components/prism-git';
-// import 'prismjs/components/prism-go';
-// import 'prismjs/components/prism-graphql';
-// import 'prismjs/components/prism-groovy';
-// import 'prismjs/components/prism-java';
-// import 'prismjs/components/prism-json';
-// import 'prismjs/components/prism-jsx';
-// import 'prismjs/components/prism-kotlin';
-// import 'prismjs/components/prism-latex';
-// import 'prismjs/components/prism-less';
-// import 'prismjs/components/prism-lua';
-// import 'prismjs/components/prism-makefile';
-// import 'prismjs/components/prism-markdown';
-// import 'prismjs/components/prism-matlab';
-// import 'prismjs/components/prism-objectivec';
-// import 'prismjs/components/prism-perl';
-// import 'prismjs/components/prism-php';
-// import 'prismjs/components/prism-powershell';
-// import 'prismjs/components/prism-properties';
-// import 'prismjs/components/prism-protobuf';
-// import 'prismjs/components/prism-python';
-// import 'prismjs/components/prism-r';
-// import 'prismjs/components/prism-ruby';
-// import 'prismjs/components/prism-sass';
-// import 'prismjs/components/prism-scala';
-// import 'prismjs/components/prism-scheme';
-// import 'prismjs/components/prism-scss';
-// import 'prismjs/components/prism-sql';
-// import 'prismjs/components/prism-swift';
-// import 'prismjs/components/prism-tsx';
-// import 'prismjs/components/prism-typescript';
-// import 'prismjs/components/prism-wasm';
-// import 'prismjs/components/prism-yaml';
+/* eslint-disable simple-import-sort/imports */
 import {
   Decorate,
   getSlatePluginOptions,
   isElement,
 } from '@udecode/slate-plugins-core';
-import { languages, Token, tokenize } from 'prismjs';
+import { languages, Token, tokenize, Grammar } from 'prismjs';
 import { Node, NodeEntry } from 'slate';
 import { ELEMENT_CODE_BLOCK } from './defaults';
+
+require('prismjs/themes/prism.css')
+require('prismjs/components/prism-java')
+require('prismjs/components/prism-python')
+require('prismjs/components/prism-r')
+require('prismjs/components/prism-sql')
 
 export const getCodeBlockDecorate = (): Decorate => (editor) => {
   const code_block = getSlatePluginOptions(editor, ELEMENT_CODE_BLOCK);
 
+  function getContent(token: any) {
+    if (typeof token === 'string') {
+      return token;
+    }
+    if (typeof token.content === 'string') {
+      return token.content;
+    }
+    return token.content.map(getContent).join('');
+  }
+
+  // TODO:
+  // Revise this logic
+
   return (entry: NodeEntry) => {
-    const ranges: any = [];
     const [node, path] = entry;
+    
+    const decorations = []
 
     if (isElement(node) && node.type === code_block.type) {
-      const text = Node.string(node);
-      // const langName: any = parent.lang || 'markup';
-      const langName: any = '';
-      const lang = languages[langName];
+      const language: string = node.language || 'javascript';
 
-      if (lang) {
-        const tokens = tokenize(text, lang);
-        let offset = 0;
+      const texts: NodeEntry<any>[] = Array.from(Node.texts(node))
+      const string: string = texts.map(([n]) => n.text).join('\n');
+      const grammar: Grammar = languages[language];
+      const tokens: (string | Token)[] = tokenize(string, grammar)
+      
+      let startEntry = texts.shift();
+      let endEntry = startEntry;
+      let startOffset = 0;
+      let endOffset = 0;
 
-        for (const element of tokens) {
-          if (typeof element === 'string') {
-            offset += element.length;
-          } else {
-            const token: Token = element;
-            ranges.push({
-              anchor: { path, offset },
-              focus: { path, offset: offset + token.length },
-              className: `prism-token token ${token.type} `,
-              prism: true,
-            });
-            offset += token.length;
+      for (const token of tokens) {
+        startEntry = endEntry;
+        startOffset = endOffset;
+
+        const [startText, startPath] = startEntry || [];
+        const [, endPath] = endEntry || [];
+
+        if (startText && startPath && endPath) {
+        
+          const content = getContent(token);
+          const newlines = content.split('\n').length - 1;
+          const length = content.length - newlines;
+    
+          let available = startText.text.length - startOffset;
+          let remaining = length;
+    
+          endOffset = startOffset + remaining;
+    
+          // Multiline tokens need their length to be changing, so that they are properly
+          // selected.
+          let lengthMultiline = length;
+          while (available < remaining && texts.length > 0) {
+            endEntry = texts.shift();
+            const [endText] = endEntry || [];
+            remaining = lengthMultiline - available;
+            available = endText?.text.length || 0;
+            endOffset = remaining;
+            lengthMultiline = remaining;
+          }
+        
+          if (typeof token !== 'string') {
+            const dec = {
+              type: token.alias || token.type,
+              anchor: {
+                path: [path[0], startPath[0]],
+                offset: startOffset,
+              },
+              focus: {
+                path: [path[0], endPath[0]],
+                offset: endOffset,
+              },
+              className: `prism-token token ${token.type}`,
+              prism: true
+            };
+            decorations.push(dec);
           }
         }
       }
     }
-    return ranges;
+    return decorations
   };
 };

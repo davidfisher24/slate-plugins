@@ -5,10 +5,21 @@ import {
   RootStyleSet,
   StyledElementProps,
 } from '@udecode/slate-plugins-ui-fluent';
+import { useEditorRef } from '@udecode/slate-plugins-core';
+import { Node, NodeEntry } from 'slate'
+import copy from "copy-to-clipboard";
+import { changeCodeBlockLanguage } from '@udecode/slate-plugins-code-block';
 import { styled } from '@uifabric/utilities';
 import { getCodeBlockElementStyles } from './CodeBlockElement.styles';
+import { CodeBlockLanguageSelector } from './CodeBlockLanguageSelector';
+
 
 const getClassNames = getRootClassNames();
+
+interface CodeBlockNodeData {
+  language?: string;
+}
+
 /**
  *   CodeBlockElement with no default styles.
  * [Use the `styles` API to add your own styles.](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
@@ -16,6 +27,7 @@ const getClassNames = getRootClassNames();
 export const CodeBlockElementBase = ({
   attributes,
   children,
+  element,
   className,
   styles,
   nodeProps,
@@ -25,10 +37,31 @@ export const CodeBlockElementBase = ({
     // Other style props
   });
 
+  const editor = useEditorRef();
+  const { language } = element;
+  const texts: NodeEntry<any>[] = Array.from(Node.texts(element))
+  const textToCopy: string = texts.map(([n]) => n.text).join('\n');
+  const copytext = () => copy(textToCopy)
+
   return (
-    <pre {...attributes} className={classNames.root} {...nodeProps}>
-      <code>{children}</code>
-    </pre>
+    <div style={{ position: 'relative'}}>
+      <pre 
+        {...attributes} 
+        className={classNames.root} 
+        {...nodeProps}
+      >
+        <code>{children}</code>
+      </pre>
+      <button onClick={copytext} >
+        copy
+      </button>
+      <CodeBlockLanguageSelector 
+        language={language}
+        handleLanguageChange={(language: string) => 
+          changeCodeBlockLanguage(editor, element, language)
+        }
+      />
+    </div>
   );
 };
 
