@@ -20,10 +20,10 @@ it('serialize list to html', () => {
       plugins: [createListPlugin()],
       nodes: [
         {
-          type: 'ul',
+          type: 'unordered-list',
           children: [
-            { type: 'li', children: [{ text: 'Item one' }] },
-            { type: 'li', children: [{ text: 'Item two' }] },
+            { type: 'list-item', children: [{ text: 'Item one' }] },
+            { type: 'list-item', children: [{ text: 'Item two' }] },
           ],
         },
       ],
@@ -31,10 +31,10 @@ it('serialize list to html', () => {
   ).getElementsByTagName('ul')[0];
   expect(render.children.length).toEqual(2);
   expect(render.children[0].outerHTML).toEqual(
-    '<li class="slate-li">Item one</li>'
+    '<li class="slate-list-item">Item one</li>'
   );
   expect(render.children[1].outerHTML).toEqual(
-    '<li class="slate-li">Item two</li>'
+    '<li class="slate-list-item">Item two</li>'
   );
 });
 

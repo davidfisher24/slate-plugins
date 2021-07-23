@@ -42,10 +42,10 @@ it('serialize complex example list with paragraphs to html', () => {
           ],
         },
         {
-          type: 'ul',
+          type: 'unordered-list',
           children: [
             {
-              type: 'li',
+              type: 'list-item',
               children: [
                 {
                   type: 'p',
@@ -58,7 +58,7 @@ it('serialize complex example list with paragraphs to html', () => {
               ],
             },
             {
-              type: 'li',
+              type: 'list-item',
               children: [
                 {
                   type: 'p',
@@ -82,7 +82,7 @@ it('serialize complex example list with paragraphs to html', () => {
   expect(render.getElementsByTagName('ul').length).toEqual(1);
   expect(render.getElementsByTagName('li').length).toEqual(2);
   expect(render.getElementsByTagName('ul')[0].innerHTML).toBe(
-    '<li class="slate-li"><p class="slate-p">Item one in list</p></li><li class="slate-li"><p class="slate-p">Item two in list</p></li>'
+    '<li class="slate-list-item"><p class="slate-p">Item one in list</p></li><li class="slate-list-item"><p class="slate-p">Item two in list</p></li>'
   );
 });
 
