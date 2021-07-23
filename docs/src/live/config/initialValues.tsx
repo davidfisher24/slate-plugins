@@ -21,6 +21,11 @@ import {
   ELEMENT_TODO_LI,
   ELEMENT_TR,
   ELEMENT_UL,
+  ELEMENT_ACCORDIONS,
+  ELEMENT_ACCORDION,
+  ELEMENT_ACCORDION_HEADER,
+  ELEMENT_ACCORDION_BODY,
+  ELEMENT_ACCORDION_CONTENT,
   MARK_BOLD,
   MARK_CODE,
   MARK_HIGHLIGHT,
@@ -778,6 +783,7 @@ const createSpanningTable = () => ({
   ],
 });
 
+
 export const initialValueTables: any = [
   {
     type: ELEMENT_H2,
@@ -817,6 +823,78 @@ export const initialValueTables: any = [
     ],
   },
 ];
+
+const createAccordion = () => ({
+  type: ELEMENT_ACCORDIONS,
+  children: [
+    {
+      type: ELEMENT_ACCORDION,
+      active: true,
+      children: [
+        {
+          type: ELEMENT_ACCORDION_HEADER,
+          children: [createElement('Accordion Header 1', { mark: MARK_BOLD })],
+        },
+        {
+          type: ELEMENT_ACCORDION_BODY,
+          active: true,
+          children: [{
+            type: ELEMENT_ACCORDION_CONTENT,
+            children: [
+              createElement('Accordion Content 1')
+            ]
+          }],
+        },
+      ],
+    },
+    {
+      type: ELEMENT_ACCORDION,
+      children: [
+        {
+          type: ELEMENT_ACCORDION_HEADER,
+          children: [createElement('Accordion Header 2', { mark: MARK_BOLD })],
+        },
+        {
+          type: ELEMENT_ACCORDION_BODY,
+          children: [{
+            type: ELEMENT_ACCORDION_CONTENT,
+            children: [
+              createElement('Accordion Content 2')
+            ]
+          }],
+        },
+      ],
+    },
+  ],
+})
+
+export const initialValueAccordion: any = [
+  {
+    type: ELEMENT_H2,
+    children: [
+      {
+        text: '🏓 Accoordion',
+      },
+    ],
+  },
+  {
+    type: ELEMENT_PARAGRAPH,
+    children: [
+      {
+        text: 'A number of accordions is added and content can be added to each one.',
+      },
+    ],
+  },
+  createAccordion(),
+  {
+    type: ELEMENT_PARAGRAPH,
+    children: [
+      {
+        text: 'Content can be added inside each accordion',
+      },
+    ],
+  },
+]
 
 export const initialValueSoftBreak: any = [
   {
@@ -886,6 +964,7 @@ export const initialValuePlayground: any = getNodesWithRandomId([
   ...initialValueBasicElements,
   ...initialValueList,
   ...initialValueTables,
+  ...initialValueAccordion,
   ...initialValueLinks,
   ...initialValueMentions,
   ...initialValueImages,

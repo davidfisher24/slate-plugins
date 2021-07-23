@@ -70,6 +70,13 @@ import {
   ELEMENT_TH,
   ELEMENT_TR,
 } from '@udecode/slate-plugins-table';
+import {
+  ELEMENT_ACCORDIONS,
+  ELEMENT_ACCORDION,
+  ELEMENT_ACCORDION_BODY,
+  ELEMENT_ACCORDION_HEADER,
+  ELEMENT_ACCORDION_CONTENT
+} from '@udecode/slate-plugins-accordion';
 
 export type DefaultSlatePluginKey =
   | typeof ELEMENT_ALIGN_CENTER
@@ -98,6 +105,11 @@ export type DefaultSlatePluginKey =
   | typeof ELEMENT_TODO_LI
   | typeof ELEMENT_TR
   | typeof ELEMENT_UL
+  | typeof ELEMENT_ACCORDIONS
+  | typeof ELEMENT_ACCORDION
+  | typeof ELEMENT_ACCORDION_HEADER
+  | typeof ELEMENT_ACCORDION_BODY
+  | typeof ELEMENT_ACCORDION_CONTENT
   | typeof MARK_BOLD
   | typeof MARK_CODE
   | typeof MARK_HIGHLIGHT
@@ -145,6 +157,11 @@ export const createSlatePluginsOptions = <T extends string = string>(
     [ELEMENT_TODO_LI]: DEFAULTS_TODO_LIST,
     [ELEMENT_TR]: {},
     [ELEMENT_UL]: {},
+    [ELEMENT_ACCORDIONS]: {},
+    [ELEMENT_ACCORDION]: {},
+    [ELEMENT_ACCORDION_HEADER]: {},
+    [ELEMENT_ACCORDION_BODY]: {},
+    [ELEMENT_ACCORDION_CONTENT]: {},
     [MARK_BOLD]: DEFAULTS_BOLD,
     [MARK_CODE]: DEFAULTS_CODE,
     [MARK_HIGHLIGHT]: DEFAULTS_HIGHLIGHT,

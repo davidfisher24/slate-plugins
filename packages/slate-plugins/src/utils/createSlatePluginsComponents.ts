@@ -59,6 +59,19 @@ import {
   ELEMENT_TR,
 } from '@udecode/slate-plugins-table';
 import { TableElement } from '@udecode/slate-plugins-table-ui';
+import {
+  ELEMENT_ACCORDIONS,
+  ELEMENT_ACCORDION,
+  ELEMENT_ACCORDION_BODY,
+  ELEMENT_ACCORDION_HEADER,
+  ELEMENT_ACCORDION_CONTENT
+} from '@udecode/slate-plugins-accordion';
+import {
+  AccordionsElement,
+  AccordionElement,
+  AccordionHeaderElement,
+  AccordionBodyElement,
+} from '@udecode/slate-plugins-accordion-ui'
 import { StyledElement, StyledLeaf } from '@udecode/slate-plugins-ui-fluent';
 import { DefaultSlatePluginKey } from './createSlatePluginsOptions';
 
@@ -235,6 +248,13 @@ export const createSlatePluginsComponents = <T extends string = string>(
     }),
     [ELEMENT_TODO_LI]: TodoListElement,
     [ELEMENT_TR]: withProps(StyledElement, { as: 'tr' }),
+    [ELEMENT_ACCORDIONS]: AccordionsElement,
+    [ELEMENT_ACCORDION]: AccordionElement,
+    [ELEMENT_ACCORDION_HEADER]: AccordionHeaderElement,
+    [ELEMENT_ACCORDION_BODY]: AccordionBodyElement,
+    [ELEMENT_ACCORDION_CONTENT]: withProps(StyledElement, {
+      as: 'div',
+    }),
     [MARK_BOLD]: withProps(StyledLeaf, { as: 'strong' }),
     [MARK_CODE]: withProps(StyledLeaf, {
       as: 'code',

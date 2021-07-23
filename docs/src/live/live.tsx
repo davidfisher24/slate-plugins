@@ -33,9 +33,15 @@ import { Looks6 } from '@styled-icons/material/Looks6';
 import { LooksOne } from '@styled-icons/material/LooksOne';
 import { LooksTwo } from '@styled-icons/material/LooksTwo';
 import { Search } from '@styled-icons/material/Search';
+import { Queue } from '@styled-icons/material/Queue';
+import { AddToQueue } from '@styled-icons/material/AddToQueue';
+import { RemoveFromQueue } from '@styled-icons/material/RemoveFromQueue';
+import { QueuePlayNext } from '@styled-icons/material/QueuePlayNext';
 import {
+  addAccordion,
   addColumn,
   addRow,
+  createAccordionPlugin,
   createAutoformatPlugin,
   createDeserializeHTMLPlugin,
   createDeserializeMDPlugin,
@@ -59,14 +65,18 @@ import {
   createTablePlugin,
   createTodoListPlugin,
   createTrailingBlockPlugin,
+  deleteAccordion,
+  deleteAccordions,
   deleteColumn,
   deleteRow,
   deleteTable,
   ELEMENT_ALIGN_CENTER,
   ELEMENT_ALIGN_JUSTIFY,
   ELEMENT_ALIGN_RIGHT,
+  insertAccordions,
   insertTable,
   SlatePlugins,
+  ToolbarAccordion,
   ToolbarAlign,
   ToolbarElement,
   ToolbarList,
@@ -142,6 +152,13 @@ import {
   ELEMENT_TH,
   ELEMENT_TR,
 } from '@udecode/slate-plugins-table';
+import {
+  ELEMENT_ACCORDION,
+  ELEMENT_ACCORDIONS,
+  ELEMENT_ACCORDION_HEADER,
+  ELEMENT_ACCORDION_BODY,
+  ELEMENT_ACCORDION_CONTENT
+} from '@udecode/slate-plugins-accordion'
 import { HeadingToolbar } from '@udecode/slate-plugins-toolbar';
 import { createEditor } from 'slate';
 import { Editable, ReactEditor, Slate, withReact } from 'slate-react';
@@ -173,6 +190,7 @@ import { ToolbarMark } from '../../../packages/ui/toolbar/src/ToolbarMark/Toolba
 import { optionsAutoformat } from './config/autoformatRules';
 import {
   getHugeDocument,
+  initialValueAccordion,
   initialValueAutoformat,
   initialValueBalloonToolbar,
   initialValueBasicElements,
@@ -211,6 +229,7 @@ import {
 import { renderMentionLabel } from './config/renderMentionLabel';
 import {
   BallonToolbarMarks,
+  ToolbarButtonsAccordion,
   ToolbarButtonsAlign,
   ToolbarButtonsBasicElements,
   ToolbarButtonsBasicMarks,
@@ -299,8 +318,11 @@ const ReactLiveScope = {
   isBlockAboveEmpty,
   isSelectionAtBlockStart,
   ExcalidrawElement,
+  addAccordion,
   addColumn,
   addRow,
+  deleteAccordion,
+  deleteAccordions,
   deleteColumn,
   deleteRow,
   KEYS_HEADING,
@@ -308,7 +330,9 @@ const ReactLiveScope = {
   ELEMENT_ALIGN_CENTER,
   ELEMENT_ALIGN_JUSTIFY,
   ELEMENT_ALIGN_RIGHT,
+  insertAccordions,
   insertTable,
+  ToolbarAccordion,
   ToolbarAlign,
   ToolbarElement,
   ToolbarList,
@@ -343,6 +367,10 @@ const ReactLiveScope = {
   Looks6,
   LooksOne,
   LooksTwo,
+  Queue,
+  QueuePlayNext,
+  AddToQueue,
+  RemoveFromQueue,
   initialValuePlayground,
   optionsMentionPlugin,
   useSlatePluginsActions,
@@ -380,6 +408,7 @@ const ReactLiveScope = {
   initialValuePreview,
   components,
   corePlugins: pluginsCore,
+  createAccordionPlugin,
   createAlignPlugin,
   createAutoformatPlugin,
   createBasicElementPlugins,
@@ -447,12 +476,18 @@ const ReactLiveScope = {
   ELEMENT_TODO_LI,
   ELEMENT_TR,
   ELEMENT_UL,
+  ELEMENT_ACCORDION,
+  ELEMENT_ACCORDIONS,
+  ELEMENT_ACCORDION_BODY,
+  ELEMENT_ACCORDION_CONTENT,
+  ELEMENT_ACCORDION_HEADER,
   HeadingToolbar,
   HTML5Backend,
   Image,
   BalloonToolbar,
   ToolbarMark,
   getSlatePluginType,
+  initialValueAccordion,
   initialValueAutoformat,
   initialValueBasic,
   initialValueBasicElements,
@@ -501,6 +536,7 @@ const ReactLiveScope = {
   Search,
   serializeHTMLFromNodes,
   SlatePlugins,
+  ToolbarButtonsAccordion,
   ToolbarButtonsAlign,
   ToolbarButtonsBasicElements,
   ToolbarButtonsBasicMarks,

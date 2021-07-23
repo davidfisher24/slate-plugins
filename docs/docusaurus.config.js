@@ -200,6 +200,14 @@ module.exports = {
             __dirname,
             '../packages/elements/basic-elements/src'
           ),
+          '@udecode/slate-plugins-accordion': path.resolve(
+            __dirname,
+            '../packages/elements/accordion/src'
+          ),
+          '@udecode/slate-plugins-accordion-ui': path.resolve(
+            __dirname,
+            '../packages/elements/accordion-ui/src'
+          ),
           '@udecode/slate-plugins-alignment': path.resolve(
             __dirname,
             '../packages/elements/alignment/src'

@@ -1,0 +1,40 @@
+
+---
+slug: /plugins/accordion
+title: Accordion
+---
+
+```ts live
+() => {
+  const ToolbarButtonsAccordion = () => (
+    <>
+        <ToolbarAccordion icon={<Queue />} transform={insertAccordions} />
+        <ToolbarAccordion icon={<QueuePlayNext />} transform={deleteAccordions} />
+        <ToolbarAccordion icon={<AddToQueue />} transform={addAccordion} />
+        <ToolbarAccordion icon={<RemoveFromQueue />} transform={deleteAccordion} />
+    </>
+  );
+  const plugins = [
+    ...pluginsBasic,
+    createAccordionPlugin(),
+    createSoftBreakPlugin(optionsSoftBreakPlugin),
+    createExitBreakPlugin(optionsExitBreakPlugin),
+  ];
+  return (
+    <>
+      <HeadingToolbar>
+        <ToolbarButtonsAccordion />
+      </HeadingToolbar>
+      <SlatePlugins
+        id="accordion"
+        plugins={plugins}
+        components={components}
+        options={options}
+        editableProps={editableProps}
+        initialValue={initialValueAccordion}
+        onChange={(val) => console.log(val)}
+      />
+    </>
+  );
+}
+```

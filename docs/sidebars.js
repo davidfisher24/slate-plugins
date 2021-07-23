@@ -38,6 +38,7 @@ module.exports = {
           type: 'category',
           label: 'Elements',
           items: [
+            'plugins/accordion',
             'plugins/alignment',
             'plugins/basic-elements',
             'plugins/excalidraw',

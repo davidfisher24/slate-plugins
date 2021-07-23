@@ -30,11 +30,18 @@ import { Looks5 } from '@styled-icons/material/Looks5';
 import { Looks6 } from '@styled-icons/material/Looks6';
 import { LooksOne } from '@styled-icons/material/LooksOne';
 import { LooksTwo } from '@styled-icons/material/LooksTwo';
+import { Queue } from '@styled-icons/material/Queue';
+import { AddToQueue } from '@styled-icons/material/AddToQueue';
+import { RemoveFromQueue } from '@styled-icons/material/RemoveFromQueue';
+import { QueuePlayNext } from '@styled-icons/material/QueuePlayNext';
 import { TippyProps } from '@tippyjs/react';
 import {
+  addAccordion,
   addColumn,
   addRow,
   BalloonToolbar,
+  deleteAccordion,
+  deleteAccordions,
   deleteColumn,
   deleteRow,
   deleteTable,
@@ -51,6 +58,7 @@ import {
   ELEMENT_OL,
   ELEMENT_UL,
   getSlatePluginType,
+  insertAccordions,
   insertTable,
   MARK_BOLD,
   MARK_CODE,
@@ -60,6 +68,7 @@ import {
   MARK_SUBSCRIPT,
   MARK_SUPERSCRIPT,
   MARK_UNDERLINE,
+  ToolbarAccordion,
   ToolbarAlign,
   ToolbarElement,
   ToolbarList,
@@ -223,6 +232,17 @@ export const ToolbarButtonsTable = () => (
     <ToolbarTable icon={<BorderRight />} transform={deleteColumn} />
   </>
 );
+
+export const ToolbarButtonsAccordion = () => (
+  <>
+    <ToolbarAccordion icon={<Queue />} transform={insertAccordions} />
+    <ToolbarAccordion icon={<QueuePlayNext />} transform={deleteAccordions} />
+    <ToolbarAccordion icon={<AddToQueue />} transform={addAccordion} />
+    <ToolbarAccordion icon={<RemoveFromQueue />} transform={deleteAccordion} />
+  </>
+)
+
+
 
 export const BallonToolbarMarks = () => {
   const editor = useStoreEditorRef(useEventEditorId('focus'));
