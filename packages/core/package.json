@@ -35,6 +35,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@insendi/ui-kit": "^2.75.2",
     "lodash": "^4.17.21",
     "zustand": "^3.4.2"
   },

@@ -35,6 +35,7 @@
     "@insendi/editor-v2-core": "1.0.0",
     "@insendi/editor-v2-serializer": "1.0.0",
     "@insendi/editor-v2-table": "1.0.0",
+    "@insendi/ui-kit": "^2.75.2",
     "papaparse": "^5.3.1"
   },
   "devDependencies": {

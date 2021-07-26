@@ -41,6 +41,7 @@
     "@insendi/editor-v2-list": "1.0.0",
     "@insendi/editor-v2-paragraph": "1.0.0",
     "@insendi/editor-v2-serializer": "1.0.0",
+    "@insendi/ui-kit": "^2.75.2",
     "remark-parse": "^9.0.0",
     "remark-slate": "^1.4.0",
     "unified": "^9.2.0"
