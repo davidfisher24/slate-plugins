@@ -6,20 +6,20 @@ import { Meta } from '@storybook/react/types-6-0';
 import { Image } from '@styled-icons/material/Image';
 import { Link } from '@styled-icons/material/Link';
 import { Search } from '@styled-icons/material/Search';
-import { createBlockquotePlugin } from '@udecode/plate-block-quote';
-import { createCodeBlockPlugin } from '@udecode/plate-code-block';
-import { withProps } from '@udecode/plate-common';
-import { createHistoryPlugin, createReactPlugin } from '@udecode/plate-core';
-import { createHeadingPlugin, ELEMENT_H1 } from '@udecode/plate-heading';
-import { createImagePlugin, ELEMENT_IMAGE } from '@udecode/plate-image';
-import { createLinkPlugin } from '@udecode/plate-link';
-import { ELEMENT_MENTION } from '@udecode/plate-mention';
-import { MentionElement } from '@udecode/plate-mention-ui';
+import { createBlockquotePlugin } from '@insendi/editor-v2-block-quote';
+import { createCodeBlockPlugin } from '@insendi/editor-v2-code-block';
+import { withProps } from '@insendi/editor-v2-common';
+import { createHistoryPlugin, createReactPlugin } from '@insendi/editor-v2-core';
+import { createHeadingPlugin, ELEMENT_H1 } from '@insendi/editor-v2-heading';
+import { createImagePlugin, ELEMENT_IMAGE } from '@insendi/editor-v2-image';
+import { createLinkPlugin } from '@insendi/editor-v2-link';
+import { ELEMENT_MENTION } from '@insendi/editor-v2-mention';
+import { MentionElement } from '@insendi/editor-v2-mention-ui';
 import {
   createParagraphPlugin,
   ELEMENT_PARAGRAPH,
-} from '@udecode/plate-paragraph';
-import { HeadingToolbar } from '@udecode/plate-toolbar';
+} from '@insendi/editor-v2-paragraph';
+import { HeadingToolbar } from '@insendi/editor-v2-toolbar';
 import { optionsAutoformat } from '../docs/src/live/config/autoformatRules';
 import { initialValuePlayground } from '../docs/src/live/config/initialValues';
 import {

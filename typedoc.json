@@ -8,8 +8,8 @@
     "**/*.development.*"
   ],
   "includeVersion": true,
-  "name": "@udecode/plate",
-  "entryPoints": ["packages/plate/src/index.tsx"],
+  "name": "@insendi/editor-v2-plate",
+  "entryPoints": ["packages/editor-v2-plate/src/index.tsx"],
   "out": "./typedoc",
   "readme": "./README.md"
 }

@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "private": true,
-  "license": "MIT",
+  "license": "UNLICENSED",
   "workspaces": [
     "packages/**"
   ],
@@ -33,7 +33,7 @@
     "test:covwa": "yarn test:cov --watchAll",
     "test:w": "yarn test --watch",
     "test:wa": "yarn test --watchAll",
-    "typedoc": "npx typedoc --tsconfig packages/plate/tsconfig.json",
+    "typedoc": "npx typedoc --tsconfig packages/editor-v2-plate/tsconfig.json",
     "unlink-all": "lerna exec --parallel --bail=false yarn unlink",
     "versionup": "lerna version --no-git-tag-version",
     "postversionup": "yarn commit-version && git push",
