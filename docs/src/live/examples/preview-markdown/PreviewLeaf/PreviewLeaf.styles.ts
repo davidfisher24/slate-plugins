@@ -1,4 +1,4 @@
-import { createStyles } from '@udecode/plate';
+import { createStyles } from '@insendi/editor-v2-plate';
 import { CSSProp } from 'styled-components';
 import { PreviewLeafStyleProps } from './PreviewLeaf.types';
 

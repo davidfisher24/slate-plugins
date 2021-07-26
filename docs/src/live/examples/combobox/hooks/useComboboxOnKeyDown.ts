@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import { SPEditor } from '@udecode/plate';
-import { KeyboardHandler } from '@udecode/plate-core';
+import { SPEditor } from '@insendi/editor-v2-plate';
+import { KeyboardHandler } from '@insendi/editor-v2-core';
 import { IComboboxItem } from '../components/Combobox.types';
 import { useComboboxIsOpen } from '../selectors/useComboboxIsOpen';
 import { useComboboxStore } from '../useComboboxStore';

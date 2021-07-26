@@ -2,7 +2,7 @@ import {
   getPlatePluginTypes,
   getRenderElement,
   PlatePlugin,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import { EDITABLE_VOID } from './defaults';
 
 export const createEditableVoidPlugin = (): PlatePlugin => ({

@@ -66,11 +66,11 @@ import {
   ToolbarMark,
   ToolbarTable,
   useStoreEditorRef,
-} from '@udecode/plate';
-import { ELEMENT_CODE_BLOCK } from '@udecode/plate-code-block';
-import { ToolbarCodeBlock } from '@udecode/plate-code-block-ui';
-import { useEventEditorId } from '@udecode/plate-core';
-import { MARK_HIGHLIGHT } from '@udecode/plate-highlight';
+} from '@insendi/editor-v2-plate';
+import { ELEMENT_CODE_BLOCK } from '@insendi/editor-v2-code-block';
+import { ToolbarCodeBlock } from '@insendi/editor-v2-code-block-ui';
+import { useEventEditorId } from '@insendi/editor-v2-core';
+import { MARK_HIGHLIGHT } from '@insendi/editor-v2-highlight';
 
 export const ToolbarButtonsBasicElements = () => {
   const editor = useStoreEditorRef(useEventEditorId('focus'));

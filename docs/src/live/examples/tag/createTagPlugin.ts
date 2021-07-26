@@ -1,5 +1,5 @@
-import { getPlatePluginTypes, getRenderElement } from '@udecode/plate';
-import { PlatePlugin } from '@udecode/plate-core';
+import { getPlatePluginTypes, getRenderElement } from '@insendi/editor-v2-plate';
+import { PlatePlugin } from '@insendi/editor-v2-core';
 import { ELEMENT_TAG } from './defaults';
 import { getTagDeserialize } from './getTagDeserialize';
 

@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import { MentionNodeData } from '@udecode/plate';
-import { TEditor } from '@udecode/plate-core';
+import { MentionNodeData } from '@insendi/editor-v2-plate';
+import { TEditor } from '@insendi/editor-v2-core';
 import shallow from 'zustand/shallow';
 import { IComboboxItem } from '../../combobox/components/Combobox.types';
 import { useComboboxOnChange } from '../../combobox/hooks/useComboboxOnChange';

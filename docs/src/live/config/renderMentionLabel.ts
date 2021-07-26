@@ -1,4 +1,4 @@
-import { MentionNodeData } from '@udecode/plate';
+import { MentionNodeData } from '@insendi/editor-v2-plate';
 import { MENTIONABLES } from './mentionables';
 
 export const renderMentionLabel = (mentionable: MentionNodeData) => {

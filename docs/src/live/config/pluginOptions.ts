@@ -12,7 +12,7 @@ import {
   MentionNodeData,
   ResetBlockTypePluginOptions,
   SoftBreakPluginOptions,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import { MENTIONABLES } from './mentionables';
 
 export const options = createPlateOptions();

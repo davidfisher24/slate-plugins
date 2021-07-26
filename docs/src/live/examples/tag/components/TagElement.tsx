@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useEditorRef } from '@udecode/plate';
+import { useEditorRef } from '@insendi/editor-v2-plate';
 import { Transforms } from 'slate';
 import { useFocused, useSelected } from 'slate-react';
 import { useHotkeys } from '../hooks/useHotkeys';

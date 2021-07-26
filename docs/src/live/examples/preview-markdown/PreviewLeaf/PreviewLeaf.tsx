@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyledLeafProps } from '@udecode/plate';
+import { StyledLeafProps } from '@insendi/editor-v2-plate';
 import { getPreviewLeafStyles } from './PreviewLeaf.styles';
 
 export const PreviewLeaf = (props: StyledLeafProps) => {

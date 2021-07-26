@@ -1,4 +1,4 @@
-import { StyledElementProps } from '@udecode/plate';
+import { StyledElementProps } from '@insendi/editor-v2-plate';
 import { CSSProp } from 'styled-components';
 import { TagNode } from '../types';
 

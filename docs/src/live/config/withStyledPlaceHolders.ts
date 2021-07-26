@@ -2,7 +2,7 @@ import {
   ELEMENT_H1,
   ELEMENT_PARAGRAPH,
   withPlaceholders,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 
 export const withStyledPlaceHolders = (components: any) =>
   withPlaceholders(components, [

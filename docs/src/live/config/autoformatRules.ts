@@ -26,8 +26,8 @@ import {
   toggleList,
   unwrapList,
   WithAutoformatOptions,
-} from '@udecode/plate';
-import { getPlatePluginType } from '@udecode/plate-core';
+} from '@insendi/editor-v2-plate';
+import { getPlatePluginType } from '@insendi/editor-v2-core';
 
 const preFormat: AutoformatRule['preFormat'] = (editor) =>
   unwrapList(editor as SPEditor);

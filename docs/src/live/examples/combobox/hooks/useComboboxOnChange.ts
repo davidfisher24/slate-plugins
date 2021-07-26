@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { isCollapsed, TEditor } from '@udecode/plate';
+import { isCollapsed, TEditor } from '@insendi/editor-v2-plate';
 import { Range } from 'slate';
 import { useComboboxStore } from '../useComboboxStore';
 import { getTextFromTrigger } from '../utils/getTextFromTrigger';

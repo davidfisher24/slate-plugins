@@ -5,7 +5,7 @@ import {
   insertNodes,
   SPEditor,
   TElement,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import { Editor, Transforms } from 'slate';
 import { ReactEditor } from 'slate-react';
 import { IComboboxItem } from '../../combobox/components/Combobox.types';

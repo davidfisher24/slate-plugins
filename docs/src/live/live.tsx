@@ -164,12 +164,12 @@ import {
   useStoreEditorState,
   withProps,
   withStyledProps,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import {
   createExcalidrawPlugin,
   ELEMENT_EXCALIDRAW,
   ExcalidrawElement,
-} from '@udecode/plate-excalidraw';
+} from '@insendi/editor-v2-excalidraw';
 import { createEditor, Editor, Transforms } from 'slate';
 import { Editable, ReactEditor, Slate, withReact } from 'slate-react';
 import { css } from 'styled-components';

@@ -6,7 +6,7 @@ const githubUrl = `${githubOrgUrl}/${projectName}`;
 const domain = 'https://plate.udecode.io';
 const domainExamples = '/docs/examples/introduction';
 const domainAPI = 'https://plate-api.udecode.io/globals.html';
-const npmOrgUrl = 'https://www.npmjs.com/package/@udecode';
+const npmOrgUrl = 'https://www.npmjs.com/package/@insendi';
 
 const customFields = {
   title: 'Plate',
@@ -184,186 +184,186 @@ module.exports = {
       path.resolve(__dirname, 'plugins/module-alias'),
       {
         alias: {
-          '@udecode/plate': path.resolve(__dirname, '../packages/plate/src'),
-          '@udecode/plate-dnd': path.resolve(__dirname, '../packages/dnd/src'),
-          '@udecode/plate-common': path.resolve(
+          '@insendi/editor-v2-plate': path.resolve(__dirname, '../packages/plate/src'),
+          '@insendi/editor-v2-dnd': path.resolve(__dirname, '../packages/dnd/src'),
+          '@insendi/editor-v2-common': path.resolve(
             __dirname,
             '../packages/common/src'
           ),
-          '@udecode/plate-core': path.resolve(
+          '@insendi/editor-v2-core': path.resolve(
             __dirname,
             '../packages/core/src'
           ),
-          '@udecode/plate-basic-elements': path.resolve(
+          '@insendi/editor-v2-basic-elements': path.resolve(
             __dirname,
             '../packages/elements/basic-elements/src'
           ),
-          '@udecode/plate-alignment': path.resolve(
+          '@insendi/editor-v2-alignment': path.resolve(
             __dirname,
             '../packages/elements/alignment/src'
           ),
-          '@udecode/plate-alignment-ui': path.resolve(
+          '@insendi/editor-v2-alignment-ui': path.resolve(
             __dirname,
             '../packages/elements/alignment-ui/src'
           ),
-          '@udecode/plate-block-quote': path.resolve(
+          '@insendi/editor-v2-block-quote': path.resolve(
             __dirname,
             '../packages/elements/block-quote/src'
           ),
-          '@udecode/plate-block-quote-ui': path.resolve(
+          '@insendi/editor-v2-block-quote-ui': path.resolve(
             __dirname,
             '../packages/elements/block-quote-ui/src'
           ),
-          '@udecode/plate-code-block': path.resolve(
+          '@insendi/editor-v2-code-block': path.resolve(
             __dirname,
             '../packages/elements/code-block/src'
           ),
-          '@udecode/plate-code-block-ui': path.resolve(
+          '@insendi/editor-v2-code-block-ui': path.resolve(
             __dirname,
             '../packages/elements/code-block-ui/src'
           ),
-          '@udecode/plate-excalidraw': path.resolve(
+          '@insendi/editor-v2-excalidraw': path.resolve(
             __dirname,
             '../packages/elements/excalidraw/src'
           ),
-          '@udecode/plate-heading': path.resolve(
+          '@insendi/editor-v2-heading': path.resolve(
             __dirname,
             '../packages/elements/heading/src'
           ),
-          '@udecode/plate-image': path.resolve(
+          '@insendi/editor-v2-image': path.resolve(
             __dirname,
             '../packages/elements/image/src'
           ),
-          '@udecode/plate-image-ui': path.resolve(
+          '@insendi/editor-v2-image-ui': path.resolve(
             __dirname,
             '../packages/elements/image-ui/src'
           ),
-          '@udecode/plate-link': path.resolve(
+          '@insendi/editor-v2-link': path.resolve(
             __dirname,
             '../packages/elements/link/src'
           ),
-          '@udecode/plate-link-ui': path.resolve(
+          '@insendi/editor-v2-link-ui': path.resolve(
             __dirname,
             '../packages/elements/link-ui/src'
           ),
-          '@udecode/plate-list': path.resolve(
+          '@insendi/editor-v2-list': path.resolve(
             __dirname,
             '../packages/elements/list/src'
           ),
-          '@udecode/plate-list-ui': path.resolve(
+          '@insendi/editor-v2-list-ui': path.resolve(
             __dirname,
             '../packages/elements/list-ui/src'
           ),
-          '@udecode/plate-media-embed': path.resolve(
+          '@insendi/editor-v2-media-embed': path.resolve(
             __dirname,
             '../packages/elements/media-embed/src'
           ),
-          '@udecode/plate-media-embed-ui': path.resolve(
+          '@insendi/editor-v2-media-embed-ui': path.resolve(
             __dirname,
             '../packages/elements/media-embed-ui/src'
           ),
-          '@udecode/plate-mention': path.resolve(
+          '@insendi/editor-v2-mention': path.resolve(
             __dirname,
             '../packages/elements/mention/src'
           ),
-          '@udecode/plate-mention-ui': path.resolve(
+          '@insendi/editor-v2-mention-ui': path.resolve(
             __dirname,
             '../packages/elements/mention-ui/src'
           ),
-          '@udecode/plate-paragraph': path.resolve(
+          '@insendi/editor-v2-paragraph': path.resolve(
             __dirname,
             '../packages/elements/paragraph/src'
           ),
-          '@udecode/plate-placeholder': path.resolve(
+          '@insendi/editor-v2-placeholder': path.resolve(
             __dirname,
             '../packages/placeholder/src'
           ),
-          '@udecode/plate-table': path.resolve(
+          '@insendi/editor-v2-table': path.resolve(
             __dirname,
             '../packages/elements/table/src'
           ),
-          '@udecode/plate-table-ui': path.resolve(
+          '@insendi/editor-v2-table-ui': path.resolve(
             __dirname,
             '../packages/elements/table-ui/src'
           ),
-          '@udecode/plate-basic-marks': path.resolve(
+          '@insendi/editor-v2-basic-marks': path.resolve(
             __dirname,
             '../packages/marks/basic-marks/src'
           ),
-          '@udecode/plate-font': path.resolve(
+          '@insendi/editor-v2-font': path.resolve(
             __dirname,
             '../packages/marks/font/src'
           ),
-          '@udecode/plate-font-ui': path.resolve(
+          '@insendi/editor-v2-font-ui': path.resolve(
             __dirname,
             '../packages/marks/font-ui/src'
           ),
-          '@udecode/plate-highlight': path.resolve(
+          '@insendi/editor-v2-highlight': path.resolve(
             __dirname,
             '../packages/marks/highlight/src'
           ),
-          '@udecode/plate-kbd': path.resolve(
+          '@insendi/editor-v2-kbd': path.resolve(
             __dirname,
             '../packages/marks/kbd/src'
           ),
-          '@udecode/plate-html-serializer': path.resolve(
+          '@insendi/editor-v2-html-serializer': path.resolve(
             __dirname,
             '../packages/serializers/html-serializer/src'
           ),
-          '@udecode/plate-md-serializer': path.resolve(
+          '@insendi/editor-v2-md-serializer': path.resolve(
             __dirname,
             '../packages/serializers/md-serializer/src'
           ),
-          '@udecode/plate-ast-serializer': path.resolve(
+          '@insendi/editor-v2-ast-serializer': path.resolve(
             __dirname,
             '../packages/serializers/ast-serializer/src'
           ),
-          '@udecode/plate': path.resolve(__dirname, '../packages/plate/src'),
-          '@udecode/plate-autoformat': path.resolve(
+          '@insendi/editor-v2-plate': path.resolve(__dirname, '../packages/plate/src'),
+          '@insendi/editor-v2-autoformat': path.resolve(
             __dirname,
             '../packages/autoformat/src'
           ),
-          '@udecode/plate-break': path.resolve(
+          '@insendi/editor-v2-break': path.resolve(
             __dirname,
             '../packages/break/src'
           ),
-          '@udecode/plate-find-replace': path.resolve(
+          '@insendi/editor-v2-find-replace': path.resolve(
             __dirname,
             '../packages/find-replace/src'
           ),
-          '@udecode/plate-find-replace-ui': path.resolve(
+          '@insendi/editor-v2-find-replace-ui': path.resolve(
             __dirname,
             '../packages/find-replace-ui/src'
           ),
-          '@udecode/plate-node-id': path.resolve(
+          '@insendi/editor-v2-node-id': path.resolve(
             __dirname,
             '../packages/node-id/src'
           ),
-          '@udecode/plate-normalizers': path.resolve(
+          '@insendi/editor-v2-normalizers': path.resolve(
             __dirname,
             '../packages/normalizers/src'
           ),
-          '@udecode/plate-reset-node': path.resolve(
+          '@insendi/editor-v2-reset-node': path.resolve(
             __dirname,
             '../packages/reset-node/src'
           ),
-          '@udecode/plate-select': path.resolve(
+          '@insendi/editor-v2-select': path.resolve(
             __dirname,
             '../packages/select/src'
           ),
-          '@udecode/plate-styled-components': path.resolve(
+          '@insendi/editor-v2-styled-components': path.resolve(
             __dirname,
             '../packages/ui/styled-components/src'
           ),
-          '@udecode/plate-trailing-block': path.resolve(
+          '@insendi/editor-v2-trailing-block': path.resolve(
             __dirname,
             '../packages/trailing-block/src'
           ),
-          '@udecode/plate-toolbar': path.resolve(
+          '@insendi/editor-v2-toolbar': path.resolve(
             __dirname,
             '../packages/ui/toolbar/src'
           ),
-          '@udecode/plate-test-utils': path.resolve(
+          '@insendi/editor-v2-test-utils': path.resolve(
             __dirname,
             '../packages/test-utils/src'
           ),

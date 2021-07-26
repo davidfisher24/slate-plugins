@@ -4,7 +4,7 @@ import {
   ELEMENT_PARAGRAPH,
   ELEMENT_UL,
   TElement,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import { Text } from 'slate';
 
 export const createElement = (

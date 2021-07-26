@@ -4,13 +4,13 @@ import {
   createHistoryPlugin,
   createPlateComponents,
   createReactPlugin,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import {
   createExitBreakPlugin,
   createSoftBreakPlugin,
-} from '@udecode/plate-break';
-import { Plate, SPRenderElementProps } from '@udecode/plate-core';
-import { createResetNodePlugin } from '@udecode/plate-reset-node';
+} from '@insendi/editor-v2-break';
+import { Plate, SPRenderElementProps } from '@insendi/editor-v2-core';
+import { createResetNodePlugin } from '@insendi/editor-v2-reset-node';
 import { initialValueBasicElements } from '../../config/initialValues';
 import {
   editableProps,

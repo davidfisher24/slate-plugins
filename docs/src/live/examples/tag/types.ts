@@ -1,4 +1,4 @@
-import { AnyObject, TElement } from '@udecode/plate-core';
+import { AnyObject, TElement } from '@insendi/editor-v2-core';
 
 // Data of Element node
 export interface TagNodeData extends AnyObject {

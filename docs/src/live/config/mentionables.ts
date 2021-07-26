@@ -1,4 +1,4 @@
-import { MentionNodeData } from '@udecode/plate';
+import { MentionNodeData } from '@insendi/editor-v2-plate';
 
 export const MENTIONABLES: MentionNodeData[] = [
   { value: '0', name: 'Aayla Secura', email: 'aayla_secura@force.com' },

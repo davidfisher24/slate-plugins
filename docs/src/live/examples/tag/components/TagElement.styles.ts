@@ -1,4 +1,4 @@
-import { createStyles } from '@udecode/plate';
+import { createStyles } from '@insendi/editor-v2-plate';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
 import { TagElementStyleProps } from './TagElement.types';

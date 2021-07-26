@@ -13,7 +13,7 @@ skills to make something similar to [Quill](https://quilljs.com/) or
 [ProseMirror](https://prosemirror.net/). This repository allows you to
 build your editor right away with **minimal** slate knowledge.
 
-`@udecode/plate` is built on top of slate to handle plugins and
+`@insendi/editor-v2` is built on top of slate to handle plugins and
 state management for an optimal development experience. This repository
 comes with a lot of plugins as elements, marks, serializers,
 normalizers, queries, transforms, components and so on.

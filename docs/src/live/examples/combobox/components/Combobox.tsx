@@ -4,7 +4,7 @@ import {
   getPreventDefaultHandler,
   PortalBody,
   useEditorState,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import {
   ComboboxItem,
   ComboboxRoot,

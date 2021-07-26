@@ -8,7 +8,7 @@ import {
   Plate,
   PlatePlugin,
   useStoreEditorRef,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import { initialValueCombobox } from '../config/initialValues';
 import { MENTIONABLES } from '../config/mentionables';
 import { editableProps } from '../config/pluginOptions';

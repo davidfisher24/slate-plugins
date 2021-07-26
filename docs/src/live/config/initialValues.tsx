@@ -31,8 +31,8 @@ import {
   MARK_STRIKETHROUGH,
   MARK_UNDERLINE,
   TDescendant,
-} from '@udecode/plate';
-import { jsx } from '@udecode/plate-test-utils';
+} from '@insendi/editor-v2-plate';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import * as faker from 'faker';
 import { EDITABLE_VOID } from '../examples/editable-voids/defaults';
 import { ELEMENT_TAG } from '../examples/tag/defaults';

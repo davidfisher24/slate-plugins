@@ -3,7 +3,7 @@ import {
   getNodeDeserializer,
   getPlatePluginOptions,
   getSlateClass,
-} from '@udecode/plate';
+} from '@insendi/editor-v2-plate';
 import { ELEMENT_TAG } from './defaults';
 
 export const getTagDeserialize = (): Deserialize => (editor) => {

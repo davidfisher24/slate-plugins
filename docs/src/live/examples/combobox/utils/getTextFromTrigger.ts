@@ -1,5 +1,5 @@
-import { escapeRegExp, getText } from '@udecode/plate';
-import { TEditor } from '@udecode/plate-core';
+import { escapeRegExp, getText } from '@insendi/editor-v2-plate';
+import { TEditor } from '@insendi/editor-v2-core';
 import { Editor, Point } from 'slate';
 
 /**
