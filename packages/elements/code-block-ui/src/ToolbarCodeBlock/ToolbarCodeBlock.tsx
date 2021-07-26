@@ -3,14 +3,14 @@ import {
   CodeBlockInsertOptions,
   ELEMENT_CODE_BLOCK,
   insertEmptyCodeBlock,
-} from '@udecode/plate-code-block';
-import { getPreventDefaultHandler } from '@udecode/plate-common';
+} from '@insendi/editor-v2-code-block';
+import { getPreventDefaultHandler } from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   useEventEditorId,
   useStoreEditorState,
-} from '@udecode/plate-core';
-import { ToolbarButtonProps, ToolbarElement } from '@udecode/plate-toolbar';
+} from '@insendi/editor-v2-core';
+import { ToolbarButtonProps, ToolbarElement } from '@insendi/editor-v2-toolbar';
 
 export const ToolbarCodeBlock = ({
   options,

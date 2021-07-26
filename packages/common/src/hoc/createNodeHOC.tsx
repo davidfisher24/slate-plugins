@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { SPRenderElementProps } from '@udecode/plate-core';
+import { SPRenderElementProps } from '@insendi/editor-v2-core';
 
 export const createNodeHOC = <T,>(HOC: FunctionComponent<T>) => (
   Component: any,

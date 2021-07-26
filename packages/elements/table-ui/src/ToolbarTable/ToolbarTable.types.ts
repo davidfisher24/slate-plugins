@@ -1,6 +1,6 @@
-import { SPEditor } from '@udecode/plate-core';
-import { TablePluginOptions } from '@udecode/plate-table';
-import { ToolbarButtonProps } from '@udecode/plate-toolbar';
+import { SPEditor } from '@insendi/editor-v2-core';
+import { TablePluginOptions } from '@insendi/editor-v2-table';
+import { ToolbarButtonProps } from '@insendi/editor-v2-toolbar';
 
 export interface ToolbarTableProps
   extends ToolbarButtonProps,

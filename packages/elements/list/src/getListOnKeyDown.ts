@@ -2,7 +2,7 @@ import {
   getPlatePluginTypes,
   KeyboardHandler,
   mapPlatePluginKeysToOptions,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import isHotkey from 'is-hotkey';
 import { castArray } from 'lodash';
 import { moveListItems } from './transforms/moveListItems';

@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { isBlockAboveEmpty } from '@udecode/plate-common';
-import { SPEditor } from '@udecode/plate-core';
-import { jsx } from '@udecode/plate-test-utils';
+import { isBlockAboveEmpty } from '@insendi/editor-v2-common';
+import { SPEditor } from '@insendi/editor-v2-core';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import * as isHotkey from 'is-hotkey';
 import { options } from '../../../../docs/src/live/config/pluginOptions';
 import { ELEMENT_BLOCKQUOTE } from '../../../elements/block-quote/src/defaults';

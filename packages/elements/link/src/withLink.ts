@@ -6,13 +6,13 @@ import {
   isUrl as isUrlProtocol,
   someNode,
   unwrapNodes,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   SPEditor,
   WithOverride,
-} from '@udecode/plate-core';
-import { withRemoveEmptyNodes } from '@udecode/plate-normalizers';
+} from '@insendi/editor-v2-core';
+import { withRemoveEmptyNodes } from '@insendi/editor-v2-normalizers';
 import { Range } from 'slate';
 import { ReactEditor } from 'slate-react';
 import { upsertLinkAtSelection } from './transforms/upsertLinkAtSelection';

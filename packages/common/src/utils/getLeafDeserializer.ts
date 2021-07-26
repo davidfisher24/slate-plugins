@@ -1,4 +1,4 @@
-import { GetLeafDeserializerOptions } from '@udecode/plate-core';
+import { GetLeafDeserializerOptions } from '@insendi/editor-v2-core';
 import { getNodeDeserializer } from './getNodeDeserializer';
 
 /**

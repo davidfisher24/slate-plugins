@@ -1,4 +1,4 @@
-import { getRenderLeaf, PlatePlugin } from '@udecode/plate-core';
+import { getRenderLeaf, PlatePlugin } from '@insendi/editor-v2-core';
 import { MARK_BG_COLOR } from './defaults';
 import { getFontBackgroundColorDeserialize } from './getColorDeserialize';
 

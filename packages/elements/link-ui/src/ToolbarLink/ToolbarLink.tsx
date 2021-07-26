@@ -4,14 +4,14 @@ import {
   isCollapsed,
   someNode,
   unwrapNodes,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   useEventEditorId,
   useStoreEditorState,
-} from '@udecode/plate-core';
-import { ELEMENT_LINK, upsertLinkAtSelection } from '@udecode/plate-link';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-toolbar';
+} from '@insendi/editor-v2-core';
+import { ELEMENT_LINK, upsertLinkAtSelection } from '@insendi/editor-v2-link';
+import { ToolbarButton, ToolbarButtonProps } from '@insendi/editor-v2-toolbar';
 
 export interface ToolbarLinkProps extends ToolbarButtonProps {
   /**

@@ -1,9 +1,9 @@
 /** @jsx jsx */
 
-import { getElementDeserializer } from '@udecode/plate-common';
-import { PlatePlugin } from '@udecode/plate-core';
-import { getHtmlDocument, jsx } from '@udecode/plate-test-utils';
-import { createEditorPlugins } from '../../../../../../plate/src/utils/createEditorPlugins';
+import { getElementDeserializer } from '@insendi/editor-v2-common';
+import { PlatePlugin } from '@insendi/editor-v2-core';
+import { getHtmlDocument, jsx } from '@insendi/editor-v2-test-utils';
+import { createEditorPlugins } from '../../../../../../editor-v2/src/utils/createEditorPlugins';
 import { deserializeHTMLElement } from '../../utils/deserializeHTMLElement';
 
 const html =

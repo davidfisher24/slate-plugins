@@ -2,7 +2,7 @@ import {
   getPlatePluginTypes,
   getRenderElement,
   PlatePlugin,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { ELEMENT_IMAGE } from './defaults';
 import { getImageDeserialize } from './getImageDeserialize';
 import { WithImageUploadOptions } from './types';

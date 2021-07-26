@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { StyledProps } from '@udecode/plate-styled-components';
+import { StyledProps } from '@insendi/editor-v2-styled-components';
 import { ToolbarProps } from '../Toolbar/Toolbar.types';
 
 export interface BalloonToolbarStyleProps extends BalloonToolbarProps {

@@ -1,4 +1,4 @@
-import { QueryNodeOptions } from '@udecode/plate-common';
+import { QueryNodeOptions } from '@insendi/editor-v2-common';
 
 export interface SoftBreakRule {
   hotkey: string;

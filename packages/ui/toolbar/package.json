@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-toolbar",
+  "name": "@insendi/editor-v2-toolbar",
   "version": "1.0.0",
   "description": "Toolbar UI for Plate",
   "keywords": [
@@ -7,16 +7,13 @@
     "plate",
     "plugin"
   ],
-  "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
-  },
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "git+ssh://git@bitbucket.org/insendi/editor-v2.git",
     "directory": "packages/ui/toolbar"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -33,9 +30,9 @@
   },
   "dependencies": {
     "@tippyjs/react": "^4.2.0",
-    "@udecode/plate-common": "1.0.0",
-    "@udecode/plate-core": "1.0.0",
-    "@udecode/plate-styled-components": "1.0.0",
+    "@insendi/editor-v2-common": "1.0.0",
+    "@insendi/editor-v2-core": "1.0.0",
+    "@insendi/editor-v2-styled-components": "1.0.0",
     "react-use": "^17.1.1"
   },
   "peerDependencies": {

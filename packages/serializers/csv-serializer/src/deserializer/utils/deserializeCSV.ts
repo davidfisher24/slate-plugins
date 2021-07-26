@@ -1,17 +1,17 @@
-import { ELEMENT_DEFAULT } from '@udecode/plate-common';
+import { ELEMENT_DEFAULT } from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   SPEditor,
   TDescendant,
   TElement,
   TNode,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import {
   ELEMENT_TABLE,
   ELEMENT_TD,
   ELEMENT_TH,
   ELEMENT_TR,
-} from '@udecode/plate-table';
+} from '@insendi/editor-v2-table';
 import { parse } from 'papaparse';
 
 export const deserializeCSV = <T extends SPEditor = SPEditor>(

@@ -1,5 +1,5 @@
-import { getNodes, setNodes, someNode, wrapNodes } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
+import { getNodes, setNodes, someNode, wrapNodes } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { ELEMENT_CODE_BLOCK, ELEMENT_CODE_LINE } from '../defaults';
 import { unwrapCodeBlock } from './unwrapCodeBlock';
 

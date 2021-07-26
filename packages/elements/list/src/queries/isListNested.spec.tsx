@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { findNode } from '@udecode/plate-common';
-import { jsx } from '@udecode/plate-test-utils';
+import { findNode } from '@insendi/editor-v2-common';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { isListNested } from './isListNested';
 
 jsx;

@@ -1,5 +1,5 @@
-import { setNodes } from '@udecode/plate-common';
-import { TEditor, TElement } from '@udecode/plate-core';
+import { setNodes } from '@insendi/editor-v2-common';
+import { TEditor, TElement } from '@insendi/editor-v2-core';
 import { Editor, Location, Transforms } from 'slate';
 import { AutoformatRule } from '../types';
 

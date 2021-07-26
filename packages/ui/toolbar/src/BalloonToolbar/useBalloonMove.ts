@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { getSelectionText, isSelectionExpanded } from '@udecode/plate-common';
-import { TEditor } from '@udecode/plate-core';
+import { getSelectionText, isSelectionExpanded } from '@insendi/editor-v2-common';
+import { TEditor } from '@insendi/editor-v2-core';
 import { setPositionAtSelection } from './setPositionAtSelection';
 
 /**

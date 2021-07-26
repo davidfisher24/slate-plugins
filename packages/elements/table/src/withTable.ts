@@ -1,11 +1,11 @@
-import { isCollapsed } from '@udecode/plate-common';
+import { isCollapsed } from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   isElement,
   SPEditor,
   TElement,
   WithOverride,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Editor, Node, Point, Transforms } from 'slate';
 import { ELEMENT_TD } from './defaults';
 

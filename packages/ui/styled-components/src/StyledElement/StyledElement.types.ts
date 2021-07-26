@@ -1,4 +1,4 @@
-import { SPRenderElementProps } from '@udecode/plate-core';
+import { SPRenderElementProps } from '@insendi/editor-v2-core';
 import { Element } from 'slate';
 import { StyledProps } from '../types/StyledProps';
 

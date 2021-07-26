@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-md-serializer",
+  "name": "@insendi/editor-v2-md-serializer",
   "version": "1.0.0",
   "description": "Markdown serializer plugin for Plate",
   "keywords": [
@@ -10,16 +10,13 @@
     "markdown",
     "md"
   ],
-  "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
-  },
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "git+ssh://git@bitbucket.org/insendi/editor-v2.git",
     "directory": "packages/serializers/md-serializer"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -35,15 +32,15 @@
     "test": "jest"
   },
   "dependencies": {
-    "@udecode/plate-block-quote": "1.0.0",
-    "@udecode/plate-code-block": "1.0.0",
-    "@udecode/plate-common": "1.0.0",
-    "@udecode/plate-core": "1.0.0",
-    "@udecode/plate-heading": "1.0.0",
-    "@udecode/plate-link": "1.0.0",
-    "@udecode/plate-list": "1.0.0",
-    "@udecode/plate-paragraph": "1.0.0",
-    "@udecode/plate-serializer": "1.0.0",
+    "@insendi/editor-v2-block-quote": "1.0.0",
+    "@insendi/editor-v2-code-block": "1.0.0",
+    "@insendi/editor-v2-common": "1.0.0",
+    "@insendi/editor-v2-core": "1.0.0",
+    "@insendi/editor-v2-heading": "1.0.0",
+    "@insendi/editor-v2-link": "1.0.0",
+    "@insendi/editor-v2-list": "1.0.0",
+    "@insendi/editor-v2-paragraph": "1.0.0",
+    "@insendi/editor-v2-serializer": "1.0.0",
     "remark-parse": "^9.0.0",
     "remark-slate": "^1.4.0",
     "unified": "^9.2.0"

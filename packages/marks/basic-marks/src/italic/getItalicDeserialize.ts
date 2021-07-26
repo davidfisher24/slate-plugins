@@ -1,5 +1,5 @@
-import { getLeafDeserializer } from '@udecode/plate-common';
-import { Deserialize, getPlatePluginOptions } from '@udecode/plate-core';
+import { getLeafDeserializer } from '@insendi/editor-v2-common';
+import { Deserialize, getPlatePluginOptions } from '@insendi/editor-v2-core';
 import { MARK_ITALIC } from './defaults';
 
 export const getItalicDeserialize = (): Deserialize => (editor) => {

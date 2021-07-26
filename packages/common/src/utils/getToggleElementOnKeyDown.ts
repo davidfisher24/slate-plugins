@@ -3,7 +3,7 @@ import {
   KeyboardHandler,
   mapPlatePluginKeysToOptions,
   SPEditor,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import isHotkey from 'is-hotkey';
 import { castArray } from 'lodash';
 import { toggleNodeType } from '../transforms/toggleNodeType';

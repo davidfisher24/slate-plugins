@@ -1,4 +1,4 @@
-import { TEditor } from '@udecode/plate-core';
+import { TEditor } from '@insendi/editor-v2-core';
 import { someNode } from '../queries/someNode';
 import { unwrapNodes } from './unwrapNodes';
 import { wrapNodes } from './wrapNodes';

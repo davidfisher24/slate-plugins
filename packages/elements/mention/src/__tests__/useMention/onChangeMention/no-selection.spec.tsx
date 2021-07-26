@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { act, renderHook } from '@testing-library/react-hooks';
-import { jsx } from '@udecode/plate-test-utils';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { Editor } from 'slate';
-import { createEditorPlugins } from '../../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../../editor-v2/src/utils/createEditorPlugins';
 import { useMentionPlugin } from '../../../useMentionPlugin';
 
 jsx;

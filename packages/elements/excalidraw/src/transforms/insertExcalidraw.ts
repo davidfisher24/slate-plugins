@@ -1,5 +1,5 @@
-import { getParent, insertNodes } from '@udecode/plate-common';
-import { PlatePluginKey, SPEditor, TElement } from '@udecode/plate-core';
+import { getParent, insertNodes } from '@insendi/editor-v2-common';
+import { PlatePluginKey, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { ELEMENT_EXCALIDRAW } from '../defaults';
 import { ExcalidrawNodeData } from '../types';
 

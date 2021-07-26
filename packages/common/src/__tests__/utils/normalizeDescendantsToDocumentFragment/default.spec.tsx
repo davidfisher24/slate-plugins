@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { createEditorPlugins } from '@udecode/plate/src';
-import { createLinkPlugin } from '@udecode/plate-link';
-import { jsx } from '@udecode/plate-test-utils';
+import { createEditorPlugins } from '@insendi/editor-v2/src';
+import { createLinkPlugin } from '@insendi/editor-v2-link';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { normalizeDescendantsToDocumentFragment } from '../../../utils';
 
 jsx;

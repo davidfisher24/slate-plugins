@@ -3,7 +3,7 @@ import {
   isElement,
   SPEditor,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Descendant, Editor, Element, Text } from 'slate';
 import { ELEMENT_DEFAULT } from '../types';
 

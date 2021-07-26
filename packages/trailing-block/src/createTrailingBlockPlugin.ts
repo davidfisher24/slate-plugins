@@ -4,14 +4,14 @@ import {
   insertNodes,
   queryNode,
   QueryNodeOptions,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   getPlatePluginWithOverrides,
   SPEditor,
   TElement,
   WithOverride,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Path } from 'slate';
 
 export interface WithTrailingBlock extends QueryNodeOptions {

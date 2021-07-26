@@ -1,4 +1,4 @@
-import { isUrl } from '@udecode/plate-common';
+import { isUrl } from '@insendi/editor-v2-common';
 
 const imageExtensions = [
   'ase',

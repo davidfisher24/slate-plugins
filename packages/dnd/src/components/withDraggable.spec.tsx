@@ -2,11 +2,11 @@ import * as React from 'react';
 import { DndProvider } from 'react-dnd';
 import { TestBackend } from 'react-dnd-test-backend';
 import { render } from '@testing-library/react';
-import { Plate } from '@udecode/plate-core';
+import { Plate } from '@insendi/editor-v2-core';
 import { createParagraphPlugin } from '../../../elements/paragraph/src/createParagraphPlugin';
 import { ELEMENT_PARAGRAPH } from '../../../elements/paragraph/src/defaults';
-import { createPlateComponents } from '../../../plate/src/utils/createPlateComponents';
-import { createPlateOptions } from '../../../plate/src/utils/createPlateOptions';
+import { createPlateComponents } from '../../../editor-v2/src/utils/createPlateComponents';
+import { createPlateOptions } from '../../../editor-v2/src/utils/createPlateOptions';
 import { withDraggable } from './withDraggable';
 
 const options = createPlateOptions();

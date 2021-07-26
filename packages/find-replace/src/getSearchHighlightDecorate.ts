@@ -1,4 +1,4 @@
-import { Decorate, getPlatePluginOptions } from '@udecode/plate-core';
+import { Decorate, getPlatePluginOptions } from '@insendi/editor-v2-core';
 import { NodeEntry, Range, Text } from 'slate';
 import { MARK_SEARCH_HIGHLIGHT } from './defaults';
 import { DecorateSearchHighlightOptions } from './types';

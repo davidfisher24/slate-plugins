@@ -1,4 +1,4 @@
-import { getRenderElement, PlatePlugin } from '@udecode/plate-core';
+import { getRenderElement, PlatePlugin } from '@insendi/editor-v2-core';
 import { KEYS_TABLE } from './defaults';
 import { getTableDeserialize } from './getTableDeserialize';
 import { getTableOnKeyDown } from './getTableOnKeyDown';

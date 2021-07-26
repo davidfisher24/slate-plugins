@@ -1,6 +1,6 @@
-import { getSearchHighlightDecorate } from '@udecode/plate-find-replace';
+import { getSearchHighlightDecorate } from '@insendi/editor-v2-find-replace';
 import { Range } from 'slate';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 
 const input = { search: 'test' };
 

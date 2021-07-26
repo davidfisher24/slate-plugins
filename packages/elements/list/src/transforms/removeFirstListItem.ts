@@ -1,5 +1,5 @@
-import { isFirstChild } from '@udecode/plate-common';
-import { SPEditor, TElement } from '@udecode/plate-core';
+import { isFirstChild } from '@insendi/editor-v2-common';
+import { SPEditor, TElement } from '@insendi/editor-v2-core';
 import { NodeEntry } from 'slate';
 import { isListNested } from '../queries/isListNested';
 import { moveListItemUp } from './moveListItemUp';

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { ELEMENT_DEFAULT } from '@udecode/plate-common';
-import { jsx } from '@udecode/plate-test-utils';
+import { ELEMENT_DEFAULT } from '@insendi/editor-v2-common';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { Editor } from 'slate';
 import { ELEMENT_H1 } from '../../elements/heading/src/defaults';
 import { withTrailingBlock } from './createTrailingBlockPlugin';

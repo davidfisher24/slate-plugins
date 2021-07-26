@@ -1,8 +1,8 @@
 import {
   createImagePlugin,
   createLinkPlugin,
-} from '../../../../../plate/src/index';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+} from '../../../../../editor-v2/src/index';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 import { serializeHTMLFromNodes } from '../serializeHTMLFromNodes';
 import { htmlStringToDOMNode } from '../utils/htmlStringToDOMNode';
 

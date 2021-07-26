@@ -1,5 +1,5 @@
-import { ELEMENT_DEFAULT } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { ELEMENT_DEFAULT } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import { ELEMENT_TD } from '../defaults';
 import { TablePluginOptions } from '../types';
 

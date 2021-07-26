@@ -1,5 +1,5 @@
-import { getBlockAbove, queryNode } from '@udecode/plate-common';
-import { KeyboardHandler } from '@udecode/plate-core';
+import { getBlockAbove, queryNode } from '@insendi/editor-v2-common';
+import { KeyboardHandler } from '@insendi/editor-v2-core';
 import isHotkey from 'is-hotkey';
 import { SoftBreakOnKeyDownOptions } from './types';
 

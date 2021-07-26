@@ -3,13 +3,13 @@ import {
   getParent,
   match,
   setNodes,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   isElement,
   SPEditor,
   TDescendant,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { NodeEntry, Transforms } from 'slate';
 import { ELEMENT_LI, ELEMENT_LIC } from '../defaults';
 import { getListTypes } from '../queries/getListTypes';

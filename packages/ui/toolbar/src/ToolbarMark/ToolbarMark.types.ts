@@ -1,4 +1,4 @@
-import { PlatePluginOptions } from '@udecode/plate-core';
+import { PlatePluginOptions } from '@insendi/editor-v2-core';
 import { ToolbarButtonProps } from '../ToolbarButton/ToolbarButton.types';
 
 export interface ToolbarMarkProps

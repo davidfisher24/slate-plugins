@@ -1,5 +1,5 @@
-import { match } from '@udecode/plate-common';
-import { SPEditor } from '@udecode/plate-core';
+import { match } from '@insendi/editor-v2-common';
+import { SPEditor } from '@insendi/editor-v2-core';
 import { Ancestor } from 'slate';
 import { getListTypes } from './getListTypes';
 

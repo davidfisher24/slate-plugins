@@ -3,13 +3,13 @@ import {
   insertEmptyElement,
   match,
   setNodes,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   SPEditor,
   TDescendant,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Editor, NodeEntry, Path, PathRef, Transforms } from 'slate';
 import { ELEMENT_LIC, ELEMENT_OL, ELEMENT_UL } from '../defaults';
 import { ListNormalizerOptions } from '../types';

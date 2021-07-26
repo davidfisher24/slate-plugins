@@ -3,12 +3,12 @@ import {
   ELEMENT_DEFAULT,
   isFirstChild,
   isSelectionAtBlockStart,
-} from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+} from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import {
   getResetNodeOnKeyDown,
   SIMULATE_BACKSPACE,
-} from '@udecode/plate-reset-node';
+} from '@insendi/editor-v2-reset-node';
 import { Editor } from 'slate';
 import { getListItemEntry } from './queries/getListItemEntry';
 import { isListNested } from './queries/isListNested';

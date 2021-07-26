@@ -1,5 +1,5 @@
-import { getNodes, getParent } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { getNodes, getParent } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import { Editor, Path, PathRef } from 'slate';
 import { ELEMENT_LIC } from '../defaults';
 import { isListNested } from '../queries/isListNested';

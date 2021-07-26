@@ -1,5 +1,5 @@
-import { getAbove } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { getAbove } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import { Ancestor, NodeEntry, Path, Point, Range } from 'slate';
 import { ELEMENT_OL, ELEMENT_UL } from '../defaults';
 

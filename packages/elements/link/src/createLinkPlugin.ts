@@ -2,7 +2,7 @@ import {
   getPlatePluginTypes,
   getRenderElement,
   PlatePlugin,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { ELEMENT_LINK } from './defaults';
 import { getLinkDeserialize } from './getLinkDeserialize';
 import { WithLinkOptions } from './types';

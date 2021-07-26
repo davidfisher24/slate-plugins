@@ -1,5 +1,5 @@
 /* eslint-disable no-constant-condition */
-import { TEditor } from '@udecode/plate-core';
+import { TEditor } from '@insendi/editor-v2-core';
 import castArray from 'lodash/castArray';
 import map from 'lodash/map';
 import { Editor, Location, Path, Point } from 'slate';

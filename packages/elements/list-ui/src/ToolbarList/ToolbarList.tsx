@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { getPreventDefaultHandler } from '@udecode/plate-common';
-import { useEventEditorId, useStoreEditorState } from '@udecode/plate-core';
-import { ELEMENT_UL, toggleList } from '@udecode/plate-list';
-import { ToolbarButtonProps, ToolbarElement } from '@udecode/plate-toolbar';
+import { getPreventDefaultHandler } from '@insendi/editor-v2-common';
+import { useEventEditorId, useStoreEditorState } from '@insendi/editor-v2-core';
+import { ELEMENT_UL, toggleList } from '@insendi/editor-v2-list';
+import { ToolbarButtonProps, ToolbarElement } from '@insendi/editor-v2-toolbar';
 
 export const ToolbarList = ({
   type = ELEMENT_UL,

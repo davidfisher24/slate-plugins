@@ -1,6 +1,6 @@
 import React from 'react';
-import { TEditor } from '@udecode/plate-core';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { TEditor } from '@insendi/editor-v2-core';
+import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { Element, Path } from 'slate';
 import { CSSProp } from 'styled-components';
 

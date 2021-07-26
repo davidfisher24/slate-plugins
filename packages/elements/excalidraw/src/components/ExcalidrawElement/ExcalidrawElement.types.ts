@@ -2,7 +2,7 @@ import {
   ExcalidrawProps,
   LibraryItems,
 } from '@excalidraw/excalidraw-next/types/types';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { CSSProp } from 'styled-components';
 import { ExcalidrawNodeData } from '../../types';
 

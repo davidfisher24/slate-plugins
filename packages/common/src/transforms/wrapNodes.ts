@@ -1,4 +1,4 @@
-import { TEditor, TElement as TTElement, TNode } from '@udecode/plate-core';
+import { TEditor, TElement as TTElement, TNode } from '@insendi/editor-v2-core';
 import { Transforms } from 'slate';
 import { WrapOptions } from '../types/Transforms.types';
 import { unhangRange, UnhangRangeOptions } from './unhangRange';

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { withInlineVoid } from '@udecode/plate-core';
-import { jsx } from '@udecode/plate-test-utils';
+import { withInlineVoid } from '@insendi/editor-v2-core';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { ELEMENT_LINK } from '../../defaults';
 import { wrapLink } from '../../transforms/wrapLink';
 import { withLink } from '../../withLink';

@@ -1,5 +1,5 @@
 import { useDrag } from 'react-dnd';
-import { TEditor } from '@udecode/plate-core';
+import { TEditor } from '@insendi/editor-v2-core';
 
 export const useDragBlock = (editor: TEditor, id: string) => {
   return useDrag(

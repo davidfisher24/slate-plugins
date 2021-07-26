@@ -1,4 +1,4 @@
-import { getRenderElement, PlatePlugin } from '@udecode/plate-core';
+import { getRenderElement, PlatePlugin } from '@insendi/editor-v2-core';
 import { KEYS_ALIGN } from './defaults';
 import { getAlignDeserialize } from './getAlignDeserialize';
 

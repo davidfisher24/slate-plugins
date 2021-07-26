@@ -2,7 +2,7 @@ import {
   getPlatePluginWithOverrides,
   isElement,
   WithOverride,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import castArray from 'lodash/castArray';
 import { Node, NodeEntry, Transforms } from 'slate';
 

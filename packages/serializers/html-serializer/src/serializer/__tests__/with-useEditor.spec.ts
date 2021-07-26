@@ -1,8 +1,8 @@
-import { getSlateClass } from '@udecode/plate-core';
+import { getSlateClass } from '@insendi/editor-v2-core';
 import { CLASS_TODO_LIST_CHECKED } from '../../../../../elements/list/src/todo-list/constants';
 import { createTodoListPlugin } from '../../../../../elements/list/src/todo-list/createTodoListPlugin';
 import { ELEMENT_TODO_LI } from '../../../../../elements/list/src/todo-list/defaults';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 import { serializeHTMLFromNodes } from '../serializeHTMLFromNodes';
 
 it('serialize elements using useSlateStatic', () => {

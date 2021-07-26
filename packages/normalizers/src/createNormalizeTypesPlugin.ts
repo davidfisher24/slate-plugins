@@ -3,13 +3,13 @@ import {
   getNode,
   insertNodes,
   setNodes,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginWithOverrides,
   isElement,
   TElement,
   WithOverride,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Path } from 'slate';
 
 interface Rule {

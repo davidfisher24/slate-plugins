@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import * as core from '@udecode/plate-core';
-import { ELEMENT_H1 } from '@udecode/plate-heading';
-import { createImagePlugin } from '@udecode/plate-image';
+import * as core from '@insendi/editor-v2-core';
+import { ELEMENT_H1 } from '@insendi/editor-v2-heading';
+import { createImagePlugin } from '@insendi/editor-v2-image';
 import { Plate } from '../../../../core/src/components/Plate';
-import { createPlateOptions } from '../../../../plate/src/utils/createPlateOptions';
+import { createPlateOptions } from '../../../../editor-v2/src/utils/createPlateOptions';
 import { ToolbarImage } from './ToolbarImage';
 import { input1, input2, output2 } from './ToolbarImage.fixtures';
 

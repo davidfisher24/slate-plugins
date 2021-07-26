@@ -3,8 +3,8 @@ import {
   insertNodes,
   isBlockAboveEmpty,
   isExpanded,
-} from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
+} from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { Editor, Path } from 'slate';
 import { CodeBlockInsertOptions } from '../types';
 import { insertCodeBlock } from './insertCodeBlock';

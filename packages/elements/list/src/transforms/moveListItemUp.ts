@@ -3,8 +3,8 @@ import {
   getNode,
   insertNodes,
   isLastChild,
-} from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
+} from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { Editor, NodeEntry, Path, Transforms } from 'slate';
 import { ELEMENT_LI } from '../defaults';
 import { hasListChild } from '../queries/hasListChild';

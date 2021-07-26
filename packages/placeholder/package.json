@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-placeholder",
+  "name": "@insendi/editor-v2-placeholder",
   "version": "1.0.0",
   "description": "Placeholder UI for Plate",
   "keywords": [
@@ -7,16 +7,13 @@
     "placeholder",
     "plugins"
   ],
-  "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
-  },
+  "homepage": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/udecode/plate.git",
     "directory": "packages/placeholder"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -32,9 +29,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@udecode/plate-common": "1.0.0",
-    "@udecode/plate-core": "1.0.0",
-    "@udecode/plate-styled-components": "1.0.0"
+    "@insendi/editor-v2-common": "1.0.0",
+    "@insendi/editor-v2-core": "1.0.0",
+    "@insendi/editor-v2-styled-components": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

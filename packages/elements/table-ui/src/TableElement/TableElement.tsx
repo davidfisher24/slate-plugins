@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { getTableElementStyles } from './TableElement.styles';
 
 export const TableElement = (props: StyledElementProps) => {

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { fireEvent, render } from '@testing-library/react';
-import * as core from '@udecode/plate-core';
-import { ELEMENT_H1 } from '@udecode/plate-heading';
-import { createLinkPlugin } from '@udecode/plate-link';
-import { createEditorPlugins } from '../../../../plate/src/utils/createEditorPlugins';
+import * as core from '@insendi/editor-v2-core';
+import { ELEMENT_H1 } from '@insendi/editor-v2-heading';
+import { createLinkPlugin } from '@insendi/editor-v2-link';
+import { createEditorPlugins } from '../../../../editor-v2/src/utils/createEditorPlugins';
 import { ToolbarLink } from './ToolbarLink';
 import {
   input1,

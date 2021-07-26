@@ -1,5 +1,5 @@
 import { createAlignPlugin } from '../../../../../elements/alignment/src/createAlignPlugin';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 import { serializeHTMLFromNodes } from '../serializeHTMLFromNodes';
 
 describe('when there is no deserializer', () => {

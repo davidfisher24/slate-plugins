@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { LinkNodeData } from '@udecode/plate-link';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { LinkNodeData } from '@insendi/editor-v2-link';
+import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { getLinkElementStyles } from './LinkElement.styles';
 
 export const LinkElement = (props: StyledElementProps<LinkNodeData>) => {

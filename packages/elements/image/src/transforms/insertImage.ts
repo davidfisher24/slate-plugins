@@ -1,5 +1,5 @@
-import { insertNodes } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
+import { insertNodes } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { ELEMENT_IMAGE } from '../defaults';
 
 export const insertImage = (editor: SPEditor, url: string | ArrayBuffer) => {

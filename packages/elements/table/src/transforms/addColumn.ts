@@ -1,5 +1,5 @@
-import { getAbove, insertNodes, someNode } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
+import { getAbove, insertNodes, someNode } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { Path } from 'slate';
 import { ELEMENT_TABLE, ELEMENT_TD } from '../defaults';
 import { TablePluginOptions } from '../types';

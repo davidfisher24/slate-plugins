@@ -1,10 +1,10 @@
 import React, { forwardRef, useMemo } from 'react';
-import { createNodesWithHOC } from '@udecode/plate-common';
+import { createNodesWithHOC } from '@insendi/editor-v2-common';
 import {
   SPRenderElementProps,
   TEditor,
   useEditorRef,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Path } from 'slate';
 import { ReactEditor, useReadOnly } from 'slate-react';
 import { Draggable } from './Draggable';

@@ -1,4 +1,4 @@
-import { TEditor } from '@udecode/plate-core';
+import { TEditor } from '@insendi/editor-v2-core';
 import { Editor } from 'slate';
 import { EditorAboveOptions } from '../types/Editor.types';
 import { getBlockAbove } from './getBlockAbove';

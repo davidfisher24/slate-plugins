@@ -1,9 +1,9 @@
 /** @jsx jsx */
 
-import { withInlineVoid } from '@udecode/plate-core';
-import { jsx } from '@udecode/plate-test-utils';
+import { withInlineVoid } from '@insendi/editor-v2-core';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { withReact } from 'slate-react';
-import { pipe } from '../../../../plate/src/pipe/pipe';
+import { pipe } from '../../../../editor-v2/src/pipe/pipe';
 import { ELEMENT_MENTION } from '../defaults';
 
 jsx;

@@ -1,7 +1,7 @@
 import {
   createStyles,
   StyledElementProps,
-} from '@udecode/plate-styled-components';
+} from '@insendi/editor-v2-styled-components';
 import { css } from 'styled-components';
 
 export const getLinkElementStyles = (props: StyledElementProps) =>

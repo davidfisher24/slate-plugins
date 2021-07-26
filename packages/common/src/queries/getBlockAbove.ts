@@ -1,4 +1,4 @@
-import { TAncestor, TEditor } from '@udecode/plate-core';
+import { TAncestor, TEditor } from '@insendi/editor-v2-core';
 import { EditorAboveOptions } from '../types/Editor.types';
 import { getAbove } from './getAbove';
 

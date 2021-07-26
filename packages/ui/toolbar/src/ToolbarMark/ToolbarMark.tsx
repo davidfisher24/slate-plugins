@@ -3,8 +3,8 @@ import {
   getPreventDefaultHandler,
   isMarkActive,
   toggleMark,
-} from '@udecode/plate-common';
-import { useEventEditorId, useStoreEditorState } from '@udecode/plate-core';
+} from '@insendi/editor-v2-common';
+import { useEventEditorId, useStoreEditorState } from '@insendi/editor-v2-core';
 import { ToolbarButton } from '../ToolbarButton/ToolbarButton';
 import { ToolbarMarkProps } from './ToolbarMark.types';
 

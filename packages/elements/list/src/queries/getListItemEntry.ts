@@ -3,8 +3,8 @@ import {
   getParent,
   isCollapsed,
   someNode,
-} from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
+} from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { Location, NodeEntry, Range } from 'slate';
 import { ELEMENT_LI } from '../defaults';
 

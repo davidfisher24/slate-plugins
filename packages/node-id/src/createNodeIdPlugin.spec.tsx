@@ -1,8 +1,8 @@
 /** @jsx jsx */
 
-import { insertNodes } from '@udecode/plate-common';
-import { TEditor, TElement } from '@udecode/plate-core';
-import { jsx } from '@udecode/plate-test-utils';
+import { insertNodes } from '@insendi/editor-v2-common';
+import { TEditor, TElement } from '@insendi/editor-v2-core';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { Editor, Transforms } from 'slate';
 import { withHistory } from 'slate-history';
 import { HistoryEditor } from 'slate-history/dist/history-editor';

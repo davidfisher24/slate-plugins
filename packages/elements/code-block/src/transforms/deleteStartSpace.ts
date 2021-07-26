@@ -1,5 +1,5 @@
-import { getText } from '@udecode/plate-common';
-import { TEditor } from '@udecode/plate-core';
+import { getText } from '@insendi/editor-v2-common';
+import { TEditor } from '@insendi/editor-v2-core';
 import { Editor, Transforms } from 'slate';
 import { OutdentCodeLineOptions } from './outdentCodeLine';
 

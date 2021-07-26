@@ -1,5 +1,5 @@
-import { unwrapNodes } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { unwrapNodes } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import { ELEMENT_CODE_BLOCK, ELEMENT_CODE_LINE } from '../defaults';
 
 export const unwrapCodeBlock = (editor: SPEditor) => {

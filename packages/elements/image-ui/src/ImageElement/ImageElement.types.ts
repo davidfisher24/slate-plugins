@@ -1,5 +1,5 @@
-import { ImageNodeData } from '@udecode/plate-image';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { ImageNodeData } from '@insendi/editor-v2-image';
+import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { CSSProp } from 'styled-components';
 
 export interface ImageElementStyleProps extends ImageElementProps {

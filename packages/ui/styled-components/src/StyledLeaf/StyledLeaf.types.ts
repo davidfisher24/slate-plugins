@@ -1,4 +1,4 @@
-import { SPRenderLeafProps } from '@udecode/plate-core';
+import { SPRenderLeafProps } from '@insendi/editor-v2-core';
 import { Text } from 'slate';
 import { StyledProps } from '../types/StyledProps';
 

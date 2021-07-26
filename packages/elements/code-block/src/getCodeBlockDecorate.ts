@@ -47,7 +47,7 @@ import {
   Decorate,
   getPlatePluginOptions,
   isElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { languages, Token, tokenize } from 'prismjs';
 import { Node, NodeEntry } from 'slate';
 import { ELEMENT_CODE_BLOCK } from './defaults';

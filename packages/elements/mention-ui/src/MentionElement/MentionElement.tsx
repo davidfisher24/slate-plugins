@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getHandler } from '@udecode/plate-common';
+import { getHandler } from '@insendi/editor-v2-common';
 import { useFocused, useSelected } from 'slate-react';
 import { getMentionElementStyles } from './MentionElement.styles';
 import { MentionElementProps } from './MentionElement.types';

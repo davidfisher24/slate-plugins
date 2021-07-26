@@ -2,7 +2,7 @@ import { createListPlugin } from '../../../../../elements/list/src/createListPlu
 import { createParagraphPlugin } from '../../../../../elements/paragraph/src/createParagraphPlugin';
 import { createBoldPlugin } from '../../../../../marks/basic-marks/src/bold/createBoldPlugin';
 import { createItalicPlugin } from '../../../../../marks/basic-marks/src/italic/createItalicPlugin';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 import { serializeHTMLFromNodes } from '../serializeHTMLFromNodes';
 import { htmlStringToDOMNode } from '../utils/htmlStringToDOMNode';
 

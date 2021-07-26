@@ -3,12 +3,12 @@ import {
   queryNode,
   QueryNodeOptions,
   someNode,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginWithOverrides,
   TNode,
   WithOverride,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import cloneDeep from 'lodash/cloneDeep';
 import { NodeEntry } from 'slate';
 import { HistoryEditor } from 'slate-history';

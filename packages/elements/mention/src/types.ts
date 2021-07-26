@@ -3,7 +3,7 @@ import {
   PlatePluginKey,
   SPEditor,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Range } from 'slate';
 
 export interface MentionNodeData extends AnyObject {

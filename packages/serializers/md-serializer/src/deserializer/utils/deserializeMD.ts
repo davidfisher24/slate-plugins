@@ -1,6 +1,6 @@
-import { ELEMENT_BLOCKQUOTE } from '@udecode/plate-block-quote';
-import { ELEMENT_CODE_BLOCK } from '@udecode/plate-code-block';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { ELEMENT_BLOCKQUOTE } from '@insendi/editor-v2-block-quote';
+import { ELEMENT_CODE_BLOCK } from '@insendi/editor-v2-code-block';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import {
   ELEMENT_H1,
   ELEMENT_H2,
@@ -8,10 +8,10 @@ import {
   ELEMENT_H4,
   ELEMENT_H5,
   ELEMENT_H6,
-} from '@udecode/plate-heading';
-import { ELEMENT_LINK } from '@udecode/plate-link';
-import { ELEMENT_LI, ELEMENT_OL, ELEMENT_UL } from '@udecode/plate-list';
-import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph';
+} from '@insendi/editor-v2-heading';
+import { ELEMENT_LINK } from '@insendi/editor-v2-link';
+import { ELEMENT_LI, ELEMENT_OL, ELEMENT_UL } from '@insendi/editor-v2-list';
+import { ELEMENT_PARAGRAPH } from '@insendi/editor-v2-paragraph';
 import markdown from 'remark-parse';
 import slate from 'remark-slate';
 import unified from 'unified';

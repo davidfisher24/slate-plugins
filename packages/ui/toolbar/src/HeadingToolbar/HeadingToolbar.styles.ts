@@ -1,4 +1,4 @@
-import { createStyles, StyledProps } from '@udecode/plate-styled-components';
+import { createStyles, StyledProps } from '@insendi/editor-v2-styled-components';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
 import { getToolbarStyles } from '../Toolbar/Toolbar.styles';

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { ELEMENT_ALIGN_CENTER } from '@udecode/plate-alignment';
-import { jsx } from '@udecode/plate-test-utils';
+import { ELEMENT_ALIGN_CENTER } from '@insendi/editor-v2-alignment';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import * as isHotkey from 'is-hotkey';
 import { getExitBreakOnKeyDown } from '../../getExitBreakOnKeyDown';
 

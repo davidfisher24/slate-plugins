@@ -1,5 +1,5 @@
-import { MentionNode, MentionNodeData } from '@udecode/plate-mention';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { MentionNode, MentionNodeData } from '@insendi/editor-v2-mention';
+import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 
 export interface MentionElementStyleProps extends MentionElementProps {
   selected?: boolean;

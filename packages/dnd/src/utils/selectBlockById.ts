@@ -1,4 +1,4 @@
-import { findNode } from '@udecode/plate-common';
+import { findNode } from '@insendi/editor-v2-common';
 import { Editor, Transforms } from 'slate';
 import { ReactEditor } from 'slate-react';
 

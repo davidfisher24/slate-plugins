@@ -1,4 +1,4 @@
-import { getRenderElement, PlatePlugin } from '@udecode/plate-core';
+import { getRenderElement, PlatePlugin } from '@insendi/editor-v2-core';
 import { KEYS_CODE_BLOCK } from './defaults';
 import { getCodeBlockDecorate } from './getCodeBlockDecorate';
 import { getCodeBlockDeserialize } from './getCodeBlockDeserialize';

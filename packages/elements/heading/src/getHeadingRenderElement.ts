@@ -3,7 +3,7 @@ import {
   getPlatePluginOptions,
   RenderElement,
   RenderNodeOptions,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import {
   DEFAULT_HEADING_LEVEL,
   ELEMENT_H1,

@@ -1,4 +1,4 @@
-import { PlatePlugin } from '@udecode/plate-core';
+import { PlatePlugin } from '@insendi/editor-v2-core';
 import { getResetNodeOnKeyDown } from './getResetNodeOnKeyDown';
 import { ResetBlockTypePluginOptions } from './types';
 

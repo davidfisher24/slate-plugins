@@ -1,5 +1,5 @@
-import { getPointBefore, getText, removeMark } from '@udecode/plate-common';
-import { TEditor } from '@udecode/plate-core';
+import { getPointBefore, getText, removeMark } from '@insendi/editor-v2-common';
+import { TEditor } from '@insendi/editor-v2-core';
 import { Range, Transforms } from 'slate';
 import { AutoformatRule } from '../types';
 

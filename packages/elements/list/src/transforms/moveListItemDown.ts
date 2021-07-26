@@ -1,5 +1,5 @@
-import { match, wrapNodes } from '@udecode/plate-common';
-import { SPEditor, TElement } from '@udecode/plate-core';
+import { match, wrapNodes } from '@insendi/editor-v2-common';
+import { SPEditor, TElement } from '@insendi/editor-v2-core';
 import { Ancestor, Editor, Element, NodeEntry, Path, Transforms } from 'slate';
 import { getListTypes } from '../queries/getListTypes';
 

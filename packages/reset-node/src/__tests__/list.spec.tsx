@@ -3,13 +3,13 @@
 import {
   isBlockAboveEmpty,
   isSelectionAtBlockStart,
-} from '@udecode/plate-common';
-import { ELEMENT_LI } from '@udecode/plate-list';
-import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph';
-import { jsx } from '@udecode/plate-test-utils';
+} from '@insendi/editor-v2-common';
+import { ELEMENT_LI } from '@insendi/editor-v2-list';
+import { ELEMENT_PARAGRAPH } from '@insendi/editor-v2-paragraph';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import * as isHotkey from 'is-hotkey';
 import { unwrapList } from '../../../elements/list/src/transforms/unwrapList';
-import { createEditorPlugins } from '../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../editor-v2/src/utils/createEditorPlugins';
 import { getResetNodeOnKeyDown } from '../getResetNodeOnKeyDown';
 
 jsx;

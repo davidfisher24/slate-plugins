@@ -5,15 +5,15 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import { getMark, isMarkActive, setMarks } from '@udecode/plate-common';
+import { getMark, isMarkActive, setMarks } from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   useEventEditorId,
   useStoreEditorRef,
   useStoreEditorSelection,
   useStoreEditorState,
-} from '@udecode/plate-core';
-import { ToolbarButton, ToolbarDropdown } from '@udecode/plate-toolbar';
+} from '@insendi/editor-v2-core';
+import { ToolbarButton, ToolbarDropdown } from '@insendi/editor-v2-toolbar';
 import { BaseSelection, Transforms } from 'slate';
 import { ReactEditor } from 'slate-react';
 import { ColorPicker } from '../ColorPicker/ColorPicker';

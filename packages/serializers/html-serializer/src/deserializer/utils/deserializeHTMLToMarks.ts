@@ -1,10 +1,10 @@
-import { mergeDeepToNodes } from '@udecode/plate-common';
+import { mergeDeepToNodes } from '@insendi/editor-v2-common';
 import {
   isElement,
   PlatePlugin,
   SPEditor,
   TDescendant,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Text } from 'slate';
 import { jsx } from 'slate-hyperscript';
 import { DeserializeHTMLChildren } from '../types';

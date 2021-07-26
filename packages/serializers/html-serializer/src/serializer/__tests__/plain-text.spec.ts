@@ -1,4 +1,4 @@
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 import { deserializeHTMLToDocumentFragment } from '../../deserializer/utils/deserializeHTMLToDocumentFragment';
 import { serializeHTMLFromNodes } from '../serializeHTMLFromNodes';
 import { htmlStringToDOMNode } from '../utils/htmlStringToDOMNode';

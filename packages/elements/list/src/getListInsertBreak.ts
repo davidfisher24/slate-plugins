@@ -1,9 +1,9 @@
-import { ELEMENT_DEFAULT, isBlockAboveEmpty } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { ELEMENT_DEFAULT, isBlockAboveEmpty } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import {
   getResetNodeOnKeyDown,
   SIMULATE_BACKSPACE,
-} from '@udecode/plate-reset-node';
+} from '@insendi/editor-v2-reset-node';
 import { getListItemEntry } from './queries/getListItemEntry';
 import { insertListItem } from './transforms/insertListItem';
 import { moveListItemUp } from './transforms/moveListItemUp';

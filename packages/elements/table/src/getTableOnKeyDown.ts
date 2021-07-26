@@ -1,10 +1,10 @@
-import { getAbove } from '@udecode/plate-common';
+import { getAbove } from '@insendi/editor-v2-common';
 import {
   getPlatePluginOptions,
   KeyboardHandler,
   SPEditor,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Transforms } from 'slate';
 import { getNextTableCell } from './queries/getNextTableCell';
 import { getPreviousTableCell } from './queries/getPreviousTableCell';

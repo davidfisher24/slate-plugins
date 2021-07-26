@@ -3,8 +3,8 @@ import {
   getPreventDefaultHandler,
   someNode,
   toggleNodeType,
-} from '@udecode/plate-common';
-import { useEventEditorId, useStoreEditorState } from '@udecode/plate-core';
+} from '@insendi/editor-v2-common';
+import { useEventEditorId, useStoreEditorState } from '@insendi/editor-v2-core';
 import { ToolbarButton } from '../ToolbarButton/ToolbarButton';
 import { ToolbarElementProps } from './ToolbarElement.types';
 

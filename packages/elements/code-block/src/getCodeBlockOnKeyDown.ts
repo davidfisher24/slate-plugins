@@ -1,5 +1,5 @@
-import { getParent } from '@udecode/plate-common';
-import { KeyboardHandler } from '@udecode/plate-core';
+import { getParent } from '@insendi/editor-v2-common';
+import { KeyboardHandler } from '@insendi/editor-v2-core';
 import { Transforms } from 'slate';
 import { getCodeLineEntry } from './queries/getCodeLineEntry';
 import { getCodeLines } from './queries/getCodeLines';

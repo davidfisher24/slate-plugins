@@ -1,5 +1,5 @@
-import { isExpanded } from '@udecode/plate-common';
-import { TEditor } from '@udecode/plate-core';
+import { isExpanded } from '@insendi/editor-v2-common';
+import { TEditor } from '@insendi/editor-v2-core';
 import { Ancestor, Editor, Node, NodeEntry, Transforms } from 'slate';
 
 export interface IndentCodeLineOptions {

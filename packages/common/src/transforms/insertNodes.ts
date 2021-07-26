@@ -1,4 +1,4 @@
-import { TEditor, TNode as TTNode } from '@udecode/plate-core';
+import { TEditor, TNode as TTNode } from '@insendi/editor-v2-core';
 import { Transforms } from 'slate';
 import { InsertNodesOptions } from '../types/Transforms.types';
 

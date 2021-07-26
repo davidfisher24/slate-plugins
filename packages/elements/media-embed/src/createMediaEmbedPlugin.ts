@@ -2,7 +2,7 @@ import {
   getPlatePluginTypes,
   getRenderElement,
   PlatePlugin,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { ELEMENT_MEDIA_EMBED } from './defaults';
 import { getMediaEmbedDeserialize } from './getMediaEmbedDeserialize';
 

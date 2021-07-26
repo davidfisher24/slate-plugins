@@ -1,4 +1,4 @@
-import { TEditor } from '@udecode/plate-core';
+import { TEditor } from '@insendi/editor-v2-core';
 import { Editor, Node, NodeEntry, Path, Transforms } from 'slate';
 import { getNode } from '../queries/getNode';
 

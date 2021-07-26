@@ -1,5 +1,5 @@
-import { getElementDeserializer } from '@udecode/plate-common';
-import { Deserialize, getPlatePluginOptions } from '@udecode/plate-core';
+import { getElementDeserializer } from '@insendi/editor-v2-common';
+import { Deserialize, getPlatePluginOptions } from '@insendi/editor-v2-core';
 import { ELEMENT_LI, ELEMENT_LIC, ELEMENT_OL, ELEMENT_UL } from './defaults';
 
 export const getListDeserialize = (): Deserialize => (editor) => {

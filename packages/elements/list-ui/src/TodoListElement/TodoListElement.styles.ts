@@ -1,4 +1,4 @@
-import { createStyles } from '@udecode/plate-styled-components';
+import { createStyles } from '@insendi/editor-v2-styled-components';
 import tw from 'twin.macro';
 import { TodoListElementStyleProps } from './TodoListElement.types';
 

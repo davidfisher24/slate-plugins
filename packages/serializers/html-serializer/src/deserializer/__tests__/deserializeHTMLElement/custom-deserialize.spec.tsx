@@ -1,14 +1,14 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /** @jsx jsx */
 
-import { PlatePlugin } from '@udecode/plate-core';
-import { getHtmlDocument, jsx } from '@udecode/plate-test-utils';
+import { PlatePlugin } from '@insendi/editor-v2-core';
+import { getHtmlDocument, jsx } from '@insendi/editor-v2-test-utils';
 import { createImagePlugin } from '../../../../../../elements/image/src/createImagePlugin';
 import { createLinkPlugin } from '../../../../../../elements/link/src/createLinkPlugin';
 import { createParagraphPlugin } from '../../../../../../elements/paragraph/src/createParagraphPlugin';
 import { createTablePlugin } from '../../../../../../elements/table/src/createTablePlugin';
 import { createBoldPlugin } from '../../../../../../marks/basic-marks/src/bold/createBoldPlugin';
-import { createEditorPlugins } from '../../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../../editor-v2/src/utils/createEditorPlugins';
 import { deserializeHTMLElement } from '../../utils/deserializeHTMLElement';
 
 jsx;

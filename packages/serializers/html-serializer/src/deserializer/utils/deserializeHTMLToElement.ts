@@ -3,7 +3,7 @@ import {
   SPEditor,
   TDescendant,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { jsx } from 'slate-hyperscript';
 import { DeserializeHTMLChildren } from '../types';
 

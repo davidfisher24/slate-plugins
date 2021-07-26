@@ -1,5 +1,5 @@
-import { unwrapNodes, wrapNodes } from '@udecode/plate-common';
-import { TEditor } from '@udecode/plate-core';
+import { unwrapNodes, wrapNodes } from '@insendi/editor-v2-common';
+import { TEditor } from '@insendi/editor-v2-core';
 import { KEYS_ALIGN } from '../defaults';
 
 export const upsertAlign = (

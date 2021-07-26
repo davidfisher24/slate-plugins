@@ -1,9 +1,9 @@
-import { getElementDeserializer } from '@udecode/plate-common';
+import { getElementDeserializer } from '@insendi/editor-v2-common';
 import {
   Deserialize,
   getPlatePluginOptions,
   getSlateClass,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { ELEMENT_CODE_BLOCK, ELEMENT_CODE_LINE } from './defaults';
 
 export const getCodeBlockDeserialize = (): Deserialize => (editor) => {

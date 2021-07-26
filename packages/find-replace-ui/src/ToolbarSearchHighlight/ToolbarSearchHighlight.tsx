@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { HeadingToolbar } from '@udecode/plate-toolbar';
+import { HeadingToolbar } from '@insendi/editor-v2-toolbar';
 
 export interface ToolbarSearchHighlightProps {
   icon: any;

@@ -1,5 +1,5 @@
 import { HTMLAttributes } from 'react';
-import { StyledProps } from '@udecode/plate-styled-components';
+import { StyledProps } from '@insendi/editor-v2-styled-components';
 
 export interface ToolbarProps
   extends StyledProps,

@@ -1,4 +1,4 @@
-import { PlatePlugin, SPEditor } from '@udecode/plate-core';
+import { PlatePlugin, SPEditor } from '@insendi/editor-v2-core';
 import { DeserializeHTMLReturn } from '../types';
 import { deserializeHTMLNode } from './deserializeHTMLNode';
 

@@ -1,11 +1,11 @@
-import { isUrl } from '@udecode/plate-common';
+import { isUrl } from '@insendi/editor-v2-common';
 import {
   getPlatePluginWithOverrides,
   PlatePlugin,
   SPEditor,
   WithOverride,
-} from '@udecode/plate-core';
-import { insertDeserializedFragment } from '@udecode/plate-serializer';
+} from '@insendi/editor-v2-core';
+import { insertDeserializedFragment } from '@insendi/editor-v2-serializer';
 import { ReactEditor } from 'slate-react';
 import { deserializeMD } from './utils/deserializeMD';
 

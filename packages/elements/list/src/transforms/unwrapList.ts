@@ -1,5 +1,5 @@
-import { ELEMENT_DEFAULT, setNodes, unwrapNodes } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { ELEMENT_DEFAULT, setNodes, unwrapNodes } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import { Path } from 'slate';
 import { ELEMENT_LI, ELEMENT_OL, ELEMENT_UL } from '../defaults';
 

@@ -1,4 +1,4 @@
-import { RangeBeforeOptions } from '@udecode/plate-common';
+import { RangeBeforeOptions } from '@insendi/editor-v2-common';
 
 export interface LinkNodeData {
   url: string;

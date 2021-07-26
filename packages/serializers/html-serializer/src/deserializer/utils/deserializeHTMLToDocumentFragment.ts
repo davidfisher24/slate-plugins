@@ -1,5 +1,5 @@
-import { normalizeDescendantsToDocumentFragment } from '@udecode/plate-common';
-import { PlatePlugin, SPEditor, TDescendant } from '@udecode/plate-core';
+import { normalizeDescendantsToDocumentFragment } from '@insendi/editor-v2-common';
+import { PlatePlugin, SPEditor, TDescendant } from '@insendi/editor-v2-core';
 import { htmlStringToDOMNode } from '../../serializer/utils/htmlStringToDOMNode';
 import { deserializeHTMLElement } from './deserializeHTMLElement';
 

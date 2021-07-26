@@ -1,4 +1,4 @@
-import { TAncestor, TDescendant } from '@udecode/plate-core';
+import { TAncestor, TDescendant } from '@insendi/editor-v2-core';
 import { NodeEntry, Path } from 'slate';
 
 /**

@@ -1,4 +1,4 @@
-import { PlatePlugin } from '@udecode/plate-core';
+import { PlatePlugin } from '@insendi/editor-v2-core';
 import { createBoldPlugin } from './bold/createBoldPlugin';
 import { createCodePlugin } from './code/createCodePlugin';
 import { createItalicPlugin } from './italic/createItalicPlugin';

@@ -1,4 +1,4 @@
-import { createEditorPlugins } from '../../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../../editor-v2/src/utils/createEditorPlugins';
 import { deserializeHTMLToMarks } from '../../utils/deserializeHTMLToMarks';
 
 const input = {

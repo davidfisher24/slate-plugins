@@ -1,4 +1,4 @@
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import { ELEMENT_TR } from '../defaults';
 import { TablePluginOptions } from '../types';
 import { getEmptyCellNode } from './getEmptyCellNode';

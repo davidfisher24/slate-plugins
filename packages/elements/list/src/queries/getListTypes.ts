@@ -1,4 +1,4 @@
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import { ELEMENT_OL, ELEMENT_UL } from '../defaults';
 
 export const getListTypes = (editor: SPEditor) => {

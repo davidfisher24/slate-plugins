@@ -1,4 +1,4 @@
-import { TEditor, TNode } from '@udecode/plate-core';
+import { TEditor, TNode } from '@insendi/editor-v2-core';
 import { findNode, FindNodeOptions } from './findNode';
 
 /**

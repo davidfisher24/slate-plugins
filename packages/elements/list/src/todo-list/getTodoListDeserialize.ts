@@ -1,9 +1,9 @@
-import { getNodeDeserializer } from '@udecode/plate-common';
+import { getNodeDeserializer } from '@insendi/editor-v2-common';
 import {
   Deserialize,
   getPlatePluginOptions,
   getSlateClass,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { CLASS_TODO_LIST_CHECKED } from './constants';
 import { ELEMENT_TODO_LI } from './defaults';
 

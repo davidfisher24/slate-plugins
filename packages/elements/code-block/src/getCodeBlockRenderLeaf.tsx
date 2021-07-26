@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { RenderLeaf } from '@udecode/plate-core';
+import { RenderLeaf } from '@insendi/editor-v2-core';
 
 export const MARK_PRISM = 'prism';
 

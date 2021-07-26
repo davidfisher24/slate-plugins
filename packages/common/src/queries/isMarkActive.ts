@@ -1,4 +1,4 @@
-import { TEditor } from '@udecode/plate-core';
+import { TEditor } from '@insendi/editor-v2-core';
 import { isDefined } from '../utils/types.utils';
 import { getMark } from './getMark';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-highlight",
+  "name": "@insendi/editor-v2-highlight",
   "version": "1.0.0",
   "description": "Highlight plugin for Plate",
   "keywords": [
@@ -7,16 +7,13 @@
     "plate",
     "plugin"
   ],
-  "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
-  },
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "git+ssh://git@bitbucket.org/insendi/editor-v2.git",
     "directory": "packages/marks/highlight"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -32,8 +29,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@udecode/plate-common": "1.0.0",
-    "@udecode/plate-core": "1.0.0"
+    "@insendi/editor-v2-common": "1.0.0",
+    "@insendi/editor-v2-core": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

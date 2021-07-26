@@ -2,12 +2,12 @@ import {
   isCollapsed,
   queryNode,
   QueryNodeOptions,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginWithOverrides,
   TNode,
   WithOverride,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import Slate, { Editor, Transforms } from 'slate';
 
 export interface WithSelectOnBackspaceOptions extends QueryNodeOptions {}

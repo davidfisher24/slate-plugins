@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { PlatePlugin } from '@udecode/plate-core';
+import { PlatePlugin } from '@insendi/editor-v2-core';
 import { RenderLeafProps } from 'slate-react';
 import {
   createBoldPlugin,
   createImagePlugin,
   MARK_BOLD,
   TRenderElementProps,
-} from '../../../../../plate/src/index';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+} from '../../../../../editor-v2/src/index';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 import { serializeHTMLFromNodes } from '../serializeHTMLFromNodes';
 import { htmlStringToDOMNode } from '../utils/htmlStringToDOMNode';
 

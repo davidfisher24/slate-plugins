@@ -1,5 +1,5 @@
-import { InsertNodesOptions } from '@udecode/plate-common';
-import { PlatePluginOptions } from '@udecode/plate-core';
+import { InsertNodesOptions } from '@insendi/editor-v2-common';
+import { PlatePluginOptions } from '@insendi/editor-v2-core';
 
 export interface WithCodeBlockOptions {
   /**

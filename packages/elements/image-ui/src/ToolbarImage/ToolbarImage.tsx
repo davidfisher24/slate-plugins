@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { useEventEditorId, useStoreEditorRef } from '@udecode/plate-core';
-import { insertImage } from '@udecode/plate-image';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-toolbar';
+import { useEventEditorId, useStoreEditorRef } from '@insendi/editor-v2-core';
+import { insertImage } from '@insendi/editor-v2-image';
+import { ToolbarButton, ToolbarButtonProps } from '@insendi/editor-v2-toolbar';
 
 export interface ToolbarImageProps extends ToolbarButtonProps {
   /**

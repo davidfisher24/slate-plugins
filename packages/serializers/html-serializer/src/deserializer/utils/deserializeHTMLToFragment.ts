@@ -1,4 +1,4 @@
-import { TDescendant } from '@udecode/plate-core';
+import { TDescendant } from '@insendi/editor-v2-core';
 import { jsx } from 'slate-hyperscript';
 import { DeserializeHTMLChildren } from '../types';
 

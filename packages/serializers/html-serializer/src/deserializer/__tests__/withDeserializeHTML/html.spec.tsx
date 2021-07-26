@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { PlatePlugin, SPEditor } from '@udecode/plate-core';
-import { createParagraphPlugin } from '@udecode/plate-paragraph';
-import { jsx } from '@udecode/plate-test-utils';
+import { PlatePlugin, SPEditor } from '@insendi/editor-v2-core';
+import { createParagraphPlugin } from '@insendi/editor-v2-paragraph';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { Editor } from 'slate';
 import { ReactEditor } from 'slate-react';
 import { createHeadingPlugin } from '../../../../../../elements/heading/src/createHeadingPlugin';
-import { createEditorPlugins } from '../../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../../editor-v2/src/utils/createEditorPlugins';
 import { createDeserializeHTMLPlugin } from '../../createDeserializeHTMLPlugin';
 
 jsx;

@@ -1,4 +1,4 @@
-import { PlatePluginOptions } from '@udecode/plate-core';
+import { PlatePluginOptions } from '@insendi/editor-v2-core';
 
 export type KEY_PARAGRAPH = 'p';
 export const ELEMENT_PARAGRAPH = 'p';

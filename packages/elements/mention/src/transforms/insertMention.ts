@@ -1,9 +1,9 @@
-import { insertNodes } from '@udecode/plate-common';
+import { insertNodes } from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   PlatePluginKey,
   SPEditor,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Transforms } from 'slate';
 import { ELEMENT_MENTION } from '../defaults';
 import { MentionNode, MentionNodeData } from '../types';

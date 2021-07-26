@@ -1,5 +1,5 @@
-import { getElementDeserializer } from '@udecode/plate-common';
-import { Deserialize, getPlatePluginOptions } from '@udecode/plate-core';
+import { getElementDeserializer } from '@insendi/editor-v2-common';
+import { Deserialize, getPlatePluginOptions } from '@insendi/editor-v2-core';
 import { ELEMENT_PARAGRAPH } from './defaults';
 
 export const getParagraphDeserialize = (): Deserialize => (editor) => {

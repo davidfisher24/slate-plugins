@@ -1,9 +1,9 @@
-import { getNodeDeserializer } from '@udecode/plate-common';
+import { getNodeDeserializer } from '@insendi/editor-v2-common';
 import {
   Deserialize,
   getPlatePluginOptions,
   getSlateClass,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { ELEMENT_EXCALIDRAW } from './defaults';
 
 export const getExcalidrawDeserialize = (

@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useMemo, useState } from 'react';
-import { getRenderLeaf, PlatePlugin } from '@udecode/plate-core';
+import { getRenderLeaf, PlatePlugin } from '@insendi/editor-v2-core';
 import { MARK_SEARCH_HIGHLIGHT } from './defaults';
 import { getSearchHighlightDecorate } from './getSearchHighlightDecorate';
 

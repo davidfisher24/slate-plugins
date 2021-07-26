@@ -2,7 +2,7 @@ import {
   getPlatePluginOptions,
   KeyboardHandler,
   SPEditor,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import isHotkey from 'is-hotkey';
 import { toggleMark } from '../transforms/toggleMark';
 

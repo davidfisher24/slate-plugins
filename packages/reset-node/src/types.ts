@@ -1,4 +1,4 @@
-import { PlatePluginOptions, TEditor } from '@udecode/plate-core';
+import { PlatePluginOptions, TEditor } from '@insendi/editor-v2-core';
 
 export interface ResetBlockTypePluginRule
   extends Pick<PlatePluginOptions, 'defaultType' | 'hotkey'> {

@@ -1,11 +1,11 @@
 /** @jsx jsx */
 
-import { MARK_BOLD, MARK_ITALIC } from '@udecode/plate-basic-marks';
-import { getToggleMarkOnKeyDown } from '@udecode/plate-common';
-import { jsx } from '@udecode/plate-test-utils';
+import { MARK_BOLD, MARK_ITALIC } from '@insendi/editor-v2-basic-marks';
+import { getToggleMarkOnKeyDown } from '@insendi/editor-v2-common';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import * as isHotkey from 'is-hotkey';
 import { createBoldPlugin } from '../../../../../marks/basic-marks/src/bold/createBoldPlugin';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 
 jsx;
 

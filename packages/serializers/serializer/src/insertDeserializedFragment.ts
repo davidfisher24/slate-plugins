@@ -1,11 +1,11 @@
-import { isBlockAboveEmpty, setNodes } from '@udecode/plate-common';
+import { isBlockAboveEmpty, setNodes } from '@insendi/editor-v2-common';
 import {
   getInlineTypes,
   PlatePlugin,
   SPEditor,
   TDescendant,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Editor } from 'slate';
 import { ReactEditor } from 'slate-react';
 

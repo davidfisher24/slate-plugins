@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { getPreventDefaultHandler, someNode } from '@udecode/plate-common';
+import { getPreventDefaultHandler, someNode } from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   useEventEditorId,
   useStoreEditorState,
-} from '@udecode/plate-core';
-import { ELEMENT_TABLE } from '@udecode/plate-table';
-import { ToolbarButton } from '@udecode/plate-toolbar';
+} from '@insendi/editor-v2-core';
+import { ELEMENT_TABLE } from '@insendi/editor-v2-table';
+import { ToolbarButton } from '@insendi/editor-v2-toolbar';
 import { ToolbarTableProps } from './ToolbarTable.types';
 
 export const ToolbarTable = ({

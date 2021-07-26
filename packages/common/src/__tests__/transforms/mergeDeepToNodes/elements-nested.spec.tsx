@@ -1,7 +1,7 @@
 /** @jsx jsx */
 
-import { isElement } from '@udecode/plate-core';
-import { jsx } from '@udecode/plate-test-utils';
+import { isElement } from '@insendi/editor-v2-core';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { ELEMENT_LI } from '../../../../../elements/list/src/defaults';
 import { ELEMENT_PARAGRAPH } from '../../../../../elements/paragraph/src/defaults';
 import { mergeDeepToNodes } from '../../../transforms/index';

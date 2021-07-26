@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { KEYS_ALIGN, upsertAlign } from '@udecode/plate-alignment';
-import { getPreventDefaultHandler, someNode } from '@udecode/plate-common';
-import { useEventEditorId, useStoreEditorState } from '@udecode/plate-core';
-import { ToolbarButton, ToolbarButtonProps } from '@udecode/plate-toolbar';
+import { KEYS_ALIGN, upsertAlign } from '@insendi/editor-v2-alignment';
+import { getPreventDefaultHandler, someNode } from '@insendi/editor-v2-common';
+import { useEventEditorId, useStoreEditorState } from '@insendi/editor-v2-core';
+import { ToolbarButton, ToolbarButtonProps } from '@insendi/editor-v2-toolbar';
 
 export interface ToolbarAlignProps extends ToolbarButtonProps {
   type?: string;

@@ -1,5 +1,5 @@
-import { getAbove, getParent, someNode } from '@udecode/plate-common';
-import { getPlatePluginType, isElement, SPEditor } from '@udecode/plate-core';
+import { getAbove, getParent, someNode } from '@insendi/editor-v2-common';
+import { getPlatePluginType, isElement, SPEditor } from '@insendi/editor-v2-core';
 import { Location } from 'slate';
 import { ELEMENT_CODE_LINE } from '../defaults';
 

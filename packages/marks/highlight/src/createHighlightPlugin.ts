@@ -1,5 +1,5 @@
-import { getToggleMarkOnKeyDown } from '@udecode/plate-common';
-import { getRenderLeaf, PlatePlugin } from '@udecode/plate-core';
+import { getToggleMarkOnKeyDown } from '@insendi/editor-v2-common';
+import { getRenderLeaf, PlatePlugin } from '@insendi/editor-v2-core';
 import { MARK_HIGHLIGHT } from './defaults';
 import { getHighlightDeserialize } from './getHighlightDeserialize';
 

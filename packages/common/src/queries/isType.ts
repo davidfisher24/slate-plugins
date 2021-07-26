@@ -1,4 +1,4 @@
-import { getPlatePluginType, SPEditor } from '@udecode/plate-core';
+import { getPlatePluginType, SPEditor } from '@insendi/editor-v2-core';
 import castArray from 'lodash/castArray';
 /**
  * Does the node match the type provided.

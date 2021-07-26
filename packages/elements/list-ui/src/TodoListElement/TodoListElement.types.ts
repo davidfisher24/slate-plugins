@@ -1,5 +1,5 @@
-import { TodoListItemNodeData } from '@udecode/plate-list';
-import { StyledElementProps } from '@udecode/plate-styled-components';
+import { TodoListItemNodeData } from '@insendi/editor-v2-list';
+import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { CSSProp } from 'styled-components';
 
 export interface TodoListElementStyleProps extends TodoListElementProps {

@@ -3,7 +3,7 @@ import {
   isCollapsed,
   isPointAtWordEnd,
   isWordAfterTrigger,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginTypes,
   getRenderElement,
@@ -11,7 +11,7 @@ import {
   OnChange,
   PlatePlugin,
   SPEditor,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Range, Transforms } from 'slate';
 import { matchesTriggerAndPattern } from './queries/matchesTriggerAndPattern';
 import { insertMention } from './transforms/insertMention';

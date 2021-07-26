@@ -4,8 +4,8 @@ import {
   getText,
   isCollapsed,
   someNode,
-} from '@udecode/plate-common';
-import { getPlatePluginWithOverrides, WithOverride } from '@udecode/plate-core';
+} from '@insendi/editor-v2-common';
+import { getPlatePluginWithOverrides, WithOverride } from '@insendi/editor-v2-core';
 import castArray from 'lodash/castArray';
 import { Editor, Range } from 'slate';
 import { autoformatBlock } from './transforms/autoformatBlock';

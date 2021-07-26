@@ -1,4 +1,4 @@
-import { PlatePlugin } from '@udecode/plate-core';
+import { PlatePlugin } from '@insendi/editor-v2-core';
 import { getSoftBreakOnKeyDown } from './getSoftBreakOnKeyDown';
 import { SoftBreakPluginOptions } from './types';
 

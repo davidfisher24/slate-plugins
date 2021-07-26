@@ -1,5 +1,5 @@
-import { getToggleElementOnKeyDown } from '@udecode/plate-common';
-import { PlatePlugin } from '@udecode/plate-core';
+import { getToggleElementOnKeyDown } from '@insendi/editor-v2-common';
+import { PlatePlugin } from '@insendi/editor-v2-core';
 import { DEFAULT_HEADING_LEVEL, KEYS_HEADING } from './defaults';
 import { getHeadingDeserialize } from './getHeadingDeserialize';
 import { getHeadingRenderElement } from './getHeadingRenderElement';

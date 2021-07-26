@@ -1,5 +1,5 @@
-import { getParent } from '@udecode/plate-common';
-import { getPlatePluginType, SPEditor, TElement } from '@udecode/plate-core';
+import { getParent } from '@insendi/editor-v2-common';
+import { getPlatePluginType, SPEditor, TElement } from '@insendi/editor-v2-core';
 import { Path } from 'slate';
 import { ELEMENT_LI } from '../defaults';
 

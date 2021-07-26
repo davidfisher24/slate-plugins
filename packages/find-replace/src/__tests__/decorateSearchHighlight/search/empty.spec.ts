@@ -1,5 +1,5 @@
 import { Range } from 'slate';
-import { createEditorPlugins } from '../../../../../plate/src/utils/createEditorPlugins';
+import { createEditorPlugins } from '../../../../../editor-v2/src/utils/createEditorPlugins';
 import { getSearchHighlightDecorate } from '../../../getSearchHighlightDecorate';
 
 const input = { search: '' };

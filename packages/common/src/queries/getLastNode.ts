@@ -1,4 +1,4 @@
-import { isAncestor, TDescendant, TEditor, TNode } from '@udecode/plate-core';
+import { isAncestor, TDescendant, TEditor, TNode } from '@insendi/editor-v2-core';
 import { Editor, NodeEntry } from 'slate';
 
 const getLastChild = (node: TNode, level: number): TDescendant => {

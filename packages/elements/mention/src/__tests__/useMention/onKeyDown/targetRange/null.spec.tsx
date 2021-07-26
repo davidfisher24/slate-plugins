@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { act, renderHook } from '@testing-library/react-hooks';
-import { SPEditor } from '@udecode/plate-core';
-import { jsx } from '@udecode/plate-test-utils';
+import { SPEditor } from '@insendi/editor-v2-core';
+import { jsx } from '@insendi/editor-v2-test-utils';
 import { useMentionPlugin } from '../../../../useMentionPlugin';
 
 jsx;

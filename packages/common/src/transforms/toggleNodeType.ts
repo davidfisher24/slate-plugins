@@ -3,7 +3,7 @@ import {
   SPEditor,
   TEditor,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { someNode } from '../queries/someNode';
 import { EditorNodesOptions } from '../types/Editor.types';
 import { ELEMENT_DEFAULT } from '../types/node.types';

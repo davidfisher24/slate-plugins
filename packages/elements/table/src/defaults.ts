@@ -1,4 +1,4 @@
-import { PlatePluginOptions } from '@udecode/plate-core';
+import { PlatePluginOptions } from '@insendi/editor-v2-core';
 
 export const ELEMENT_TABLE = 'table';
 export const ELEMENT_TH = 'th';

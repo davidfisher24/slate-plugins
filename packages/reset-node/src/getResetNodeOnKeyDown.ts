@@ -1,5 +1,5 @@
-import { isCollapsed, setNodes, someNode } from '@udecode/plate-common';
-import { KeyboardHandler, TElement } from '@udecode/plate-core';
+import { isCollapsed, setNodes, someNode } from '@insendi/editor-v2-common';
+import { KeyboardHandler, TElement } from '@insendi/editor-v2-core';
 import isHotkey from 'is-hotkey';
 import { ResetBlockTypePluginOptions } from './types';
 

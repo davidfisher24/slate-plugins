@@ -5,11 +5,11 @@
  * - Heading
  * - Paragraph
  */
-import { createBlockquotePlugin } from '@udecode/plate-block-quote';
-import { createCodeBlockPlugin } from '@udecode/plate-code-block';
-import { PlatePlugin } from '@udecode/plate-core';
-import { createHeadingPlugin } from '@udecode/plate-heading';
-import { createParagraphPlugin } from '@udecode/plate-paragraph';
+import { createBlockquotePlugin } from '@insendi/editor-v2-block-quote';
+import { createCodeBlockPlugin } from '@insendi/editor-v2-code-block';
+import { PlatePlugin } from '@insendi/editor-v2-core';
+import { createHeadingPlugin } from '@insendi/editor-v2-heading';
+import { createParagraphPlugin } from '@insendi/editor-v2-paragraph';
 import { BasicElementPluginsOptions } from './types';
 
 export const createBasicElementPlugins = ({

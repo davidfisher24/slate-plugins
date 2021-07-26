@@ -1,5 +1,5 @@
 {
-  "name": "@udecode/plate-test-utils",
+  "name": "@insendi/editor-v2-test-utils",
   "version": "1.0.0",
   "description": "Testing utilities for Plate",
   "keywords": [
@@ -8,16 +8,13 @@
     "plugin",
     "test"
   ],
-  "homepage": "https://plate.udecode.io",
-  "bugs": {
-    "url": "https://github.com/udecode/plate/issues"
-  },
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udecode/plate.git",
+    "url": "git+ssh://git@bitbucket.org/insendi/editor-v2.git",
     "directory": "packages/test-utils"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",

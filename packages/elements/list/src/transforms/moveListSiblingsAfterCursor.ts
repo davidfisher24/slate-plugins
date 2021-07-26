@@ -1,5 +1,5 @@
-import { match, moveChildren } from '@udecode/plate-common';
-import { SPEditor } from '@udecode/plate-core';
+import { match, moveChildren } from '@insendi/editor-v2-common';
+import { SPEditor } from '@insendi/editor-v2-core';
 import { Node, NodeEntry, Path } from 'slate';
 import { getListTypes } from '../queries/getListTypes';
 

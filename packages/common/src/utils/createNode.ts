@@ -1,4 +1,4 @@
-import { TElement } from '@udecode/plate-core';
+import { TElement } from '@insendi/editor-v2-core';
 
 export const createNode = (type = 'p', text = ''): TElement => ({
   type,

@@ -6,14 +6,14 @@ import {
   isSelectionAtBlockEnd,
   isSelectionAtBlockStart,
   queryNode,
-} from '@udecode/plate-common';
+} from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   KeyboardHandler,
   SPEditor,
   TEditor,
   TElement,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import isHotkey from 'is-hotkey';
 import { Editor, Path } from 'slate';
 import { ExitBreakOnKeyDownOptions } from './types';

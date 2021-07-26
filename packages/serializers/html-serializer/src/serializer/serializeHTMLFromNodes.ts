@@ -1,12 +1,12 @@
 import { renderToStaticMarkup } from 'react-dom/server';
-import { createElementWithSlate } from '@udecode/plate-common';
+import { createElementWithSlate } from '@insendi/editor-v2-common';
 import {
   PlatePlugin,
   SlateProps,
   SPEditor,
   SPRenderElementProps,
   TDescendant,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { Text } from 'slate';
 import { RenderLeafProps } from 'slate-react';
 

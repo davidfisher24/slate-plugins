@@ -1,4 +1,4 @@
-import { TNode } from '@udecode/plate-core';
+import { TNode } from '@insendi/editor-v2-core';
 import { NodeEntry } from 'slate';
 
 /**
