@@ -10,3 +10,4 @@ export * from './insertEmptyCodeBlock';
 export * from './outdentCodeLine';
 export * from './toggleCodeBlock';
 export * from './unwrapCodeBlock';
+export * from './changeCodeBlockLanguage';
