@@ -67,6 +67,7 @@ import {
   ELEMENT_TH,
   ELEMENT_TR,
 } from '@insendi/editor-v2-table';
+import { ELEMENT_VIDEO } from '@insendi/editor-v2-video';
 
 export type DefaultPlatePluginKey =
   | typeof ELEMENT_ALIGN_CENTER
@@ -95,6 +96,7 @@ export type DefaultPlatePluginKey =
   | typeof ELEMENT_TODO_LI
   | typeof ELEMENT_TR
   | typeof ELEMENT_UL
+  | typeof ELEMENT_VIDEO
   | typeof MARK_BOLD
   | typeof MARK_CODE
   | typeof MARK_HIGHLIGHT
@@ -142,6 +144,7 @@ export const createPlateOptions = <T extends string = string>(
     [ELEMENT_TODO_LI]: DEFAULTS_TODO_LIST,
     [ELEMENT_TR]: {},
     [ELEMENT_UL]: {},
+    [ELEMENT_VIDEO]: {},
     [MARK_BOLD]: DEFAULTS_BOLD,
     [MARK_CODE]: DEFAULTS_CODE,
     [MARK_HIGHLIGHT]: DEFAULTS_HIGHLIGHT,

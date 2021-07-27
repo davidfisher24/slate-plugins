@@ -60,6 +60,8 @@ import {
   ELEMENT_TR,
 } from '@insendi/editor-v2-table';
 import { TableElement } from '@insendi/editor-v2-table-ui';
+import { ELEMENT_VIDEO } from '@insendi/editor-v2-video';
+import { VideoElement } from '@insendi/editor-v2-video-ui';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
 import { DefaultPlatePluginKey } from './createPlateOptions';
@@ -228,6 +230,7 @@ export const createPlateComponents = <T extends string = string>(
     }),
     [ELEMENT_TODO_LI]: TodoListElement,
     [ELEMENT_TR]: withProps(StyledElement, { as: 'tr' }),
+    [ELEMENT_VIDEO]: VideoElement,
     [MARK_BOLD]: withProps(StyledLeaf, { as: 'strong' }),
     [MARK_CODE]: withProps(StyledLeaf, {
       as: 'code',

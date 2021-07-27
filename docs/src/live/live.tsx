@@ -34,6 +34,7 @@ import { Looks5 } from '@styled-icons/material/Looks5';
 import { Looks6 } from '@styled-icons/material/Looks6';
 import { LooksOne } from '@styled-icons/material/LooksOne';
 import { LooksTwo } from '@styled-icons/material/LooksTwo';
+import { OndemandVideo } from '@styled-icons/material/OndemandVideo';
 import { Search } from '@styled-icons/material/Search';
 import {
   addColumn,
@@ -81,6 +82,7 @@ import {
   createTodoListPlugin,
   createTrailingBlockPlugin,
   createUnderlinePlugin,
+  createVideoPlugin,
   deleteColumn,
   deleteRow,
   deleteTable,
@@ -111,6 +113,7 @@ import {
   ELEMENT_TODO_LI,
   ELEMENT_TR,
   ELEMENT_UL,
+  ELEMENT_VIDEO,
   getNodeDeserializer,
   getParent,
   getPlatePluginOptions,
@@ -152,6 +155,7 @@ import {
   ToolbarMark,
   ToolbarSearchHighlight,
   ToolbarTable,
+  ToolbarVideo,
   unwrapList,
   useEventEditorId,
   useFindReplacePlugin,
@@ -203,6 +207,7 @@ import {
   initialValueSearchHighlighting,
   initialValueSoftBreak,
   initialValueTables,
+  initialValueVideo,
   initialValueVoids,
 } from './config/initialValues';
 import { MENTIONABLES } from './config/mentionables';
@@ -360,6 +365,7 @@ const ReactLiveScope = {
   Looks6,
   LooksOne,
   LooksTwo,
+  OndemandVideo,
   initialValuePlayground,
   optionsMentionPlugin,
   usePlateActions,
@@ -438,6 +444,7 @@ const ReactLiveScope = {
   createTodoListPlugin,
   createTrailingBlockPlugin,
   createUnderlinePlugin,
+  createVideoPlugin,
   DndProvider,
   editableProps,
   ELEMENT_BLOCKQUOTE,
@@ -466,6 +473,7 @@ const ReactLiveScope = {
   ELEMENT_TODO_LI,
   ELEMENT_TR,
   ELEMENT_UL,
+  ELEMENT_VIDEO,
   HeadingToolbar,
   HTML5Backend,
   Image,
@@ -492,6 +500,7 @@ const ReactLiveScope = {
   initialValueSearchHighlighting,
   initialValueSoftBreak,
   initialValueTables,
+  initialValueVideo,
   initialValueVoids,
   useEventEditorId,
   Link,
@@ -530,6 +539,7 @@ const ReactLiveScope = {
   ToolbarLink,
   ToolbarKbd,
   ToolbarSearchHighlight,
+  ToolbarVideo,
   useFindReplacePlugin,
   useMentionPlugin,
   withProps,

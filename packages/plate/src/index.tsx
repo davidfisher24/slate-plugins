@@ -47,5 +47,7 @@ export * from '@insendi/editor-v2-table';
 export * from '@insendi/editor-v2-table-ui';
 export * from '@insendi/editor-v2-toolbar';
 export * from '@insendi/editor-v2-trailing-block';
+export * from '@insendi/editor-v2-video';
+export * from '@insendi/editor-v2-video-ui';
 export * from '@insendi/editor-v2-placeholder';
 export * from './utils/index';

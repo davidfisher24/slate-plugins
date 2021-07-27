@@ -286,6 +286,14 @@ module.exports = {
             __dirname,
             '../packages/elements/table-ui/src'
           ),
+          '@udecode/slate-plugins-video': path.resolve(
+            __dirname,
+            '../packages/elements/video/src'
+          ),
+          '@udecode/slate-plugins-video-ui': path.resolve(
+            __dirname,
+            '../packages/elements/video-ui/src'
+          ),
           '@insendi/editor-v2-basic-marks': path.resolve(
             __dirname,
             '../packages/marks/basic-marks/src'

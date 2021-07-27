@@ -47,6 +47,7 @@ module.exports = {
             'plugins/media-embed',
             'plugins/mention',
             'plugins/table',
+            'plugins/video',
           ],
           collapsed: false,
         },
