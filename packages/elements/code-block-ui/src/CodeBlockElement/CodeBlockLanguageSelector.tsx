@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Select } from '@insendi/ui-kit';
 
 export const CodeBlockLanguageSelector = ({
   language,
@@ -9,19 +10,20 @@ export const CodeBlockLanguageSelector = ({
 }) => {
 
   const handleChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
+    event: any
   ) => {
-    event.preventDefault();
-    const { value } = event.target;
+    const { value } = event;
     handleLanguageChange(value)
   }
 
   return (
     <div style={{ position: 'absolute', top: '5px', right: '5px'}}>
-      <select
+      <Select
         name="languageCodeSelector"
         onChange={handleChange}
         contentEditable={false}
+        isSize="small"
+        title="Select coding language"
         value={language}
       >
         <option value="js">JavaScript</option>
@@ -29,7 +31,7 @@ export const CodeBlockLanguageSelector = ({
         <option value="python">Python</option>
         <option value="r">R</option>
         <option value="sql">SQL</option>
-      </select>
+      </Select>
     </div>
   );
 };
