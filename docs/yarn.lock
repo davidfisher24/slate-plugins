@@ -1586,14 +1586,12 @@
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-alignment@1.0.0", "@insendi/editor-v2-alignment@file:../packages/elements/alignment":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-ast-serializer@1.0.0", "@insendi/editor-v2-ast-serializer@file:../packages/serializers/ast-serializer":
   version "1.0.0"
@@ -1607,7 +1605,6 @@
     "@insendi/editor-v2-list" "1.0.0"
     "@insendi/editor-v2-paragraph" "1.0.0"
     "@insendi/editor-v2-serializer" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     remark-parse "^9.0.0"
     remark-slate "^1.4.0"
     unified "^9.2.0"
@@ -1617,7 +1614,6 @@
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-basic-elements@1.0.0", "@insendi/editor-v2-basic-elements@file:../packages/elements/basic-elements":
   version "1.0.0"
@@ -1628,14 +1624,12 @@
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-heading" "1.0.0"
     "@insendi/editor-v2-paragraph" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-basic-marks@1.0.0", "@insendi/editor-v2-basic-marks@file:../packages/marks/basic-marks":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-block-quote-ui@1.0.0", "@insendi/editor-v2-block-quote-ui@file:../packages/elements/block-quote-ui":
   version "1.0.0"
@@ -1644,21 +1638,18 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-block-quote@1.0.0", "@insendi/editor-v2-block-quote@file:../packages/elements/block-quote":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-break@1.0.0", "@insendi/editor-v2-break@file:../packages/break":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-code-block-ui@1.0.0", "@insendi/editor-v2-code-block-ui@file:../packages/elements/code-block-ui":
   version "1.0.0"
@@ -1668,27 +1659,23 @@
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-code-block@1.0.0", "@insendi/editor-v2-code-block@file:../packages/elements/code-block":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     prismjs "^1.23.0"
 
 "@insendi/editor-v2-common@1.0.0", "@insendi/editor-v2-common@file:../packages/common":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     is-hotkey "^0.1.6"
 
 "@insendi/editor-v2-core@1.0.0", "@insendi/editor-v2-core@file:../packages/core":
   version "1.0.0"
   dependencies:
-    "@insendi/ui-kit" "^2.75.2"
     lodash "^4.17.21"
     zustand "^3.4.2"
 
@@ -1699,7 +1686,6 @@
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-serializer" "1.0.0"
     "@insendi/editor-v2-table" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     papaparse "^5.3.1"
 
 "@insendi/editor-v2-dnd@1.0.0", "@insendi/editor-v2-dnd@file:../packages/dnd":
@@ -1708,7 +1694,6 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     "@react-hook/merged-ref" "^1.3.0"
     "@tippyjs/react" "^4.2.0"
     react-dnd "^14.0.2"
@@ -1721,7 +1706,6 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-find-replace-ui@1.0.0", "@insendi/editor-v2-find-replace-ui@file:../packages/find-replace-ui":
   version "1.0.0"
@@ -1731,14 +1715,12 @@
     "@insendi/editor-v2-find-replace" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-find-replace@1.0.0", "@insendi/editor-v2-find-replace@file:../packages/find-replace":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-font-ui@1.0.0", "@insendi/editor-v2-font-ui@file:../packages/marks/font-ui":
   version "1.0.0"
@@ -1748,28 +1730,24 @@
     "@insendi/editor-v2-font" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-font@1.0.0", "@insendi/editor-v2-font@file:../packages/marks/font":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-heading@1.0.0", "@insendi/editor-v2-heading@file:../packages/elements/heading":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-highlight@1.0.0", "@insendi/editor-v2-highlight@file:../packages/marks/highlight":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-html-serializer@1.0.0", "@insendi/editor-v2-html-serializer@file:../packages/serializers/html-serializer":
   version "1.0.0"
@@ -1777,7 +1755,6 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-serializer" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-image-ui@1.0.0", "@insendi/editor-v2-image-ui@file:../packages/elements/image-ui":
   version "1.0.0"
@@ -1787,21 +1764,18 @@
     "@insendi/editor-v2-image" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-image@1.0.0", "@insendi/editor-v2-image@file:../packages/elements/image":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-kbd@1.0.0", "@insendi/editor-v2-kbd@file:../packages/marks/kbd":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-link-ui@1.0.0", "@insendi/editor-v2-link-ui@file:../packages/elements/link-ui":
   version "1.0.0"
@@ -1811,7 +1785,6 @@
     "@insendi/editor-v2-link" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-link@1.0.0", "@insendi/editor-v2-link@file:../packages/elements/link":
   version "1.0.0"
@@ -1819,7 +1792,6 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-normalizers" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-list-ui@1.0.0", "@insendi/editor-v2-list-ui@file:../packages/elements/list-ui":
   version "1.0.0"
@@ -1829,7 +1801,6 @@
     "@insendi/editor-v2-list" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-list@1.0.0", "@insendi/editor-v2-list@file:../packages/elements/list":
   version "1.0.0"
@@ -1837,7 +1808,6 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-reset-node" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-md-serializer@1.0.0", "@insendi/editor-v2-md-serializer@file:../packages/serializers/md-serializer":
   version "1.0.0"
@@ -1851,7 +1821,6 @@
     "@insendi/editor-v2-list" "1.0.0"
     "@insendi/editor-v2-paragraph" "1.0.0"
     "@insendi/editor-v2-serializer" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     remark-parse "^9.0.0"
     remark-slate "^1.4.0"
     unified "^9.2.0"
@@ -1863,14 +1832,12 @@
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-media-embed" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-media-embed@1.0.0", "@insendi/editor-v2-media-embed@file:../packages/elements/media-embed":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-mention-ui@1.0.0", "@insendi/editor-v2-mention-ui@file:../packages/elements/mention-ui":
   version "1.0.0"
@@ -1879,35 +1846,30 @@
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-mention" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-mention@1.0.0", "@insendi/editor-v2-mention@file:../packages/elements/mention":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-node-id@1.0.0", "@insendi/editor-v2-node-id@file:../packages/node-id":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-normalizers@1.0.0", "@insendi/editor-v2-normalizers@file:../packages/normalizers":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-paragraph@1.0.0", "@insendi/editor-v2-paragraph@file:../packages/elements/paragraph":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-placeholder@1.0.0", "@insendi/editor-v2-placeholder@file:../packages/placeholder":
   version "1.0.0"
@@ -1915,7 +1877,6 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-plate@file:../packages/plate":
   version "1.1.0"
@@ -1966,35 +1927,30 @@
     "@insendi/editor-v2-table-ui" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
     "@insendi/editor-v2-trailing-block" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-reset-node@1.0.0", "@insendi/editor-v2-reset-node@file:../packages/reset-node":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-select@1.0.0", "@insendi/editor-v2-select@file:../packages/select":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-serializer@1.0.0", "@insendi/editor-v2-serializer@file:../packages/serializers/serializer":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-styled-components@1.0.0", "@insendi/editor-v2-styled-components@file:../packages/ui/styled-components":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     clsx "^1.1.1"
     styled-components "5.1.1"
 
@@ -2006,19 +1962,16 @@
     "@insendi/editor-v2-styled-components" "1.0.0"
     "@insendi/editor-v2-table" "1.0.0"
     "@insendi/editor-v2-toolbar" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-table@1.0.0", "@insendi/editor-v2-table@file:../packages/elements/table":
   version "1.0.0"
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-test-utils@file:../packages/test-utils":
   version "1.0.0"
   dependencies:
-    "@insendi/ui-kit" "^2.75.2"
 
 "@insendi/editor-v2-toolbar@1.0.0", "@insendi/editor-v2-toolbar@file:../packages/ui/toolbar":
   version "1.0.0"
@@ -2026,7 +1979,6 @@
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
     "@insendi/editor-v2-styled-components" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
     "@tippyjs/react" "^4.2.0"
     react-use "^17.1.1"
 
@@ -2035,43 +1987,6 @@
   dependencies:
     "@insendi/editor-v2-common" "1.0.0"
     "@insendi/editor-v2-core" "1.0.0"
-    "@insendi/ui-kit" "^2.75.2"
-
-"@insendi/ui-kit@^2.75.2":
-  version "2.75.2"
-  resolved "https://npm.insendi.com/@insendi%2fui-kit/-/ui-kit-2.75.2.tgz#d6d58dfd2844fed954ca38bfa41db3256dbfc62a"
-  integrity sha512-jUpCbT/Pcjy0Efk+0a/0ZZ76ClwrKfv4FDGV+d61X4oK86sxVGu+/7tUPTDMx4Q+TBzfQZsDgci0i4iVOWpybQ==
-  dependencies:
-    "@insendi/bulma-tagsinput" "^1.0.3-alpha.4"
-    "@insendi/data-test" "^1.0.0"
-    "@tippy.js/react" "^3.1.1"
-    bulma "=0.9.1"
-    bulma-accordion "^2.0.1"
-    bulma-checkradio "^2.1.1"
-    bulma-css-vars "^0.4.0"
-    bulma-divider "^2.0.1"
-    bulma-switch "^2.0.0"
-    bulma-tagsinput "^2.0.0"
-    bulma-tooltip "^3.0.2"
-    chrono-node "^2.2.6"
-    classnames "^2.2.6"
-    countdown "^2.6.0"
-    dateformat "^3.0.3"
-    flatpickr "=4.6.2"
-    immutable "^3.8.1"
-    lodash "^4.17.11"
-    lodash.isdate "^4.0.1"
-    moment "^2.24.0"
-    prop-types "^15.7.2"
-    react-click-outside "^3.0.1"
-    react-expanding-textarea "^2.0.3"
-    react-flatpickr "^3.10.6"
-    react-hot-loader "^4.12.18"
-    react-measure "^2.3.0"
-    react-modal "=3.13.1"
-    react-transition-group "^4.1.0"
-    regenerator-runtime "^0.13.3"
-    shortid "^2.2.15"
 
 "@mdx-js/mdx@^1.6.21":
   version "1.6.22"
