@@ -1,1 +1,1 @@
-# @udecode/plate
+# @insendi/editor-v2

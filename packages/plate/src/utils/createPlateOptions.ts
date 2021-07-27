@@ -3,7 +3,7 @@ import {
   ELEMENT_ALIGN_JUSTIFY,
   ELEMENT_ALIGN_LEFT,
   ELEMENT_ALIGN_RIGHT,
-} from '@udecode/plate-alignment';
+} from '@insendi/editor-v2-alignment';
 import {
   DEFAULTS_BOLD,
   DEFAULTS_CODE,
@@ -19,18 +19,18 @@ import {
   MARK_SUBSCRIPT,
   MARK_SUPERSCRIPT,
   MARK_UNDERLINE,
-} from '@udecode/plate-basic-marks';
+} from '@insendi/editor-v2-basic-marks';
 import {
   DEFAULTS_BLOCKQUOTE,
   ELEMENT_BLOCKQUOTE,
-} from '@udecode/plate-block-quote';
+} from '@insendi/editor-v2-block-quote';
 import {
   DEFAULTS_CODE_BLOCK,
   ELEMENT_CODE_BLOCK,
   ELEMENT_CODE_LINE,
-} from '@udecode/plate-code-block';
-import { PlatePluginOptions } from '@udecode/plate-core';
-import { MARK_SEARCH_HIGHLIGHT } from '@udecode/plate-find-replace';
+} from '@insendi/editor-v2-code-block';
+import { PlatePluginOptions } from '@insendi/editor-v2-core';
+import { MARK_SEARCH_HIGHLIGHT } from '@insendi/editor-v2-find-replace';
 import {
   DEFAULTS_H1,
   DEFAULTS_H2,
@@ -41,24 +41,24 @@ import {
   ELEMENT_H4,
   ELEMENT_H5,
   ELEMENT_H6,
-} from '@udecode/plate-heading';
-import { DEFAULTS_HIGHLIGHT, MARK_HIGHLIGHT } from '@udecode/plate-highlight';
-import { ELEMENT_IMAGE } from '@udecode/plate-image';
-import { MARK_KBD } from '@udecode/plate-kbd';
-import { ELEMENT_LINK } from '@udecode/plate-link';
+} from '@insendi/editor-v2-heading';
+import { DEFAULTS_HIGHLIGHT, MARK_HIGHLIGHT } from '@insendi/editor-v2-highlight';
+import { ELEMENT_IMAGE } from '@insendi/editor-v2-image';
+import { MARK_KBD } from '@insendi/editor-v2-kbd';
+import { ELEMENT_LINK } from '@insendi/editor-v2-link';
 import {
   DEFAULTS_TODO_LIST,
   ELEMENT_LI,
   ELEMENT_OL,
   ELEMENT_TODO_LI,
   ELEMENT_UL,
-} from '@udecode/plate-list';
-import { ELEMENT_MEDIA_EMBED } from '@udecode/plate-media-embed';
-import { ELEMENT_MENTION } from '@udecode/plate-mention';
+} from '@insendi/editor-v2-list';
+import { ELEMENT_MEDIA_EMBED } from '@insendi/editor-v2-media-embed';
+import { ELEMENT_MENTION } from '@insendi/editor-v2-mention';
 import {
   DEFAULTS_PARAGRAPH,
   ELEMENT_PARAGRAPH,
-} from '@udecode/plate-paragraph';
+} from '@insendi/editor-v2-paragraph';
 import {
   DEFAULTS_TD,
   DEFAULTS_TH,
@@ -66,7 +66,7 @@ import {
   ELEMENT_TD,
   ELEMENT_TH,
   ELEMENT_TR,
-} from '@udecode/plate-table';
+} from '@insendi/editor-v2-table';
 
 export type DefaultPlatePluginKey =
   | typeof ELEMENT_ALIGN_CENTER

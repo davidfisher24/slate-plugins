@@ -8,7 +8,7 @@ import {
   SPEditor,
   TEditor,
   withPlate,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { createEditor } from 'slate';
 import { ReactEditor } from 'slate-react';
 import { createPlateComponents } from './createPlateComponents';

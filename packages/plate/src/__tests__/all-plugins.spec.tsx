@@ -7,7 +7,7 @@ import {
   Plate,
   PlatePlugin,
   SPEditor,
-} from '@udecode/plate-core';
+} from '@insendi/editor-v2-core';
 import { ReactEditor } from 'slate-react';
 import { optionsAutoformat } from '../../../../docs/src/live/config/autoformatRules';
 import { initialValuePlayground } from '../../../../docs/src/live/config/initialValues';

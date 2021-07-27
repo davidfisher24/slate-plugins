@@ -3,7 +3,7 @@ import {
   ELEMENT_ALIGN_JUSTIFY,
   ELEMENT_ALIGN_LEFT,
   ELEMENT_ALIGN_RIGHT,
-} from '@udecode/plate-alignment';
+} from '@insendi/editor-v2-alignment';
 import {
   MARK_BOLD,
   MARK_CODE,
@@ -12,20 +12,20 @@ import {
   MARK_SUBSCRIPT,
   MARK_SUPERSCRIPT,
   MARK_UNDERLINE,
-} from '@udecode/plate-basic-marks';
-import { ELEMENT_BLOCKQUOTE } from '@udecode/plate-block-quote';
-import { BlockquoteElement } from '@udecode/plate-block-quote-ui';
+} from '@insendi/editor-v2-basic-marks';
+import { ELEMENT_BLOCKQUOTE } from '@insendi/editor-v2-block-quote';
+import { BlockquoteElement } from '@insendi/editor-v2-block-quote-ui';
 import {
   ELEMENT_CODE_BLOCK,
   ELEMENT_CODE_LINE,
-} from '@udecode/plate-code-block';
+} from '@insendi/editor-v2-code-block';
 import {
   CodeBlockElement,
   CodeLineElement,
-} from '@udecode/plate-code-block-ui';
-import { withProps } from '@udecode/plate-common';
-import { PlatePluginComponent } from '@udecode/plate-core';
-import { MARK_SEARCH_HIGHLIGHT } from '@udecode/plate-find-replace';
+} from '@insendi/editor-v2-code-block-ui';
+import { withProps } from '@insendi/editor-v2-common';
+import { PlatePluginComponent } from '@insendi/editor-v2-core';
+import { MARK_SEARCH_HIGHLIGHT } from '@insendi/editor-v2-find-replace';
 import {
   ELEMENT_H1,
   ELEMENT_H2,
@@ -33,33 +33,33 @@ import {
   ELEMENT_H4,
   ELEMENT_H5,
   ELEMENT_H6,
-} from '@udecode/plate-heading';
-import { MARK_HIGHLIGHT } from '@udecode/plate-highlight';
-import { ELEMENT_IMAGE } from '@udecode/plate-image';
-import { ImageElement } from '@udecode/plate-image-ui';
-import { MARK_KBD } from '@udecode/plate-kbd';
-import { ELEMENT_LINK } from '@udecode/plate-link';
-import { LinkElement } from '@udecode/plate-link-ui';
+} from '@insendi/editor-v2-heading';
+import { MARK_HIGHLIGHT } from '@insendi/editor-v2-highlight';
+import { ELEMENT_IMAGE } from '@insendi/editor-v2-image';
+import { ImageElement } from '@insendi/editor-v2-image-ui';
+import { MARK_KBD } from '@insendi/editor-v2-kbd';
+import { ELEMENT_LINK } from '@insendi/editor-v2-link';
+import { LinkElement } from '@insendi/editor-v2-link-ui';
 import {
   ELEMENT_LI,
   ELEMENT_OL,
   ELEMENT_TODO_LI,
   ELEMENT_UL,
-} from '@udecode/plate-list';
-import { TodoListElement } from '@udecode/plate-list-ui';
-import { ELEMENT_MEDIA_EMBED } from '@udecode/plate-media-embed';
-import { MediaEmbedElement } from '@udecode/plate-media-embed-ui';
-import { ELEMENT_MENTION } from '@udecode/plate-mention';
-import { MentionElement } from '@udecode/plate-mention-ui';
-import { ELEMENT_PARAGRAPH } from '@udecode/plate-paragraph';
-import { StyledElement, StyledLeaf } from '@udecode/plate-styled-components';
+} from '@insendi/editor-v2-list';
+import { TodoListElement } from '@insendi/editor-v2-list-ui';
+import { ELEMENT_MEDIA_EMBED } from '@insendi/editor-v2-media-embed';
+import { MediaEmbedElement } from '@insendi/editor-v2-media-embed-ui';
+import { ELEMENT_MENTION } from '@insendi/editor-v2-mention';
+import { MentionElement } from '@insendi/editor-v2-mention-ui';
+import { ELEMENT_PARAGRAPH } from '@insendi/editor-v2-paragraph';
+import { StyledElement, StyledLeaf } from '@insendi/editor-v2-styled-components';
 import {
   ELEMENT_TABLE,
   ELEMENT_TD,
   ELEMENT_TH,
   ELEMENT_TR,
-} from '@udecode/plate-table';
-import { TableElement } from '@udecode/plate-table-ui';
+} from '@insendi/editor-v2-table';
+import { TableElement } from '@insendi/editor-v2-table-ui';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
 import { DefaultPlatePluginKey } from './createPlateOptions';
