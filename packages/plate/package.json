@@ -34,7 +34,6 @@
     "rollup": "rollup -c=../../rollup.config.js"
   },
   "dependencies": {
-    "@insendi/ui-kit": "^2.75.2",
     "@insendi/editor-v2-alignment": "1.0.0",
     "@insendi/editor-v2-alignment-ui": "1.0.0",
     "@insendi/editor-v2-ast-serializer": "1.0.0",

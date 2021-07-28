@@ -1568,16 +1568,6 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@insendi/bulma-tagsinput@^1.0.3-alpha.4":
-  version "1.0.3-alpha.4"
-  resolved "https://npm.insendi.com/@insendi%2fbulma-tagsinput/-/bulma-tagsinput-1.0.3-alpha.4.tgz#2fa689dbe0a96cf5a2c7bfb11d4cb6da1dff32bc"
-  integrity sha512-jRaX/0ZgeHxLi/SRvhr/69P2DyeqZa5SfJF9UyyLZc7HHFaiW0YMiOX1/XceEpRNBQJzHMeL7kWbY4yt5pcLhQ==
-
-"@insendi/data-test@^1.0.0":
-  version "1.0.0"
-  resolved "https://npm.insendi.com/@insendi%2fdata-test/-/data-test-1.0.0.tgz#8c88d1a31509210f08caafaa7243076b8ab97363"
-  integrity sha512-ufWN3RDFwgqsl6L2IVqaPheap5ua9QJRuO1rSbuWRLp9pBuO1EzqRXTLjUr/3FWyELNKGYibflL1zLBmSDLplw==
-
 "@insendi/editor-v2-alignment-ui@1.0.0", "@insendi/editor-v2-alignment-ui@file:../packages/elements/alignment-ui":
   version "1.0.0"
   dependencies:
@@ -3217,51 +3207,6 @@ buffer-indexof@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-indexof/-/buffer-indexof-1.1.1.tgz#52fabcc6a606d1a00302802648ef68f639da268c"
   integrity sha512-4/rOEg86jivtPTeOUUT61jJO1Ya1TrR/OkqCSZDyq84WJh3LuuiphBYJN+fm5xufIk4XAFcEwte/8WzC8If/1g==
-
-bulma-accordion@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/bulma-accordion/-/bulma-accordion-2.0.1.tgz#5493c51dd7c5926ae47115da3efe858cfb115474"
-  integrity sha512-qqLN67Y60c0adHAVvQmJTr6rhg0FWUCWbswFaW/3+offjc6ujqrUoIdlzX1avni4d/aJEl7j9PckfRGmIJcxxQ==
-
-bulma-checkradio@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/bulma-checkradio/-/bulma-checkradio-2.1.1.tgz#5ff67d9fa540c8ce538980812b203f9be4eae8d2"
-  integrity sha512-bs01SMD0++qcA5UyRN2jL8a+/rG4eLUpGPiS1iIUVbi1dyDsqzWWV/7aGMHBrG8a7ZvQo1zk8MwLBA2P5QA6TA==
-
-bulma-css-vars@^0.4.0:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/bulma-css-vars/-/bulma-css-vars-0.4.5.tgz#4ff0418008a12bf4a3b959db545f26878dbacdd6"
-  integrity sha512-utnbyiMhQ42az/pLz3cwftYC7UfUr96WuaOh2mFybVXuudH1F6pZ/WkhaKnTXjjv9hIZhLVfhttHdZ7nBqHeAQ==
-  dependencies:
-    color "^3.1.2"
-    css "^2.2.4"
-    mkdirp "^1.0.4"
-    sass "^1.26.9"
-
-bulma-divider@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/bulma-divider/-/bulma-divider-2.0.1.tgz#6ab81c939fafd4962e2e5432b2df07dfeb02f150"
-  integrity sha512-ooDFcAcOXC18urRMqRgah/8UuvU4N0Bpbs4HlSTxjxRW7usZluyBekEDBlQQ1VlYirVmvUpExs6S5pDSi92yDg==
-
-bulma-switch@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/bulma-switch/-/bulma-switch-2.0.0.tgz#7a187cd1bb8073e9a542478d936b89315f1ffcd8"
-  integrity sha512-myD38zeUfjmdduq+pXabhJEe3x2hQP48l/OI+Y0fO3HdDynZUY/VJygucvEAJKRjr4HxD5DnEm4yx+oDOBXpAA==
-
-bulma-tagsinput@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/bulma-tagsinput/-/bulma-tagsinput-2.0.0.tgz#ef6653464212f23a50b3b046fc9735bd75fc1768"
-  integrity sha512-BFvd0oaxgeWHOEh3d4cgETy5vpSSjRRBA9w+8TWEuhjFQg38Rb+3vjDCavL+udpdjf+dRV0SK5T4kYCXTOrz5A==
-
-bulma-tooltip@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/bulma-tooltip/-/bulma-tooltip-3.0.2.tgz#2cf0abab1de2eba07f9d84eb7f07a8a88819ea92"
-  integrity sha512-CsT3APjhlZScskFg38n8HYL8oYNUHQtcu4sz6ERarxkUpBRbk9v0h/5KAvXeKapVSn2dp9l7bOGit5SECP8EWQ==
-
-bulma@=0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.1.tgz#2bf0e25062a22166db5c92e8c3dcb4605ab040d8"
-  integrity sha512-LSF69OumXg2HSKl2+rN0/OEXJy7WFEb681wtBlNS/ulJYR27J3rORHibdXZ6GVb/vyUzzYK/Arjyh56wjbFedA==
 
 bytes@3.0.0:
   version "3.0.0"
