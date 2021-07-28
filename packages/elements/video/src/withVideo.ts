@@ -70,7 +70,6 @@ export const withVideo = (): WithOverride<SPEditor> => (editor) => {
       const videos = Editor.nodes(editor, {
         match: matchVideo,
       });
-      console.log(videos)
       for (const [, path] of videos) {
         for (const [, childPath] of Node.children(editor, path, {
           reverse: true,

@@ -32,20 +32,22 @@ export const VideoElement = (props: VideoElementProps) => {
     ratio = RATIO,
     language = LANGUAGE,
     getSubtitle = () => {
-      /* return new Promise((resolve, reject) => {
+      // For testing buttons
+      return new Promise((resolve, reject) => {
         let wait = setTimeout(() => {
           clearTimeout(wait);
           resolve('https://filesamples.com/samples/document/txt/sample3.txt');
         }, 500)
-      }) */
+      }) 
     },
     getVideoDownload = () => {
-      /* return new Promise((resolve, reject) => {
+      // For testing buttons
+      return new Promise((resolve, reject) => {
         let wait = setTimeout(() => {
           clearTimeout(wait);
           resolve('https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4');
         }, 500)
-      }) */
+      }) 
     },
   } = element;
 
@@ -94,7 +96,7 @@ export const VideoElement = (props: VideoElementProps) => {
       setVideoId(null);
       setVideoUrl(null);
     }
-  }, [getSubtitle, getVideoDownload, language, src]);
+  }, [src]);
 
   const handleRatioChange = (newRatio: string): void => {
     if (!editor) return;

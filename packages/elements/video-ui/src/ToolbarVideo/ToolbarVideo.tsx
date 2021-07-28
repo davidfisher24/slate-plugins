@@ -4,9 +4,6 @@ import { ToolbarButton, ToolbarButtonProps } from '@insendi/editor-v2-toolbar';
 import { insertVideo } from '@insendi/editor-v2-video';
 
 export interface ToolbarVideoProps extends ToolbarButtonProps {
-  /**
-   * Default onMouseDown is getting the video url by calling this promise before inserting the image.
-   */
   getVideoSrc?: () => Promise<string>;
 }
 
