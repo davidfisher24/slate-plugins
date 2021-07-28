@@ -9,6 +9,7 @@ import globals from 'rollup-plugin-node-globals';
 import resolve from 'rollup-plugin-node-resolve';
 import external from 'rollup-plugin-peer-deps-external';
 import { terser } from 'rollup-plugin-terser';
+import postcss from 'rollup-plugin-postcss';
 
 const PACKAGE_ROOT_PATH = process.cwd();
 const INPUT_FILE_PATH = path.join(PACKAGE_ROOT_PATH, 'src/index.ts');
@@ -114,6 +115,10 @@ const plugins = [
   // Only minify the output in production, since it is very slow. And only
   // for UMD builds, since modules will be bundled by the consumer.
   isUmd && terser(),
+
+  postcss({
+    extensions: ['.css']
+  })
 ];
 
 export default [
