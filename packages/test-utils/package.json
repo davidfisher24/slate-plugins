@@ -35,8 +35,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@insendi/ui-kit": "^2.75.2"
   }
 }
