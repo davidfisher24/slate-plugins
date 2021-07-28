@@ -6,11 +6,7 @@ it('should render', () => {
   const onChange = jest.fn();
 
   const { getByTestId } = render(
-    <VideoUrlInput
-      data-testid="VideoUrlInput"
-      src="test"
-      onChange={onChange}
-    />
+    <VideoUrlInput data-testid="VideoUrlInput" src="test" onChange={onChange} />
   );
 
   const element = getByTestId('VideoUrlInput');

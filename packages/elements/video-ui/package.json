@@ -34,7 +34,8 @@
     "@insendi/editor-v2-core": "^1.0.0",
     "@insendi/editor-v2-styled-components": "^1.0.0",
     "@insendi/editor-v2-toolbar": "^1.0.0",
-    "@insendi/editor-v2-video": "^1.0.0"
+    "@insendi/editor-v2-video": "^1.0.0",
+    "@insendi/ui-kit": "^2.75.2"
   },
   "publishConfig": {
     "access": "public"

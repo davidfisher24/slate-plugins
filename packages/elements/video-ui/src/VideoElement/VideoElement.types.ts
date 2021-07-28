@@ -1,5 +1,5 @@
-import { VideoNodeData } from '@insendi/editor-v2-video';
 import { StyledElementProps } from '@insendi/editor-v2-styled-components';
+import { VideoNodeData } from '@insendi/editor-v2-video';
 import { CSSProp } from 'styled-components';
 
 export interface VideoElementStyleProps extends VideoElementProps {
@@ -10,12 +10,9 @@ export interface VideoElementStyles {
   iframeWrapper: CSSProp;
   iframe: CSSProp;
   iframePlaceholder: CSSProp;
-  input: CSSProp;
 }
-
 
 export type VideoElementProps = StyledElementProps<
   VideoNodeData,
   VideoElementStyles
->
-
+>;

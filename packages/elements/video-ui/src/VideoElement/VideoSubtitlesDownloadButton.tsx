@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { 
-    downloadSubtitles
-} from '../utils'
+import { Button, Icon } from '@insendi/ui-kit';
+import { downloadSubtitles } from '../utils';
 
 export const VideoSubtitlesDownloadButton = ({
   videoUrl,
@@ -13,13 +12,21 @@ export const VideoSubtitlesDownloadButton = ({
   language: string;
 }) => {
   return (
-    <button
-        name="Download Subtitles"
-        onClick={() => downloadSubtitles({
-          src: videoUrl, subtitles, language
-        })}
+    <Button
+      name="Download Subtitles"
+      isSize="small"
+      isOutlined
+      onMouseDown={() =>
+        downloadSubtitles({
+          src: videoUrl,
+          subtitles,
+          language,
+        })
+      }
+      style={{ marginTop: '0.5rem' }}
     >
-        <span>Download Subtitles</span>
-    </button>
+      <Icon className="fal fa-download mr-xxs" />
+      <span>Download Subtitles</span>
+    </Button>
   );
 };

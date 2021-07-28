@@ -1,13 +1,7 @@
 import * as React from 'react';
-import {
-  useEventEditorId,
-  useStoreEditorRef,
-} from '@insendi/editor-v2-core';
+import { useEventEditorId, useStoreEditorRef } from '@insendi/editor-v2-core';
+import { ToolbarButton, ToolbarButtonProps } from '@insendi/editor-v2-toolbar';
 import { insertVideo } from '@insendi/editor-v2-video';
-import {
-  ToolbarButton,
-  ToolbarButtonProps,
-} from '@insendi/editor-v2-toolbar';
 
 export interface ToolbarVideoProps extends ToolbarButtonProps {
   /**
@@ -29,7 +23,7 @@ export const ToolbarVideo = ({ getVideoSrc, ...props }: ToolbarVideoProps) => {
         let src;
         if (getVideoSrc) {
           src = await getVideoSrc();
-        }  
+        }
 
         insertVideo(editor, { src });
       }}

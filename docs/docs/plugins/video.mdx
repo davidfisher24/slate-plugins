@@ -7,6 +7,14 @@ title: Video
 
 ```ts live
 () => {
+  const editableProps = {
+    placeholder: 'Type…',
+    style: {
+      padding: '15px',
+    },
+    readOnly: false,
+  };
+
   const plugins = [
     ...pluginsBasic,
     createVideoPlugin(),

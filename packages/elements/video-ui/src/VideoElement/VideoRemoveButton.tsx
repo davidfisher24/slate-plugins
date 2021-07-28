@@ -1,16 +1,21 @@
 import * as React from 'react';
+import { Button, Icon } from '@insendi/ui-kit';
 
 export const VideoRemoveButton = ({
-  handleRemoveVideo
+  handleRemoveVideo,
 }: {
-  handleRemoveVideo: () => void
+  handleRemoveVideo: () => void;
 }) => {
   return (
-    <button
-        name="removeVideo"
-        onMouseDown={() => {handleRemoveVideo()}}
+    <Button
+      isSize="small"
+      isOutlined
+      onMouseDown={() => {
+        handleRemoveVideo();
+      }}
     >
-        <span>Remove Video</span>
-    </button>
+      <Icon className="fal fa-times" />
+      <span>Remove</span>
+    </Button>
   );
 };

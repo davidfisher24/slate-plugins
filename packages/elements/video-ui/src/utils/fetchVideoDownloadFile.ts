@@ -2,24 +2,26 @@ import { SERVICES } from '@insendi/editor-v2-video';
 import { isServiceValidInPlatform } from './isServiceValidInPlatform';
 
 export const fetchVideoDownloadFile = async (
-    platform: string, 
+  platform: string,
+  id: string,
+  quality: string,
+  getVideoDownload?: (
+    platform: string,
     id: string,
-    quality: string,
-    getVideoDownload?: (
-        platform: string, id: string, quality: string
-    ) => Promise<string>
-): Promise<string|null> => {
-    if (!getVideoDownload) {
-        return null;
-    }
-    if (!isServiceValidInPlatform(platform, SERVICES.SUBTITLES)) {
-        return null;
-    }
+    quality: string
+  ) => Promise<string>
+): Promise<string | null> => {
+  if (!getVideoDownload) {
+    return null;
+  }
+  if (!isServiceValidInPlatform(platform, SERVICES.SUBTITLES)) {
+    return null;
+  }
 
-    try {
-        const videoFileUrl = getVideoDownload(platform, id, quality)
-        return videoFileUrl;
-    } catch (e) {
-        return null
-    }
+  try {
+    const videoFileUrl = getVideoDownload(platform, id, quality);
+    return videoFileUrl;
+  } catch (e) {
+    return null;
+  }
 };
