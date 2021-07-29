@@ -33,21 +33,23 @@ export const VideoElement = (props: VideoElementProps) => {
     language = LANGUAGE,
     getSubtitle = () => {
       // For testing buttons
-      return new Promise((resolve, reject) => {
-        let wait = setTimeout(() => {
+      return new Promise((resolve) => {
+        const wait = setTimeout(() => {
           clearTimeout(wait);
           resolve('https://filesamples.com/samples/document/txt/sample3.txt');
-        }, 500)
-      }) 
+        }, 500);
+      });
     },
     getVideoDownload = () => {
       // For testing buttons
-      return new Promise((resolve, reject) => {
-        let wait = setTimeout(() => {
+      return new Promise((resolve) => {
+        const wait = setTimeout(() => {
           clearTimeout(wait);
-          resolve('https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4');
-        }, 500)
-      }) 
+          resolve(
+            'https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4'
+          );
+        }, 500);
+      });
     },
   } = element;
 
