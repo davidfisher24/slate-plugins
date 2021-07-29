@@ -78,6 +78,8 @@
     "@insendi/editor-v2-styled-components": "1.0.0",
     "@insendi/editor-v2-table": "1.0.0",
     "@insendi/editor-v2-table-ui": "1.0.0",
+    "@insendi/editor-v2-tabs": "^1.0.0",
+    "@insendi/editor-v2-tabs-ui": "^1.0.0",
     "@insendi/editor-v2-toolbar": "1.0.0",
     "@insendi/editor-v2-trailing-block": "1.0.0"
   },

@@ -67,6 +67,13 @@ import {
   ELEMENT_TH,
   ELEMENT_TR,
 } from '@insendi/editor-v2-table';
+import {
+  ELEMENT_TABS,
+  ELEMENT_TAB,
+  ELEMENT_TABS_LIST,
+  ELEMENT_TABS_CONTENT,
+  ELEMENT_TAB_CONTENT
+} from '@insendi/editor-v2-tabs';
 
 export type DefaultPlatePluginKey =
   | typeof ELEMENT_ALIGN_CENTER
@@ -94,6 +101,11 @@ export type DefaultPlatePluginKey =
   | typeof ELEMENT_TH
   | typeof ELEMENT_TODO_LI
   | typeof ELEMENT_TR
+  | typeof ELEMENT_TABS
+  | typeof ELEMENT_TAB
+  | typeof ELEMENT_TABS_LIST
+  | typeof ELEMENT_TABS_CONTENT
+  | typeof ELEMENT_TAB_CONTENT
   | typeof ELEMENT_UL
   | typeof MARK_BOLD
   | typeof MARK_CODE
@@ -139,6 +151,11 @@ export const createPlateOptions = <T extends string = string>(
     [ELEMENT_TABLE]: {},
     [ELEMENT_TD]: DEFAULTS_TD,
     [ELEMENT_TH]: DEFAULTS_TH,
+    [ELEMENT_TABS]: {},
+    [ELEMENT_TAB]: {},
+    [ELEMENT_TABS_LIST]: {},
+    [ELEMENT_TABS_CONTENT]: {},
+    [ELEMENT_TAB_CONTENT]: {},
     [ELEMENT_TODO_LI]: DEFAULTS_TODO_LIST,
     [ELEMENT_TR]: {},
     [ELEMENT_UL]: {},

@@ -45,6 +45,8 @@ export * from '@insendi/editor-v2-serializer';
 export * from '@insendi/editor-v2-styled-components';
 export * from '@insendi/editor-v2-table';
 export * from '@insendi/editor-v2-table-ui';
+export * from '@insendi/editor-v2-tabs';
+export * from '@insendi/editor-v2-tabs-ui';
 export * from '@insendi/editor-v2-toolbar';
 export * from '@insendi/editor-v2-trailing-block';
 export * from '@insendi/editor-v2-placeholder';

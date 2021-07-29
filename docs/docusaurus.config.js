@@ -286,7 +286,16 @@ module.exports = {
             __dirname,
             '../packages/elements/table-ui/src'
           ),
+          '@insendi/editor-v2-tabs': path.resolve(
+            __dirname,
+            '../packages/elements/tabs/src'
+          ),
+          '@insendi/editor-v2-tabs-ui': path.resolve(
+            __dirname,
+            '../packages/elements/tabs-ui/src'
+          ),
           '@insendi/editor-v2-basic-marks': path.resolve(
+
             __dirname,
             '../packages/marks/basic-marks/src'
           ),

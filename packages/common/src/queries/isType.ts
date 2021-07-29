@@ -10,6 +10,7 @@ export const isType = (
   pluginKey?: string | string[]
 ) => {
   const keys = castArray(pluginKey);
+  //return keys.some((key) => node?.type === getPlatePluginType(editor, key));
   keys.forEach((key) => {
     if (node?.type === getPlatePluginType(editor, key)) return true;
   });

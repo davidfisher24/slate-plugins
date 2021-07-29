@@ -3,6 +3,10 @@ import 'tippy.js/dist/tippy.css';
 import React from 'react';
 import { CodeAlt } from '@styled-icons/boxicons-regular/CodeAlt';
 import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
+import { PageAdd } from '@styled-icons/foundation/PageAdd';
+import { PageCopy } from '@styled-icons/foundation/PageCopy';
+import { PageMultiple } from '@styled-icons/foundation/PageMultiple'; 
+import { PageRemove } from '@styled-icons/foundation/PageRemove';
 import { Highlight } from '@styled-icons/boxicons-regular/Highlight';
 import { Subscript } from '@styled-icons/foundation/Subscript';
 import { Superscript } from '@styled-icons/foundation/Superscript';
@@ -34,10 +38,13 @@ import { TippyProps } from '@tippyjs/react';
 import {
   addColumn,
   addRow,
+  addTab,
   BalloonToolbar,
   deleteColumn,
   deleteRow,
+  deleteTab,
   deleteTable,
+  deleteTabs,
   ELEMENT_ALIGN_CENTER,
   ELEMENT_ALIGN_JUSTIFY,
   ELEMENT_ALIGN_RIGHT,
@@ -52,6 +59,7 @@ import {
   ELEMENT_UL,
   getPlatePluginType,
   insertTable,
+  insertTabs,
   MARK_BOLD,
   MARK_CODE,
   MARK_ITALIC,
@@ -65,6 +73,7 @@ import {
   ToolbarList,
   ToolbarMark,
   ToolbarTable,
+  ToolbarTabs,
   useStoreEditorRef,
 } from '@insendi/editor-v2-plate';
 import { ELEMENT_CODE_BLOCK } from '@insendi/editor-v2-code-block';
@@ -223,6 +232,15 @@ export const ToolbarButtonsTable = () => (
     <ToolbarTable icon={<BorderRight />} transform={deleteColumn} />
   </>
 );
+
+export const ToolbarButtonsTabs = () => (
+  <>
+    <ToolbarTabs icon={<PageMultiple />} transform={insertTabs} />
+    <ToolbarTabs icon={<PageCopy />} transform={deleteTabs} />
+    <ToolbarTabs icon={<PageAdd />} transform={addTab} />
+    <ToolbarTabs icon={<PageRemove />} transform={deleteTab} />
+  </>
+)
 
 export const BallonToolbarMarks = () => {
   const editor = useStoreEditorRef(useEventEditorId('focus'));

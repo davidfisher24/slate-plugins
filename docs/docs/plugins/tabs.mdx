@@ -1,0 +1,40 @@
+---
+slug: /plugins/tabs
+title: Tabs
+---
+
+```ts live
+() => {
+  const ToolbarButtonsTabs = () => (
+    <>
+        <ToolbarTabs icon={<PageMultiple />} transform={insertTabs} />
+        <ToolbarTabs icon={<PageCopy />} transform={deleteTabs} />
+        <ToolbarTabs icon={<PageAdd />} transform={addTab} />
+        <ToolbarTabs icon={<PageRemove />} transform={deleteTab} />
+    </>
+  );
+
+  const plugins = [
+    ...pluginsBasic,
+    createTabsPlugin(),
+    createSoftBreakPlugin(optionsSoftBreakPlugin),
+    createExitBreakPlugin(optionsExitBreakPlugin),
+  ];
+
+  return (
+    <>
+      <HeadingToolbar>
+        <ToolbarButtonsTabs />
+      </HeadingToolbar>
+      <Plate
+        id="tabs"
+        plugins={plugins}
+        components={components}
+        options={options}
+        editableProps={editableProps}
+        initialValue={initialValueTabs}
+      />
+    </>
+  );
+}
+```

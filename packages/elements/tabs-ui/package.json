@@ -1,0 +1,46 @@
+{
+  "name": "@insendi/editor-v2-tabs-ui",
+  "version": "1.0.0",
+  "description": "Tabs ui plugin for Plate",
+  "keywords": [
+    "slate",
+    "plate",
+    "plugin"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/insendi/editor-v2.git",
+    "directory": "packages/elements/table"
+  },
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "cti": "sh ../../../cti.sh",
+    "prebuild": "rimraf dist",
+    "build": "tsc && yarn rollup",
+    "build:w": "yarn rollup -w",
+    "rollup": "rollup -c=../../../rollup.config.js",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "slate": ">=0.60.0",
+    "slate-react": ">=0.60.0"
+  },
+  "dependencies": {
+    "@insendi/editor-v2-common": "^1.0.0",
+    "@insendi/editor-v2-core": "^1.0.0",
+    "@insendi/editor-v2-tabs": "^1.0.0",
+    "@insendi/editor-v2-toolbar": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
