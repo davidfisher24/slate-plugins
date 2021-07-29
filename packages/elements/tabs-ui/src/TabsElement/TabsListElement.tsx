@@ -1,13 +1,17 @@
 import * as React from 'react';
 import { StyledElementProps } from '@insendi/editor-v2-styled-components';
-import { getTabsElementStyles } from './TabsElement.styles';
+import { getTabsListElementStyles } from './TabsListElement.styles';
+import { Tabs, TabList } from '@insendi/ui-kit'; 
+
+
 
 /**
  * TabsElement with no default styles.
  * [Use the `styles` API to add your own styles.](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
  */
-export const TabsElement = (props: StyledElementProps) => {
-  const { root } = getTabsElementStyles(props);
+
+export const TabsListElement = (props: StyledElementProps) => {
+  const { root } = getTabsListElementStyles(props);
 
   const {
     attributes,
@@ -15,8 +19,8 @@ export const TabsElement = (props: StyledElementProps) => {
   } = props;
 
   return (
-    <div {...attributes} className={root.className}>
-      {children}
-    </div>
+    <Tabs {...attributes} className={root.className} >
+        <TabList>{children}</TabList>
+    </Tabs>
   );
 };

@@ -9,10 +9,7 @@ export const getTabsElementStyles = (props: StyledElementProps) =>
     { prefixClassNames: 'TabsElement', ...props },
     {
       root: css`
-        margin: 10px 0;
-        border-collapse: collapse;
-        width: 100%;
-        border-bottom: 2px solid #eaeaea;
+
       `,
     }
   );

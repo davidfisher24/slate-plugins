@@ -8,3 +8,5 @@ export * from './TabElement.styles';
 export * from './TabElement';
 export * from './TabContentElement.styles';
 export * from './TabContentElement';
+export * from './TabsListElement.styles';
+export * from './TabsListElement';

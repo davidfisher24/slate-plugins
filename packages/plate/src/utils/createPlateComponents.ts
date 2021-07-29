@@ -70,7 +70,8 @@ import {
 import { 
   TabsElement,
   TabElement,
-  TabContentElement
+  TabContentElement,
+  TabsListElement,
 } from '@insendi/editor-v2-tabs-ui';
 import { css } from 'styled-components';
 import tw from 'twin.macro';
@@ -239,29 +240,10 @@ export const createPlateComponents = <T extends string = string>(
       },
     }),
     [ELEMENT_TABS]: TabsElement,
-    [ELEMENT_TABS_CONTENT]: withProps(StyledLeaf, { 
-      as: 'div',
-      styles: {
-        root: {
-          display: 'flex'
-        }
-      }
-    }),
+    [ELEMENT_TABS_CONTENT]: withProps(StyledElement, { as: 'div' }),
     [ELEMENT_TAB_CONTENT]: TabContentElement,
     [ELEMENT_TAB]: TabElement,
-    [ELEMENT_TABS_LIST]: withProps(StyledLeaf, { 
-      as: 'div',
-      styles: {
-        root: {
-          display: 'flex',
-          overflow: 'hidden',
-          border: '1px solid #ccc',
-          listStyle: 'none',
-          backgroundColor: '#f1f1f1',
-          marginBottom: '0'
-        },
-      },
-    }),
+    [ELEMENT_TABS_LIST]: TabsListElement,
     [ELEMENT_TODO_LI]: TodoListElement,
     [ELEMENT_TR]: withProps(StyledElement, { as: 'tr' }),
     [MARK_BOLD]: withProps(StyledLeaf, { as: 'strong' }),

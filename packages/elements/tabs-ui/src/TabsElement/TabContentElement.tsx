@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { getTabContentElementStyles } from './TabContentElement.styles';
+import { TabContent } from '@insendi/ui-kit';
 
 /**
  * TabContentElement with no default styles.
@@ -11,7 +12,6 @@ export const TabContentElement = (props: StyledElementProps) => {
     attributes,
     children,
     element,
-    nodeProps,
   } = props;
 
   const { active } = element;
@@ -21,8 +21,12 @@ export const TabContentElement = (props: StyledElementProps) => {
   if (!active) return null;
 
   return (
-    <div {...attributes} className={root.className} css={root.css} {...nodeProps}>
+    <TabContent 
+      {...attributes} 
+      className={root.className}
+      isActive={active}
+    >
       {children}
-    </div>
+    </TabContent>
   );
 };
