@@ -70,6 +70,8 @@
     "@insendi/editor-v2-styled-components": "file:../packages/ui/styled-components",
     "@insendi/editor-v2-table": "file:../packages/elements/table",
     "@insendi/editor-v2-table-ui": "file:../packages/elements/table-ui",
+    "@insendi/editor-v2-tabs": "file:../packages/elements/tabs",
+    "@insendi/editor-v2-tabs-ui": "file:../packages/elements/tabs-ui",
     "@insendi/editor-v2-toolbar": "file:../packages/ui/toolbar",
     "@insendi/editor-v2-trailing-block": "file:../packages/trailing-block"
   },

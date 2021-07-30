@@ -1,19 +1,21 @@
 import * as React from 'react';
 import { useEditorRef } from '@insendi/editor-v2-core';
 import { setActiveTab } from '@insendi/editor-v2-tabs';
+import { getText, findDescendant } from '@insendi/editor-v2-common';
+import { ELEMENT_PARAGRAPH } from '@insendi/editor-v2-plate';
 import { StyledElementProps } from '@insendi/editor-v2-styled-components';
 import { ReactEditor, useReadOnly } from 'slate-react';
 import { Transforms } from 'slate';
-import { getTabElementStyles } from './TabElement.styles';
 import { Tab, TabLink } from '@insendi/ui-kit';
+
 /**
  * TabsListElement with no default styles.
  * [Use the `styles` API to add your own styles.](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)
  */
-export const TabElement = (props: StyledElementProps) => {
+
+export const TabElement = React.forwardRef((props: StyledElementProps, ref) => { 
   const editor = useEditorRef();
   const readOnly = useReadOnly();
-  const { root } = getTabElementStyles(props);
 
   const {
     attributes,
@@ -21,32 +23,51 @@ export const TabElement = (props: StyledElementProps) => {
     element,
   } = props;
 
-  const { active } = element;
-
+  const { active = false } = element;
+  const path = ReactEditor.findPath(editor, element);
+  
   return (
-    <Tab
-      {...attributes}
-      isActive={active}
-      className={root.className}
-      onMouseDown={(event: any) => {
-        event.stopPropagation();
-        if (active && readOnly) {
-          return;
-        }
-        const path = ReactEditor.findPath(editor, element);
-        const [newActiveIndex] = path.slice(-1);
-        setActiveTab(editor, newActiveIndex);
+    <div {...attributes}>
+      <Tab
+        style={{ userSelect: "none" }}
+        isActive={active}
+        ref={ref}
+        onMouseDown={(event: any) => {
+          event.stopPropagation();
+          if (active && readOnly) {
+            return;
+          }
+          const text = getText(editor, path);
+          const [tabIndex] = path.slice(-1);
+          setActiveTab(editor, tabIndex);
 
-        Transforms.select(editor, path);
-        /*Transforms.select(editor, {
-          anchor: { path: [2,0,0,0,0], offset: 0 },
-          focus: { path: [2,0,0,0,0], offset: 2 },
-        })*/
-      }}
-    >
-      <TabLink>
-        <span className="is-family-secondary is-marginless">{children}</span>
-      </TabLink>
-    </Tab>
+          const descendantText = findDescendant(editor, { 
+            at: path,
+            match: {
+              type: ELEMENT_PARAGRAPH,
+            },
+          })
+
+          if (descendantText) {
+            const [, textNodePath] = descendantText;
+            Transforms.select(editor, {
+              anchor: { path: textNodePath, offset: text.length },
+              focus: { path: textNodePath, offset: text.length },
+            })
+          }
+        }}
+      >
+        <TabLink 
+          ariaControls=""
+          isActive={active} 
+        >
+          <span 
+            className="is-family-secondary is-marginless"
+          >
+            {children}
+          </span>
+        </TabLink>
+      </Tab>
+    </div>
   );
-};
+});
