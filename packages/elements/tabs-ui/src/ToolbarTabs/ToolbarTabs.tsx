@@ -1,8 +1,5 @@
 import * as React from 'react';
-import {
-  getPreventDefaultHandler,
-  someNode,
-} from '@insendi/editor-v2-common';
+import { getPreventDefaultHandler, someNode } from '@insendi/editor-v2-common';
 import {
   getPlatePluginType,
   useEventEditorId,

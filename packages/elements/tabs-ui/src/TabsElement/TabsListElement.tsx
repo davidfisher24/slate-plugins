@@ -1,19 +1,17 @@
 import * as React from 'react';
 import { StyledElementProps } from '@insendi/editor-v2-styled-components';
-import { Tabs, TabList } from '@insendi/ui-kit'; 
+import { TabList, Tabs } from '@insendi/ui-kit';
 
-export const TabsListElement = React.forwardRef((props: StyledElementProps, ref) => { 
+export const TabsListElement = React.forwardRef(
+  (props: StyledElementProps, ref) => {
+    const { attributes, children } = props;
 
-  const {
-    attributes,
-    children,
-  } = props;
-
-  return (
-    <div {...attributes}>
-      <Tabs ref={ref}>
-        <TabList>{children}</TabList>
-      </Tabs>
-    </div>
-  );
-});
+    return (
+      <div {...attributes}>
+        <Tabs ref={ref}>
+          <TabList>{children}</TabList>
+        </Tabs>
+      </div>
+    );
+  }
+);
