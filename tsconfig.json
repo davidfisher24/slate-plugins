@@ -21,7 +21,10 @@
     "suppressImplicitAnyIndexErrors": true,
     "target": "es2017"
   },
-  "files": ["types/twin.d.ts"],
+  "files": [
+    "types/twin.d.ts",
+    "types/ui-kit.d.ts"
+  ],
   "exclude": [
     "node_modules",
     "**/node_modules",

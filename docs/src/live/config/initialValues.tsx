@@ -680,6 +680,32 @@ export const initialValueBasicElements: any = [
   },
 ];
 
+export const initialValuesCodeBlock: any = [
+  createElement('This is a code block'),
+  {
+    type: ELEMENT_CODE_BLOCK,
+    language: 'javascript',
+    children: [
+      {
+        type: ELEMENT_CODE_LINE,
+        children: [
+          {
+            text: "const a = 'Hello';",
+          },
+        ],
+      },
+      {
+        type: ELEMENT_CODE_LINE,
+        children: [
+          {
+            text: "const b = 'World';",
+          },
+        ],
+      },
+    ],
+  },
+]
+
 export const initialValueList: any = [
   {
     type: ELEMENT_H2,

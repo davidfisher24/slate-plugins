@@ -172,7 +172,6 @@ import {
 } from '@insendi/editor-v2-excalidraw';
 import { createEditor, Editor, Transforms } from 'slate';
 import { Editable, ReactEditor, Slate, withReact } from 'slate-react';
-import { css } from 'styled-components';
 import { optionsAutoformat } from './config/autoformatRules';
 import {
   getHugeDocument,
@@ -180,6 +179,7 @@ import {
   initialValueBalloonToolbar,
   initialValueBasicElements,
   initialValueBasicMarks,
+  initialValuesCodeBlock,
   initialValueCombobox,
   initialValueEmbeds,
   initialValueExcalidraw,
@@ -250,20 +250,7 @@ const editableProps = {
   },
 };
 
-const components = createPlateComponents({
-  [ELEMENT_CODE_BLOCK]: withProps(CodeBlockElement, {
-    styles: {
-      root: [
-        css`
-          background-color: #111827;
-          code {
-            color: white;
-          }
-        `,
-      ],
-    },
-  }),
-});
+const components = createPlateComponents();
 
 const options = createPlateOptions();
 
@@ -476,6 +463,7 @@ const ReactLiveScope = {
   initialValueBasic,
   initialValueBasicElements,
   initialValueBasicMarks,
+  initialValuesCodeBlock,
   initialValueEmbeds,
   initialValueExitBreak,
   initialValueForcedLayout,

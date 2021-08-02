@@ -32,8 +32,7 @@
     "@insendi/editor-v2-common": "1.0.0",
     "@insendi/editor-v2-core": "1.0.0",
     "@insendi/editor-v2-mention": "1.0.0",
-    "@insendi/editor-v2-styled-components": "1.0.0",
-    "@insendi/ui-kit": "^2.75.2"
+    "@insendi/editor-v2-styled-components": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

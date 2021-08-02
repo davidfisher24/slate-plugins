@@ -3,6 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
   },
-  "files": ["../types/twin.d.ts"],
+  "files": [
+    "../types/twin.d.ts",
+    "../types/ui-kit.d.ts"
+  ],
   "include": ["src"]
 }

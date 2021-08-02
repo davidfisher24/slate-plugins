@@ -1,0 +1,54 @@
+---
+slug: /plugins/code-block
+title: Code Block
+---
+
+### `createCodeBlockPlugin`
+
+```ts live
+() => {
+  const ToolbarButtonsCodeBlock = () => {
+    const editor = useStoreEditorRef(useEventEditorId('focus'));
+
+    return (
+      <>
+        <ToolbarCodeBlock
+          type={getPlatePluginType(editor, ELEMENT_CODE_BLOCK)}
+          icon={<CodeBlock />}
+        />
+      </>
+    );
+  };
+
+  const editableProps = {
+    placeholder: 'Type…',
+    style: {
+      padding: '15px',
+    },
+  };
+
+  const plugins = [
+    ...pluginsBasic,
+    createCodeBlockPlugin(),
+    createSoftBreakPlugin(optionsSoftBreakPlugin),
+    createExitBreakPlugin(optionsExitBreakPlugin),
+    createResetNodePlugin(optionsResetBlockTypePlugin),
+  ];
+
+  return (
+    <>
+      <HeadingToolbar>
+        <ToolbarButtonsCodeBlock />
+      </HeadingToolbar>
+      <Plate
+        id="code-block"
+        plugins={plugins}
+        components={components}
+        options={options}
+        editableProps={editableProps}
+        initialValue={initialValuesCodeBlock}
+      />
+    </>
+  );
+}
+```

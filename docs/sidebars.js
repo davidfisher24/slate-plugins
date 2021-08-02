@@ -40,6 +40,7 @@ module.exports = {
           items: [
             'plugins/alignment',
             'plugins/basic-elements',
+            'plugins/code-block',
             'plugins/excalidraw',
             'plugins/image',
             'plugins/link',
